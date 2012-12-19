@@ -15,6 +15,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="elgg_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Elgg
    </div>
@@ -29,7 +30,9 @@
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a>  </div>
+<a href="#pro-methods">Protected Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">ElggDiskFilestore Class Reference</div>  </div>
 </div><!--header-->
@@ -73,7 +76,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aac6da0535533315d18a9619c2b5e01f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37d5583ade535d363b89dffa5f31228a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_disk_filestore.html#a37d5583ade535d363b89dffa5f31228a">exists</a> (<a class="el" href="class_elgg_file.html">ElggFile</a> $file)</td></tr>
 <tr class="separator:a37d5583ade535d363b89dffa5f31228a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a745fa8bd3784d81c32554c521f57b27a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_disk_filestore.html#a745fa8bd3784d81c32554c521f57b27a">getSize</a> ($prefix= '', $container_guid)</td></tr>
+<tr class="memitem:a745fa8bd3784d81c32554c521f57b27a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_disk_filestore.html#a745fa8bd3784d81c32554c521f57b27a">getSize</a> ($prefix= '', $<a class="el" href="mod_2pages_2actions_2pages_2edit_8php.html#a399cd621f71922d981da16e2d3701412">container_guid</a>)</td></tr>
 <tr class="separator:a745fa8bd3784d81c32554c521f57b27a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a015cb52e5774a1972d296c9694d2a3c3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_disk_filestore.html#a015cb52e5774a1972d296c9694d2a3c3">getParameters</a> ()</td></tr>
 <tr class="separator:a015cb52e5774a1972d296c9694d2a3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -121,6 +124,18 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:aed3172d87a8bcfc4ee1fdc000fba711a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab44453f1cf69a324903eeb73fd0fb543"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_disk_filestore.html#ab44453f1cf69a324903eeb73fd0fb543">user_file_matrix</a> ($guid)</td></tr>
 <tr class="separator:ab44453f1cf69a324903eeb73fd0fb543"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:acd39cfead0c6353c8e4b4983292a97f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_disk_filestore.html#acd39cfead0c6353c8e4b4983292a97f3">mb_str_split</a> ($string, $charset= 'UTF8')</td></tr>
+<tr class="separator:acd39cfead0c6353c8e4b4983292a97f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a25a5f0426cbbcccfc63e5e82568e20e3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_disk_filestore.html#a25a5f0426cbbcccfc63e5e82568e20e3">$dir_root</a></td></tr>
+<tr class="separator:a25a5f0426cbbcccfc63e5e82568e20e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42f4ae7187eea84da345dff6dbba5521"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_disk_filestore.html#a42f4ae7187eea84da345dff6dbba5521">$matrix_depth</a> = 5</td></tr>
+<tr class="separator:a42f4ae7187eea84da345dff6dbba5521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a2c3211c18285822abad4d22fb81b0e7a"></a>
@@ -509,6 +524,51 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="acd39cfead0c6353c8e4b4983292a97f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">mb_str_split </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$string</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$charset</em> = <code>'UTF8'</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Multibyte string tokeniser.</p>
+<p>Splits a string into an array. Will fail safely if mbstring is not installed.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$string</td><td>String </td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$charset</td><td>The charset, defaults to UTF8</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000008">Deprecated:</a></b></dt><dd>1.8 Files are stored by date and guid; no need for this. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="adbb0c658badc738f7c13ada76b392830"></a>
 <div class="memitem">
 <div class="memproto">
@@ -747,13 +807,56 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a25a5f0426cbbcccfc63e5e82568e20e3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$dir_root</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Directory root. </p>
+
+</div>
+</div>
+<a class="anchor" id="a42f4ae7187eea84da345dff6dbba5521"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$matrix_depth = 5</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Default depth of file directory matrix </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/markborcherding/source/vendor/Elgg/engine/classes/ElggDiskFilestore.php</li>
+<li>Elgg/engine/classes/<a class="el" href="_elgg_disk_filestore_8php.html">ElggDiskFilestore.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 30 2012 09:32:41 for Elgg by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 19 2012 12:53:48 for Elgg by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

@@ -15,6 +15,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="elgg_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Elgg
    </div>
@@ -32,7 +33,33 @@
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_todo000075"></a>Namespace <a class="el" href="namespace_blog.html">Blog</a>  </dt>
+<dt><a class="anchor" id="_todo000090"></a>Global <a class="el" href="mod_2search_2pages_2search_2index_8php.html#ab0f2368a815e4de20e91228f9ea184f6">$autofeed</a>  </dt>
+<dd>much of this code should be pulled out into a library of functions  </dd>
+<dt><a class="anchor" id="_todo000028"></a>Global <a class="el" href="engine_2lib_2access_8php.html#ade8e6e45b20b216750e5773ae53092d4">$ENTITY_SHOW_HIDDEN_OVERRIDE</a>  </dt>
+<dd>Replace this with query object!  bool $ENTITY_SHOW_HIDDEN_OVERRIDE  private  </dd>
+<dt><a class="anchor" id="_todo000097"></a>Global <a class="el" href="views_2default_2forms_2admin_2site_2update__advanced_8php.html#ace6c036108b8c32114d2105eeef0a453">$form_body</a>  </dt>
+<dd><p class="startdd">cleanup </p>
+<p class="enddd">cleanup  </p>
+</dd>
+<dt><a class="anchor" id="_todo000032"></a>Global <a class="el" href="engine_2lib_2access_8php.html#a7945482fe6f6a798dd2effee0b7195fb">$init_finished</a>  </dt>
+<dd>This is required to tell the access system to start caching because calls are made while in ignore access mode and before the user is logged in.  </dd>
+<dt><a class="anchor" id="_todo000100"></a>Global <a class="el" href="js_2lightbox_8php.html#a1601a4ad71bcc0f897f2b5272777ad85">$js_path</a>  </dt>
+<dd>add support for passing options: $('#myplugin-lightbox').elgg.ui.lightbox(options);  </dd>
+<dt><a class="anchor" id="_todo000093"></a>Global <a class="el" href="views_2default_2admin_2appearance_2profile__fields_2list_8php.html#aa5fae90470d460a65d5211ec08e6b05c">$n</a>  </dt>
+<dd>Needs some review  </dd>
+<dt><a class="anchor" id="_todo000067"></a>Global <a class="el" href="sessions_8php.html#ad5cfa393445b28dca1ba32e28c7f8857">_elgg_session_close</a>  ()</dt>
+<dd><p class="startdd">implement </p>
+<p class="enddd">document </p>
+</dd>
+<dt><a class="anchor" id="_todo000066"></a>Global <a class="el" href="sessions_8php.html#a562c899fca7ca2ffc0e4f8fd9aa801dd">_elgg_session_open</a>  ($save_path, $session_name)</dt>
+<dd>Document  private  </dd>
+<dt><a class="anchor" id="_todo000033"></a>Global <a class="el" href="engine_2lib_2access_8php.html#a122fbe470c3e2a68f62060c2eaead246">access_init</a>  ()</dt>
+<dd>Invesigate </dd>
+<dt><a class="anchor" id="_todo000056"></a>Global <a class="el" href="engine_2lib_2output_8php.html#a50712639cfdece069f4579405eaec495">autop</a>  ($pee)</dt>
+<dd>Add deprecation warning in 1.9 </dd>
+<dt><a class="anchor" id="_todo000074"></a>Global <a class="el" href="views_8php.html#a9303ec6c39226bc6dcb0e83daadd29c4">autoregister_views</a>  ($view_base, $folder, $base_location_path, $viewtype)</dt>
+<dd>This seems overly complicated.  private  </dd>
+<dt><a class="anchor" id="_todo000078"></a>Namespace <a class="el" href="namespace_blog.html">Blog</a>  </dt>
 <dd><ul>
 <li>Either drop support for "publish date" or duplicate more entity getter functions to work with a non-standard time_created.</li>
 <li>Pingbacks</li>
@@ -40,7 +67,19 @@
 <li>River entry for posts saved as drafts and later published  </li>
 </ul>
 </dd>
-<dt><a class="anchor" id="_todo000103"></a>Namespace <a class="el" href="namespace_elgg.html">Elgg</a>  </dt>
+<dt><a class="anchor" id="_todo000079"></a>Global <a class="el" href="mod_2blog_2start_8php.html#aa6951cf9eb331140988cee22d82f2f82">blog_page_handler</a>  ($page)</dt>
+<dd>no archives for all blogs or friends </dd>
+<dt><a class="anchor" id="_todo000075"></a>Global <a class="el" href="web__services_8php.html#a12a1e9ca9568c7fbcaed1a794ffb6fd3">calculate_posthash</a>  ($postdata, $algo)</dt>
+<dd>Work out how to handle really large bits of data. </dd>
+<dt><a class="anchor" id="_todo000039"></a>Global <a class="el" href="deprecated-1_87_8php.html#a9b386f4bd4b485c07a33594455ed64be">delete_object_entity</a>  ($guid)</dt>
+<dd>- this should be removed - was deprecated in 1.5 or earlier </dd>
+<dt><a class="anchor" id="_todo000040"></a>Global <a class="el" href="deprecated-1_87_8php.html#a113d3e03ef6725385112a0e540798b61">delete_user_entity</a>  ($guid)</dt>
+<dd>remove </dd>
+<dt><a class="anchor" id="_todo000050"></a>Global <a class="el" href="extender_8php.html#abd2b957223da91a52a873520b701c42f">detect_extender_valuetype</a>  ($value, $value_type="")</dt>
+<dd>Make better! </dd>
+<dt><a class="anchor" id="_todo000082"></a>Global <a class="el" href="mod_2groups_2start_8php.html#ab266ada0decb7c12d09b7623f6018e76">discussion_reply_notifications</a>  ($event, $type, $annotation)</dt>
+<dd>this will be replaced in <a class="el" href="namespace_elgg.html">Elgg</a> 1.9 and is a clone of <a class="el" href="notification_8php.html#acfba5bbf2903338e978d5cfc01f39fb8">object_notifications()</a> </dd>
+<dt><a class="anchor" id="_todo000099"></a>Namespace <a class="el" href="namespace_elgg.html">Elgg</a>  </dt>
 <dd><p class="startdd">This currently only works for ONE AUTOCOMPLETE TEXT FIELD on a page.</p>
 <p class="enddd">removed below because blog is a plugin &lt;foaf:weblog rdf:resource="&lt;?php echo elgg_get_site_url(); ?&gt;blog/&lt;?php echo $owner-&gt;username; ?&gt;" /&gt;  </p>
 </dd>
@@ -49,11 +88,55 @@
 <p>I don't remember why this was required beyond scope concerns. </p>
 <p>This should eventually be merged into <a class="el" href="class_elgg_plugin.html">ElggPlugin</a>. Currently <a class="el" href="class_elgg_plugin.html">ElggPlugin</a> objects are only used to get and save plugin settings and user settings, so not every plugin has an <a class="el" href="class_elgg_plugin.html">ElggPlugin</a> object. It's not implemented in <a class="el" href="class_elgg_plugin.html">ElggPlugin</a> right now because of conflicts with at least the constructor, enable(), disable(), and private settings.</p>
 <p>Implement or remove. </p>
+<p>Does this work? </p>
+<p>Implement or remove </p>
 <p>These functions can't be subpackaged because they cover a wide mix of purposes and subsystems. Many of them should be moved to more relevant files. </p>
 <p>Turn this into something we handle more automatically.</p>
 <p>Configuration </p>
 <p class="enddd">we need broswer-specific test cases for this).  </p>
 </dd>
+<dt><a class="anchor" id="_todo000045"></a>Global <a class="el" href="elgglib_8php.html#acdd0156d45ebe3e407cb8756b0a3ec87">elgg_batch_enable_callback</a>  ($object)</dt>
+<dd>why aren't these static methods on <a class="el" href="class_elgg_batch.html">ElggBatch</a>? </dd>
+<dt><a class="anchor" id="_todo000057"></a>Global <a class="el" href="pagehandler_8php.html#afcbef2b0d3742d83ba51a89b31e19c86">elgg_error_page_handler</a>  ($hook, $type, $result, $params)</dt>
+<dd>not sending status codes yet </dd>
+<dt><a class="anchor" id="_todo000060"></a>Global <a class="el" href="engine_2lib_2plugins_8php.html#aa183c3a78f82d38c5f04e3425fd61d32">elgg_generate_plugin_entities</a>  ()</dt>
+<dd>Crappy name?  </dd>
+<dt><a class="anchor" id="_todo000031"></a>Global <a class="el" href="engine_2lib_2access_8php.html#a45785019065800c726e2f5af3f6cee6f">elgg_get_access_object</a>  ()</dt>
+<dd>comment is incomplete This is used to </dd>
+<dt><a class="anchor" id="_todo000062"></a>Global <a class="el" href="engine_2lib_2plugins_8php.html#a9614995e94f1d7a7608b2695e7d7c1ea">elgg_get_calling_plugin_id</a>  ($mainfilename=false)</dt>
+<dd>get rid of this  </dd>
+<dt><a class="anchor" id="_todo000064"></a>Global <a class="el" href="relationships_8php.html#a69e1c403f9f87dc0af960d1b3789a266">elgg_get_entity_relationship_where_sql</a>  ($column, $relationship=NULL, $relationship_guid=NULL, $inverse_relationship=FALSE)</dt>
+<dd>add support for multiple relationships and guids. </dd>
+<dt><a class="anchor" id="_todo000037"></a>Global <a class="el" href="cache_8php.html#af3744418280f3860d9f9539605240acc">elgg_get_filepath_cache</a>  ()</dt>
+<dd>deprecate in <a class="el" href="namespace_elgg.html">Elgg</a> 1.9  </dd>
+<dt><a class="anchor" id="_todo000063"></a>Global <a class="el" href="engine_2lib_2plugins_8php.html#a6a3e953e9714394efaaa512bcaaa5788">elgg_get_plugin_setting</a>  ($name, $plugin_id=null)</dt>
+<dd>make $plugin_id required in future version  </dd>
+<dt><a class="anchor" id="_todo000053"></a>Global <a class="el" href="input_8php.html#a498953f5fe74d80e30755a9aa568e4e4">elgg_get_sticky_value</a>  ($form_name, $variable= '', $default=NULL, $filter_result=true)</dt>
+<dd>should this filter the default value? <a class="el" href="">http://docs.elgg.org/Tutorials/UI/StickyForms</a> </dd>
+<dt><a class="anchor" id="_todo000036"></a>Global <a class="el" href="cache_8php.html#ab22292557ace1a4d0c980280d3bfdee9">elgg_get_system_cache</a>  ()</dt>
+<dd><p class="startdd">Can this be done in a cleaner way? </p>
+<p class="enddd">Swap to memcache etc? </p>
+</dd>
+<dt><a class="anchor" id="_todo000072"></a>Global <a class="el" href="views_8php.html#a8267e5bef524d17e47ffc85bffd4fce2">elgg_get_views</a>  ($dir, $base)</dt>
+<dd>Why isn't this used anywhere else but in <a class="el" href="views_8php.html#ae8d546e90a0a7c9eafc8f388e2d5db1d">elgg_view_tree()</a>? Seems like a useful function for autodiscovery.  private  </dd>
+<dt><a class="anchor" id="_todo000065"></a>Global <a class="el" href="sessions_8php.html#aba32f12a35c39faaa7731005ace7e609">elgg_is_admin_user</a>  ($user_guid)</dt>
+<dd>: Will always return full access if the user is an admin. </dd>
+<dt><a class="anchor" id="_todo000042"></a>Global <a class="el" href="elgglib_8php.html#a79f7f8c633f3f6d9b83908056ecbd78f">elgg_log</a>  ($message, $level= 'NOTICE')</dt>
+<dd>This is complicated and confusing. Using int constants for debug levels will make things easier.  </dd>
+<dt><a class="anchor" id="_todo000059"></a>Global <a class="el" href="engine_2lib_2plugins_8php.html#a8b845efd7e658ae417e70172aa3791c3">ELGG_PLUGIN_INTERNAL_PREFIX</a>  </dt>
+<dd>This could be resolved by promoting <a class="el" href="class_elgg_plugin.html">ElggPlugin</a> to a 5th type.  </dd>
+<dt><a class="anchor" id="_todo000058"></a>Global <a class="el" href="engine_2lib_2plugins_8php.html#a91bf2a2f74cf0c00877276d4f20204e9">ELGG_PLUGIN_USER_SETTING_PREFIX</a>  </dt>
+<dd>Can't namespace these because many plugins directly call private settings via $entity-&gt;$name.  </dd>
+<dt><a class="anchor" id="_todo000061"></a>Global <a class="el" href="engine_2lib_2plugins_8php.html#a78a9c250bbdc652956e5376ba4beb1ba">elgg_reindex_plugin_priorities</a>  ()</dt>
+<dd>Can this be done in a single sql command?  </dd>
+<dt><a class="anchor" id="_todo000071"></a>Global <a class="el" href="views_8php.html#a73fab717bbc7b2b1a670823ee7b6110c">elgg_view_access_collections</a>  ($owner_guid)</dt>
+<dd>Move to the <a class="el" href="collection_8php.html">friends/collection.php</a> page.  private  </dd>
+<dt><a class="anchor" id="_todo000069"></a>Global <a class="el" href="views_8php.html#aa2c1ea92e9279d1d029152ec16cc7d24">elgg_view_entity</a>  (<a class="el" href="class_elgg_entity.html">ElggEntity</a> $entity, $vars=array(), $bypass=true, $debug=false)</dt>
+<dd>The annotation hook might be better as a generic plugin hook to append content.  </dd>
+<dt><a class="anchor" id="_todo000070"></a>Global <a class="el" href="views_8php.html#ac93ff5037839f9c281535f682b76d58a">elgg_view_entity_annotations</a>  (<a class="el" href="class_elgg_entity.html">ElggEntity</a> $entity, $full_view=true)</dt>
+<dd>Change the hook name.  </dd>
+<dt><a class="anchor" id="_todo000073"></a>Global <a class="el" href="views_8php.html#ae8d546e90a0a7c9eafc8f388e2d5db1d">elgg_view_tree</a>  ($view_root, $viewtype="")</dt>
+<dd>This is used once in the deprecated <a class="el" href="deprecated-1_88_8php.html#a9a697c0b8cade6764b6f71e0bd0d29b6">get_activity_stream_data()</a> function.  private  </dd>
 <dt><a class="anchor" id="_todo000004"></a>Global <a class="el" href="class_elgg_cache.html#a86b78c32ebc34b138264985c5e782238">ElggCache::load</a>  ($key, $offset=0, $limit=null)</dt>
 <dd>$offset is a horrible variable name because it creates confusion with the ArrayAccess methods </dd>
 <dt><a class="anchor" id="_todo000005"></a>Global <a class="el" href="class_elgg_disk_filestore.html#adbb0c658badc738f7c13ada76b392830">ElggDiskFilestore::open</a>  (<a class="el" href="class_elgg_file.html">ElggFile</a> $file, $mode)</dt>
@@ -78,14 +161,16 @@
 <dd>Unimplemented  </dd>
 <dt><a class="anchor" id="_todo000009"></a>Global <a class="el" href="class_elgg_entity.html#a4d5de0b69040330eba15a59e5993442a">ElggEntity::setLocation</a>  ($location)</dt>
 <dd>Unimplemented </dd>
-<dt><a class="anchor" id="_todo000074"></a>Global <a class="el" href="class_elgg_installer.html#ae1ca0d2444e3cca6b147445348f686de">ElggInstaller::getBaseUrl</a>  ()</dt>
+<dt><a class="anchor" id="_todo000077"></a>Global <a class="el" href="class_elgg_installer.html#ae1ca0d2444e3cca6b147445348f686de">ElggInstaller::getBaseUrl</a>  ()</dt>
 <dd>Should this be a core function? </dd>
 <dt><a class="anchor" id="_todo000016"></a>Global <a class="el" href="class_elgg_memcache.html#aa821bec12eaa7e0f649397c9675ff505">ElggMemcache::clear</a>  ()</dt>
 <dd>write or remove. </dd>
 <dt><a class="anchor" id="_todo000017"></a>Global <a class="el" href="class_elgg_menu_item.html#ad1603950621d3fb970befd81ea9c491f">ElggMenuItem::getContent</a>  (array $vars=array())</dt>
 <dd>View code in a model. How do we feel about that?  </dd>
 <dt><a class="anchor" id="_todo000018"></a>Global <a class="el" href="class_elgg_object.html#ad1d02324b7f4acdc149f71bb90e82648">ElggObject::getSites</a>  ($subtype="", $limit=10, $offset=0)</dt>
-<dd>This should be moved to <a class="el" href="class_elgg_entity.html">ElggEntity</a> </dd>
+<dd><p class="startdd">This should be moved to <a class="el" href="class_elgg_entity.html">ElggEntity</a> </p>
+<p class="enddd">Unimplemented </p>
+</dd>
 <dt><a class="anchor" id="_todo000021"></a>Global <a class="el" href="class_elgg_plugin.html#a7b37efab7473a1effc29f8be2421f6e3">ElggPlugin::isValid</a>  ()</dt>
 <dd>bad name? This could be confused with isValid() from ElggPackage. </dd>
 <dt><a class="anchor" id="_todo000019"></a>Global <a class="el" href="class_elgg_plugin.html#a7c8765d2cfaa26f8a4e2f3447e2fcf15">ElggPlugin::setSetting</a>  ($name, $value)</dt>
@@ -94,42 +179,143 @@
 <dd><p class="startdd">Should be a better way to do this without dropping to raw SQL. </p>
 <p class="enddd">If we could namespace the plugin settings this would be cleaner.  </p>
 </dd>
+<dt><a class="anchor" id="_todo000024"></a>Global <a class="el" href="class_elgg_plugin_package.html#a41e260cf5410335caa0da97787229f20">ElggPluginPackage::checkDepPhpExtension</a>  (array $dep, $inverse=false)</dt>
+<dd>Can this be merged with the plugin checker? </dd>
+<dt><a class="anchor" id="_todo000023"></a>Global <a class="el" href="class_elgg_plugin_package.html#ac0568f9f2706760d55dd1cdc2feea9d2">ElggPluginPackage::isSaneDeps</a>  ()</dt>
+<dd>Don't let them require and conflict the same thing </dd>
 <dt><a class="anchor" id="_todo000025"></a>Global <a class="el" href="class_elgg_site.html#a7ab403e5326ffb0fb285c962dca5bddd">ElggSite::getMembers</a>  ($options=array(), $offset=0)</dt>
 <dd>remove $offset in 2.0 </dd>
-<dt><a class="anchor" id="_todo000080"></a>Namespace <a class="el" href="namespace_groups.html">Groups</a>  </dt>
+<dt><a class="anchor" id="_todo000043"></a>Global <a class="el" href="elgglib_8php.html#a4df93f3e6145461cd915e899c8b60f9d">full_url</a>  ()</dt>
+<dd>Combine / replace with <a class="el" href="elgglib_8php.html#ad4eb020c4bb595ca83e31b3046daf87e">current_page_url()</a>  </dd>
+<dt><a class="anchor" id="_todo000052"></a>Global <a class="el" href="input_8php.html#aeee1505b147cefd03b392d1341b914da">get_input</a>  ($variable, $default=NULL, $filter_result=TRUE)</dt>
+<dd>Is this ^ still true? </dd>
+<dt><a class="anchor" id="_todo000030"></a>Global <a class="el" href="engine_2lib_2access_8php.html#a878e29d91d921c9f23b0fffd1713424a">get_readable_access_level</a>  ($entity_access_id)</dt>
+<dd>I think this probably wants <a class="el" href="engine_2lib_2access_8php.html#a6dd352b6343cd157d34dc6d2dae79a9d">get_access_array()</a> instead of <a class="el" href="engine_2lib_2access_8php.html#a1ddaf14e1625a4f84a4cf95615f0226f">get_write_access_array()</a>, but those two functions return different types of arrays.  </dd>
+<dt><a class="anchor" id="_todo000035"></a>Global <a class="el" href="actions_8php.html#ab1debf0703fc14de732e34ee93589e4f">get_site_secret</a>  ()</dt>
+<dd>Move to better file.  </dd>
+<dt><a class="anchor" id="_todo000081"></a>Global <a class="el" href="mod_2groups_2start_8php.html#aee52d9b61d52baa44a7e48a2b9b2015b">groupforumtopic_notify_message</a>  ($hook, $type, $message, $params)</dt>
+<dd>namespace method with 'discussion' </dd>
+<dt><a class="anchor" id="_todo000083"></a>Namespace <a class="el" href="namespace_groups.html">Groups</a>  </dt>
 <dd>add people joining group to activity </dd>
-<dt><a class="anchor" id="_todo000090"></a>Namespace <a class="el" href="namespace_minify.html">Minify</a>  </dt>
-<dd><p class="startdd">unit tests, $options docs </p>
-<p>more options support (or should just passthru them all?)</p>
-<p>can use a stream wrapper to unit test this? </p>
-<p>lose this singleton! pass log object in <a class="el" href="class_minify.html#a47ca57217b0b2de1aa74848fc8ea8a53">Minify::serve</a> and distribute to others </p>
-<p class="enddd">unit tests, $options docs </p>
-</dd>
-<dt><a class="anchor" id="_todo000091"></a>Global <a class="el" href="class_minify___controller___page.html#ac56e41749f067994f4930eda9c34e0d6">Minify_Controller_Page::setupSources</a>  ($options)</dt>
-<dd>Add 'file' option to read HTML file.  </dd>
-<dt><a class="anchor" id="_todo000094"></a>Global <a class="el" href="class_minify___y_u_i___css_compressor.html#ad701f07794dffca597247b7773843997">Minify_YUI_CssCompressor::compress</a>  ($css, $linebreakpos=0)</dt>
-<dd><p class="startdd">comment removal </p>
-<p class="enddd">re-port from newer Java version  </p>
-</dd>
-<dt><a class="anchor" id="_todo000082"></a>Namespace <a class="el" href="namespaceoauth__api.html">oauth_api</a>  </dt>
-<dd><p class="startdd">Pull these out into an elgg_oauth lib and use elgg_register_library().</p>
+<dt><a class="anchor" id="_todo000029"></a>Global <a class="el" href="engine_2lib_2access_8php.html#af5f7246dfad0743a6568820d19858188">has_access_to_entity</a>  ($entity, $user=null)</dt>
+<dd>This function would be much more useful if we could pass the guid of the entity to test access for. We need to be able to tell whether the entity exists and whether the user has access to the entity. </dd>
+<dt><a class="anchor" id="_todo000084"></a>Global <a class="el" href="mod_2htmlawed_2start_8php.html#a0f4a276fd0281f0034a5c1cabce74dfc">htmlawed_tag_post_processor</a>  ($element, $attributes=false)</dt>
+<dd>since these styles are created for tinymce, shouldn't they be in the tinymce plugin? </dd>
+<dt><a class="anchor" id="_todo000049"></a>Global <a class="el" href="lib_2entities_8php.html#aa1416466332b3cc24b854a768ff71c9d">import_entity_plugin_hook</a>  ($hook, $entity_type, $returnvalue, $params)</dt>
+<dd>document  private </dd>
+<dt><a class="anchor" id="_todo000051"></a>Global <a class="el" href="extender_8php.html#a41f09eaa454d9a23fa8f8a37c4f9d86f">import_extender_plugin_hook</a>  ($hook, $entity_type, $returnvalue, $params)</dt>
+<dd>investigate more.  private  </dd>
+<dt><a class="anchor" id="_todo000034"></a>Global <a class="el" href="actions_8php.html#a2afdee3ff78d7439402cff4711ad429a">init_site_secret</a>  ()</dt>
+<dd>Move to better file.  </dd>
+<dt><a class="anchor" id="_todo000044"></a>Global <a class="el" href="elgglib_8php.html#a817c4732ca5355ec2b3c5379ab30ad99">is_not_null</a>  ($string)</dt>
+<dd>This is used once in metadata.php. Use a lambda function instead.  </dd>
+<dt><a class="anchor" id="_todo000055"></a>Global <a class="el" href="notification_8php.html#ad88390067e2bbaa3a31c63a36432c0f2">notification_user_settings_save</a>  ()</dt>
+<dd>why can't this call action(...)?  private  </dd>
+<dt><a class="anchor" id="_todo000085"></a>Namespace <a class="el" href="namespaceoauth__api.html">oauth_api</a>  </dt>
+<dd><p class="startdd">Pull these out into an elgg_oauth lib and use <a class="el" href="elgglib_8php.html#a2de7080d5dff6501a15ee50d256d0dcb">elgg_register_library()</a>.</p>
 <p class="enddd"></p>
 </dd>
-<dt><a class="anchor" id="_todo000084"></a>Global <a class="el" href="class_o_auth_request.html#a5a2407d88e50935160f06b525b264bb3">OAuthRequest::parseUri</a>  ($parameters)</dt>
+<dt><a class="anchor" id="_todo000087"></a>Global <a class="el" href="class_o_auth_request.html#a5a2407d88e50935160f06b525b264bb3">OAuthRequest::parseUri</a>  ($parameters)</dt>
 <dd><p class="startdd">check for the use of https, right now we default to http </p>
 <p class="enddd">support for multiple occurences of parameters  </p>
 </dd>
-<dt><a class="anchor" id="_todo000083"></a>Global <a class="el" href="class_o_auth_request.html#ae33a0a921ba8b55609f60b93b7db1cef">OAuthRequest::selectSignatureMethod</a>  ($methods)</dt>
+<dt><a class="anchor" id="_todo000086"></a>Global <a class="el" href="class_o_auth_request.html#ae33a0a921ba8b55609f60b93b7db1cef">OAuthRequest::selectSignatureMethod</a>  ($methods)</dt>
 <dd>Let the signature method tell us how secure it is  </dd>
-<dt><a class="anchor" id="_todo000086"></a>Global <a class="el" href="class_o_auth_store_my_s_q_l.html#ada187d294990e60b2545c1d6b346f065">OAuthStoreMySQL::addServerToken</a>  ($consumer_key, $token_type, $token, $token_secret, $user_id, $options=array())</dt>
+<dt><a class="anchor" id="_todo000089"></a>Global <a class="el" href="class_o_auth_store_my_s_q_l.html#ada187d294990e60b2545c1d6b346f065">OAuthStoreMySQL::addServerToken</a>  ($consumer_key, $token_type, $token, $token_secret, $user_id, $options=array())</dt>
 <dd>remove old tokens for this user and this ocr_id  </dd>
-<dt><a class="anchor" id="_todo000085"></a>Global <a class="el" href="class_o_auth_store_my_s_q_l.html#a59d8ee6c89ff4d5f224d9fe3b5300a0f">OAuthStoreMySQL::getSecretsForSignature</a>  ($uri, $user_id, $name= '')</dt>
-<dd>filter on token type (we should know how and with what to sign this request, and there might be old access tokens) </dd>
+<dt><a class="anchor" id="_todo000088"></a>Global <a class="el" href="class_o_auth_store_my_s_q_l.html#a59d8ee6c89ff4d5f224d9fe3b5300a0f">OAuthStoreMySQL::getSecretsForSignature</a>  ($uri, $user_id, $name= '')</dt>
+<dd>filter on token type (we should know how and with what to sign this request, and there might be old access tokens)  </dd>
+<dt><a class="anchor" id="_todo000048"></a>Global <a class="el" href="lib_2entities_8php.html#ab0e2c60437e4c2879a143e95724ea851">oddentity_to_elggentity</a>  (<a class="el" href="class_o_d_d_entity.html">ODDEntity</a> $element)</dt>
+<dd>Remove this.  private </dd>
+<dt><a class="anchor" id="_todo000054"></a>Global <a class="el" href="engine_2lib_2languages_8php.html#a7116f42c9296d6b49b31acbbeaf44d10">reload_all_translations</a>  ()</dt>
+<dd>Better on demand loading based on language_paths array </dd>
+<dt><a class="anchor" id="_todo000046"></a>Global <a class="el" href="lib_2entities_8php.html#afeafe4010534b3ff2643035ae1bb33fa">retrieve_cached_entity_row</a>  ($guid)</dt>
+<dd>unused  private  </dd>
+<dt><a class="anchor" id="_todo000091"></a>Global <a class="el" href="search__hooks_8php.html#a8682ef7ac3aeb19ba37dc93d68a1d010">search_users_hook</a>  ($hook, $type, $value, $params)</dt>
+<dd>add profile field MD searching </dd>
+<dt><a class="anchor" id="_todo000094"></a>Global <a class="el" href="core_8php.html#ab4fdedc3fc3a069da50aa2e1e063e90f">span</a>  </dt>
+<dd><p class="startdd">check what happens with long </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p class="enddd">Move this to its own file &ndash; it is very complicated and should not have to be overridden.  </p>
+</dd>
+<dt><a class="anchor" id="_todo000094"></a>Global <a class="el" href="core_8php.html#ab4fdedc3fc3a069da50aa2e1e063e90f">span</a>  </dt>
+<dd><p class="startdd">check what happens with long </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p class="enddd">Move this to its own file &ndash; it is very complicated and should not have to be overridden.  </p>
+</dd>
+<dt><a class="anchor" id="_todo000094"></a>Global <a class="el" href="core_8php.html#ab4fdedc3fc3a069da50aa2e1e063e90f">span</a>  </dt>
+<dd><p class="startdd">check what happens with long </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p class="enddd">Move this to its own file &ndash; it is very complicated and should not have to be overridden.  </p>
+</dd>
+<dt><a class="anchor" id="_todo000094"></a>Global <a class="el" href="core_8php.html#ab4fdedc3fc3a069da50aa2e1e063e90f">span</a>  </dt>
+<dd><p class="startdd">check what happens with long </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p class="enddd">Move this to its own file &ndash; it is very complicated and should not have to be overridden.  </p>
+</dd>
+<dt><a class="anchor" id="_todo000094"></a>Global <a class="el" href="core_8php.html#ab4fdedc3fc3a069da50aa2e1e063e90f">span</a>  </dt>
+<dd><p class="startdd">check what happens with long </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p>Move this to its own file &ndash; it is very complicated and should not have to be overridden. </p>
+<p class="enddd">Move this to its own file &ndash; it is very complicated and should not have to be overridden.  </p>
+</dd>
+<dt><a class="anchor" id="_todo000068"></a>Global <a class="el" href="user__settings_8php.html#a2a881b161bdb15bd6606e69319316478">users_settings_save</a>  ()</dt>
+<dd>this assumes settings are coming in on a GET/POST request </dd>
+<dt><a class="anchor" id="_todo000047"></a>Global <a class="el" href="lib_2entities_8php.html#af2f84b4d593beb5d407c87faa96bf1c2">volatile_data_export_plugin_hook</a>  ($hook, $entity_type, $returnvalue, $params)</dt>
+<dd><p class="startdd">investigate more.  private </p>
+<p class="enddd">document  </p>
+</dd>
+<dt><a class="anchor" id="_todo000002"></a>Global <a class="el" href="config_8php.html#aee7f0c28f2c5bd03e37b99ba044dc108">wordblacklist</a>  </dt>
+<dd>currently unused. </dd>
 </dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 30 2012 09:32:41 for Elgg by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 19 2012 12:53:47 for Elgg by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

@@ -15,6 +15,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="elgg_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Elgg
    </div>
@@ -31,7 +32,9 @@
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a>  </div>
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">ElggPluginManifest Class Reference</div>  </div>
 </div><!--header-->
@@ -49,14 +52,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ad3943e5e8cbea32910c4144ee7ee7051"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d0963e68bb313b163a73f2803c64600"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#a3d0963e68bb313b163a73f2803c64600">getName</a> ()</td></tr>
 <tr class="separator:a3d0963e68bb313b163a73f2803c64600"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30dd7fff4fec7a39f9be9d27d4b22a59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#a30dd7fff4fec7a39f9be9d27d4b22a59">getID</a> ()</td></tr>
-<tr class="separator:a30dd7fff4fec7a39f9be9d27d4b22a59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e7bb35c71bf1824456ceb944cb7a845"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#a2e7bb35c71bf1824456ceb944cb7a845">getDescription</a> ()</td></tr>
 <tr class="separator:a2e7bb35c71bf1824456ceb944cb7a845"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6816a1b0d81abcb89d7cdd75c3c55ea1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#a6816a1b0d81abcb89d7cdd75c3c55ea1">getBlurb</a> ()</td></tr>
 <tr class="separator:a6816a1b0d81abcb89d7cdd75c3c55ea1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae158eb18e93586e424223908e5bd5e9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#ae158eb18e93586e424223908e5bd5e9f">getLicense</a> ()</td></tr>
 <tr class="separator:ae158eb18e93586e424223908e5bd5e9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb71dfeb348129e5e8939acf766ff19b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#acb71dfeb348129e5e8939acf766ff19b">getRepositoryURL</a> ()</td></tr>
+<tr class="separator:acb71dfeb348129e5e8939acf766ff19b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a626fc71e8dbddefeb0323ec91761829a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#a626fc71e8dbddefeb0323ec91761829a">getBugTrackerURL</a> ()</td></tr>
+<tr class="separator:a626fc71e8dbddefeb0323ec91761829a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86adac57f0358f2b2cd6b0da424d39cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#a86adac57f0358f2b2cd6b0da424d39cc">getDonationsPageURL</a> ()</td></tr>
+<tr class="separator:a86adac57f0358f2b2cd6b0da424d39cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa8e7a3a646144eab50188b7a805a389"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#afa8e7a3a646144eab50188b7a805a389">getVersion</a> ()</td></tr>
 <tr class="separator:afa8e7a3a646144eab50188b7a805a389"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5286e30390ae3e1b274940286493dd24"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#a5286e30390ae3e1b274940286493dd24">getAuthor</a> ()</td></tr>
@@ -69,8 +76,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a8729ba486702e7e12a3fff08965e1e7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5769a01a0a84d822a6d580f38d5d1715"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#a5769a01a0a84d822a6d580f38d5d1715">getScreenshots</a> ()</td></tr>
 <tr class="separator:a5769a01a0a84d822a6d580f38d5d1715"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a024dd588a0d235ead3ebfd31fa8e8738"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#a024dd588a0d235ead3ebfd31fa8e8738">getContributors</a> ()</td></tr>
-<tr class="separator:a024dd588a0d235ead3ebfd31fa8e8738"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4b8e86f8e5d33f41fd5d4dc9b37aac38"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#a4b8e86f8e5d33f41fd5d4dc9b37aac38">getProvides</a> ()</td></tr>
 <tr class="separator:a4b8e86f8e5d33f41fd5d4dc9b37aac38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28d573bd624157f5dfd80dced8ad9ad2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#a28d573bd624157f5dfd80dced8ad9ad2">getRequires</a> ()</td></tr>
@@ -94,17 +99,38 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:a147a766daa03d52576c7345fea31c945"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a147a766daa03d52576c7345fea31c945"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$parser</b></td></tr>
+<tr class="memitem:a147a766daa03d52576c7345fea31c945"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#a147a766daa03d52576c7345fea31c945">$parser</a></td></tr>
 <tr class="separator:a147a766daa03d52576c7345fea31c945"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9828dbaafdfc2d36752c35f6c0ce9028"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#a9828dbaafdfc2d36752c35f6c0ce9028">$namespace_root</a> = 'http://www.elgg.org/plugin_manifest/'</td></tr>
 <tr class="separator:a9828dbaafdfc2d36752c35f6c0ce9028"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5afa34b4c9cf16013c5d97744b3f191"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac5afa34b4c9cf16013c5d97744b3f191"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$apiVersion</b></td></tr>
+<tr class="memitem:ac5afa34b4c9cf16013c5d97744b3f191"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#ac5afa34b4c9cf16013c5d97744b3f191">$apiVersion</a></td></tr>
 <tr class="separator:ac5afa34b4c9cf16013c5d97744b3f191"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac9d206a73de62bda84020b6df623e3f3"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac9d206a73de62bda84020b6df623e3f3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$pluginID</b></td></tr>
+<tr class="memitem:ac9d206a73de62bda84020b6df623e3f3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#ac9d206a73de62bda84020b6df623e3f3">$pluginID</a></td></tr>
 <tr class="separator:ac9d206a73de62bda84020b6df623e3f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aa97c26024f2ccd35625df13e7e323ea5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#aa97c26024f2ccd35625df13e7e323ea5">normalizeDep</a> ($dep)</td></tr>
+<tr class="separator:aa97c26024f2ccd35625df13e7e323ea5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:af521103b23f745b64d4bf31e8dc130a5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#af521103b23f745b64d4bf31e8dc130a5">$depsStructPlugin</a></td></tr>
+<tr class="separator:af521103b23f745b64d4bf31e8dc130a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d31b5899b77330e4316eade469e44e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#a2d31b5899b77330e4316eade469e44e5">$depsStructPriority</a></td></tr>
+<tr class="separator:a2d31b5899b77330e4316eade469e44e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f1ce242c11f7d3ae374735674f331a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#a9f1ce242c11f7d3ae374735674f331a3">$depsStructElgg</a></td></tr>
+<tr class="separator:a9f1ce242c11f7d3ae374735674f331a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07b535a7c72ac98e28dcc5da2a0e1bf0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#a07b535a7c72ac98e28dcc5da2a0e1bf0">$depsStructPhpIni</a></td></tr>
+<tr class="separator:a07b535a7c72ac98e28dcc5da2a0e1bf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5d173c669c2b905e814ee9e956e17d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#ad5d173c669c2b905e814ee9e956e17d6">$depsStructPhpExtension</a></td></tr>
+<tr class="separator:ad5d173c669c2b905e814ee9e956e17d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70b0077f7c94169f9d7739367ebaed39"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#a70b0077f7c94169f9d7739367ebaed39">$depsConflictsStruct</a></td></tr>
+<tr class="separator:a70b0077f7c94169f9d7739367ebaed39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad989e17319e6edba5ec57cf00dca9bbb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#ad989e17319e6edba5ec57cf00dca9bbb">$depsProvidesStruct</a></td></tr>
+<tr class="separator:ad989e17319e6edba5ec57cf00dca9bbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab30edf74b4373935247b5d7994c7c8e0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_plugin_manifest.html#ab30edf74b4373935247b5d7994c7c8e0">$screenshotStruct</a></td></tr>
+<tr class="separator:ab30edf74b4373935247b5d7994c7c8e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a463aa541cac29be2f2e8a637c9e95089"></a>
@@ -134,13 +160,7 @@ Protected Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramtype">mixed</td><td class="paramname">$manifest</td><td>A string, <a class="el" href="class_xml_element.html">XmlElement</a>, or path of a manifest file. </td></tr>
-    <tr><td class="paramtype">string</td><td class="paramname">$plugin_id</td><td>Optional ID of the owning plugin. Used to fill in some values automatically.</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname"><a class="el" href="class_plugin_exception.html">PluginException</a></td><td></td></tr>
+    <tr><td class="paramtype">string</td><td class="paramname">$plugin_id</td><td>Optional ID of the owning plugin. Used to fill in some values automatically. </td></tr>
   </table>
   </dd>
 </dl>
@@ -259,6 +279,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a626fc71e8dbddefeb0323ec91761829a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">getBugTrackerURL </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the bug tracker page</p>
+<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a8729ba486702e7e12a3fff08965e1e7f"></a>
 <div class="memitem">
 <div class="memproto">
@@ -289,23 +326,6 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the conflicts listed</p>
-<dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a024dd588a0d235ead3ebfd31fa8e8738"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">getContributors </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return the contributors listed.</p>
 <dl class="section return"><dt>Returns</dt><dd>array </dd></dl>
 
 </div>
@@ -344,6 +364,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a86adac57f0358f2b2cd6b0da424d39cc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">getDonationsPageURL </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the donations page</p>
+<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a2b77bdeaab4af22859082a76c6f4a4db"></a>
 <div class="memitem">
 <div class="memproto">
@@ -368,28 +405,11 @@ Protected Attributes</h2></td></tr>
 <p>Returns a category's friendly name. This can be localized by defining the string 'admin:plugins:category:&lt;category&gt;'. If no localization is found, returns the category with _ and - converted to ' ' and then ucwords()'d.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramtype">string</td><td class="paramname">$category</td><td>The category as defined in the manifest. </td></tr>
+    <tr><td class="paramtype">str</td><td class="paramname">$category</td><td>The category as defined in the manifest. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>string A human-readable category </dd></dl>
-
-</div>
-</div>
-<a class="anchor" id="a30dd7fff4fec7a39f9be9d27d4b22a59"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">getID </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Return the plugin ID required by the author. If <a class="el" href="class_elgg_plugin_manifest.html#afeda92884e791aea09a17c718f6b3210">getPluginID()</a> does not match this, the plugin should not be started.</p>
-<dl class="section return"><dt>Returns</dt><dd>string empty string if not empty/not defined </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>str A human-readable category </dd></dl>
 
 </div>
 </div>
@@ -479,6 +499,23 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="acb71dfeb348129e5e8939acf766ff19b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">getRepositoryURL </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the repository url</p>
+<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a28d573bd624157f5dfd80dced8ad9ad2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -564,7 +601,244 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aa97c26024f2ccd35625df13e7e323ea5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">normalizeDep </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$dep</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Normalizes a dependency array using the defined structs. Can be used with either requires or suggests.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">array</td><td class="paramname">$dep</td><td>A dependency array. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>array The normalized deps array. </dd></dl>
+
+</div>
+</div>
 <h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="ac5afa34b4c9cf16013c5d97744b3f191"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$apiVersion</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a70b0077f7c94169f9d7739367ebaed39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$depsConflictsStruct</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
+<div class="line">        <span class="stringliteral">&#39;type&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;name&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;version&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;comparison&#39;</span> =&gt; <span class="charliteral">&#39;=&#39;</span></div>
+<div class="line">    )</div>
+</div><!-- fragment --><p>The expected structure of a conflicts depedency element </p>
+
+</div>
+</div>
+<a class="anchor" id="ad989e17319e6edba5ec57cf00dca9bbb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$depsProvidesStruct</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
+<div class="line">        <span class="stringliteral">&#39;type&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;name&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;version&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span></div>
+<div class="line">    )</div>
+</div><!-- fragment --><p>The expected structure of a provides dependency element. </p>
+
+</div>
+</div>
+<a class="anchor" id="a9f1ce242c11f7d3ae374735674f331a3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$depsStructElgg</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
+<div class="line">        <span class="stringliteral">&#39;type&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;version&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;comparison&#39;</span> =&gt; <span class="stringliteral">&#39;ge&#39;</span></div>
+<div class="line">    )</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ad5d173c669c2b905e814ee9e956e17d6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$depsStructPhpExtension</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
+<div class="line">        <span class="stringliteral">&#39;type&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;name&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;version&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;comparison&#39;</span> =&gt; <span class="charliteral">&#39;=&#39;</span></div>
+<div class="line">    )</div>
+</div><!-- fragment --><p>The expected structure of a requires php_extension dependency element </p>
+
+</div>
+</div>
+<a class="anchor" id="a07b535a7c72ac98e28dcc5da2a0e1bf0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$depsStructPhpIni</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
+<div class="line">        <span class="stringliteral">&#39;type&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;name&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;value&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;comparison&#39;</span> =&gt; <span class="charliteral">&#39;=&#39;</span></div>
+<div class="line">    )</div>
+</div><!-- fragment --><p>The expected structure of a requires php_ini dependency element </p>
+
+</div>
+</div>
+<a class="anchor" id="af521103b23f745b64d4bf31e8dc130a5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$depsStructPlugin</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
+<div class="line">        <span class="stringliteral">&#39;type&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;name&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;version&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;comparison&#39;</span> =&gt; <span class="stringliteral">&#39;ge&#39;</span></div>
+<div class="line">    )</div>
+</div><!-- fragment --><p>The expected structure of a plugins requires element </p>
+
+</div>
+</div>
+<a class="anchor" id="a2d31b5899b77330e4316eade469e44e5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$depsStructPriority</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
+<div class="line">        <span class="stringliteral">&#39;type&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;priority&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;plugin&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span></div>
+<div class="line">    )</div>
+</div><!-- fragment --><p>The expected structure of a priority element </p>
+
+</div>
+</div>
 <a class="anchor" id="a9828dbaafdfc2d36752c35f6c0ce9028"></a>
 <div class="memitem">
 <div class="memproto">
@@ -586,13 +860,79 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a147a766daa03d52576c7345fea31c945"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$parser</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The parser object </p>
+
+</div>
+</div>
+<a class="anchor" id="ac9d206a73de62bda84020b6df623e3f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$pluginID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab30edf74b4373935247b5d7994c7c8e0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$screenshotStruct</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">= array(</div>
+<div class="line">        <span class="stringliteral">&#39;description&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span>,</div>
+<div class="line">        <span class="stringliteral">&#39;path&#39;</span> =&gt; <span class="stringliteral">&#39;&#39;</span></div>
+<div class="line">    )</div>
+</div><!-- fragment --><p>The expected structure of a screenshot element </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/markborcherding/source/vendor/Elgg/engine/classes/ElggPluginManifest.php</li>
+<li>Elgg/engine/classes/<a class="el" href="_elgg_plugin_manifest_8php.html">ElggPluginManifest.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 30 2012 09:32:42 for Elgg by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 19 2012 12:53:48 for Elgg by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

@@ -15,6 +15,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="elgg_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Elgg
    </div>
@@ -28,7 +29,10 @@
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a>  </div>
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a>  </div>
   <div class="headertitle">
 <div class="title">ElggMemcache Class Reference</div>  </div>
 </div><!--header-->
@@ -46,7 +50,7 @@ Inheritance diagram for ElggMemcache:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af09a66c757f785beb4c85a110268a75a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_memcache.html#af09a66c757f785beb4c85a110268a75a">__construct</a> ($namespace= 'default')</td></tr>
+<tr class="memitem:af09a66c757f785beb4c85a110268a75a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_memcache.html#af09a66c757f785beb4c85a110268a75a">__construct</a> ($namespace= '<a class="el" href="views_2default_2css_2elements_2layout_8php.html#ae28cec3c28c7853e6e548cab88d688fe">default</a>')</td></tr>
 <tr class="separator:af09a66c757f785beb4c85a110268a75a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a190bcf98402472cc75027bb378ae77a9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_memcache.html#a190bcf98402472cc75027bb378ae77a9">setDefaultExpiry</a> ($expires=0)</td></tr>
 <tr class="separator:a190bcf98402472cc75027bb378ae77a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,6 +104,25 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1d11d3dade07ef846d01a397abfaf0d9 inherit pub_methods_class_elgg_cache"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a72b9545b16ea105298bb0d2109bd2fbe inherit pub_methods_class_elgg_cache"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_cache.html#a72b9545b16ea105298bb0d2109bd2fbe">offsetExists</a> ($key)</td></tr>
 <tr class="separator:a72b9545b16ea105298bb0d2109bd2fbe inherit pub_methods_class_elgg_cache"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:aebd19d2822cc456b7f8e8b3180778767"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_memcache.html#aebd19d2822cc456b7f8e8b3180778767">makeMemcacheKey</a> ($key)</td></tr>
+<tr class="separator:aebd19d2822cc456b7f8e8b3180778767"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ae7b98d2059d138bf69a5b67c3426d01a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_memcache.html#ae7b98d2059d138bf69a5b67c3426d01a">$memcache</a></td></tr>
+<tr class="separator:ae7b98d2059d138bf69a5b67c3426d01a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa41bb802080b20a3965a21a8cb3d9696"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_memcache.html#aa41bb802080b20a3965a21a8cb3d9696">$expires</a> = 86400</td></tr>
+<tr class="separator:aa41bb802080b20a3965a21a8cb3d9696"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17c8948c68aa44fa9961ae169b6a8961"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_memcache.html#a17c8948c68aa44fa9961ae169b6a8961">$version</a> = 0</td></tr>
+<tr class="separator:a17c8948c68aa44fa9961ae169b6a8961"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
+<tr class="memitem:a19d503507c59f9911deaccc41506ed42"><td class="memItemLeft" align="right" valign="top">static&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_elgg_memcache.html#a19d503507c59f9911deaccc41506ed42">$MINSERVERVERSION</a> = '1.1.12'</td></tr>
+<tr class="separator:a19d503507c59f9911deaccc41506ed42"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="af09a66c757f785beb4c85a110268a75a"></a>
@@ -110,7 +133,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">__construct </td>
           <td>(</td>
           <td class="paramtype">&#160;</td>
-          <td class="paramname"><em>$namespace</em> = <code>'default'</code></td><td>)</td>
+          <td class="paramname"><em>$namespace</em> = <code>'<a class="el" href="views_2default_2css_2elements_2layout_8php.html#ae28cec3c28c7853e6e548cab88d688fe">default</a>'</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -210,6 +233,38 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="aebd19d2822cc456b7f8e8b3180778767"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">makeMemcacheKey </td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname"><em>$key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Combine a key with the namespace. Memcache can only accept &lt;250 char key. If the given key is too long it is shortened.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramtype">string</td><td class="paramname">$key</td><td>The key</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>string The new key. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ae36df76dda7f62c04ba4920902e2e8eb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -276,13 +331,98 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="aa41bb802080b20a3965a21a8cb3d9696"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$expires = 86400</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Expiry of saved items (default timeout after a day to prevent anything getting too stale) </p>
+
+</div>
+</div>
+<a class="anchor" id="ae7b98d2059d138bf69a5b67c3426d01a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$memcache</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Memcache object </p>
+
+</div>
+</div>
+<a class="anchor" id="a19d503507c59f9911deaccc41506ed42"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$MINSERVERVERSION = '1.1.12'</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Minimum version of memcached needed to run </p>
+
+</div>
+</div>
+<a class="anchor" id="a17c8948c68aa44fa9961ae169b6a8961"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$version = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>The version of memcache running </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/markborcherding/source/vendor/Elgg/engine/classes/ElggMemcache.php</li>
+<li>Elgg/engine/classes/<a class="el" href="_elgg_memcache_8php.html">ElggMemcache.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 30 2012 09:32:42 for Elgg by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 19 2012 12:53:48 for Elgg by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

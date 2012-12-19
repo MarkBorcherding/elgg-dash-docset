@@ -15,6 +15,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="elgg_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Elgg
    </div>
@@ -32,15 +33,93 @@
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_deprecated000276"></a>Namespace <a class="el" href="namespace_elgg.html">Elgg</a>  </dt>
+<dt><a class="anchor" id="_deprecated000089"></a>Global <a class="el" href="deprecated-1_88_8php.html#a3117aa06e402a7e50c346bf1da330847">add_menu</a>  ($menu_name, $menu_url, $menu_children=array(), $context="")</dt>
+<dd>1.8 use <a class="el" href="engine_2lib_2navigation_8php.html#a344445364078d03607904c44bad36c1c">elgg_register_menu_item()</a> for the menu 'site'  </dd>
+<dt><a class="anchor" id="_deprecated000097"></a>Global <a class="el" href="deprecated-1_88_8php.html#a5c3eaaec777ed7ef366bedb721372a77">add_page_owner_handler</a>  ($functionname)</dt>
+<dd>1.8 Use the 'page_owner', 'system' plugin hook  </dd>
+<dt><a class="anchor" id="_deprecated000123"></a>Global <a class="el" href="deprecated-1_88_8php.html#a69c10146d3aa4ed1b554f00f1f78ea74">add_site_collection</a>  ($site_guid, $collection_guid)</dt>
+<dd>1.8 Don't use this.  </dd>
+<dt><a class="anchor" id="_deprecated000086"></a>Global <a class="el" href="deprecated-1_88_8php.html#adf09a38a08659ebc267361093ce7e25a">add_submenu_item</a>  ($label, $link, $group= 'default', $onclick=false, $selected=NULL)</dt>
+<dd>1.8 Use the new menu system </dd>
+<dt><a class="anchor" id="_deprecated000062"></a>Global <a class="el" href="deprecated-1_88_8php.html#a0243f6d5e42a477bfa2d1f99a0771e09">add_to_register</a>  ($register_name, $subregister_name, $subregister_value, $children_array=array())</dt>
+<dd>1.8 Use the new menu system. </dd>
+<dt><a class="anchor" id="_deprecated000189"></a>Global <a class="el" href="deprecated-1_88_8php.html#ac9e7768316b35d582a6fe0c2059b9e21">add_widget</a>  ($entity_guid, $handler, $context, $order=0, $column=1, $access_id=null)</dt>
+<dd>1.8 use <a class="el" href="engine_2lib_2widgets_8php.html#a288474cc7e6005993aefa6e7a8d36677">elgg_create_widget()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000190"></a>Global <a class="el" href="deprecated-1_88_8php.html#a829bda2b812562544b095d47ccbc4912">add_widget_type</a>  ($handler, $name, $description, $context="all", $multiple=false, $positions="side,main")</dt>
+<dd>1.8 Use elgg_register_widget_type  </dd>
+<dt><a class="anchor" id="_deprecated000120"></a>Global <a class="el" href="deprecated-1_88_8php.html#aee8894dc905620587c994c017f9092cc">authenticate</a>  ($username, $password)</dt>
+<dd>1.8 Use elgg_authenticate  </dd>
+<dt><a class="anchor" id="_deprecated000204"></a>Global <a class="el" href="engine_2lib_2output_8php.html#a50712639cfdece069f4579405eaec495">autop</a>  ($pee)</dt>
+<dd>Use elgg_autop instead  </dd>
+<dt><a class="anchor" id="_deprecated000072"></a>Global <a class="el" href="deprecated-1_88_8php.html#a7a6d3d878298131922f3589b388a4e2f">call_gatekeeper</a>  ($function, $file="")</dt>
+<dd>1.8 A neat but pointless function  </dd>
+<dt><a class="anchor" id="_deprecated000073"></a>Global <a class="el" href="deprecated-1_88_8php.html#a9e932dcf8af2a516cd767b93671b1f77">callpath_gatekeeper</a>  ($path, $include_subdirs=true, $strict_mode=false)</dt>
+<dd>1.8 A neat but pointless function  </dd>
+<dt><a class="anchor" id="_deprecated000105"></a>Global <a class="el" href="deprecated-1_88_8php.html#aaa80b828d6884f57caad56d0f41ef1b0">check_plugin_compatibility</a>  ($manifest_elgg_version_string)</dt>
+<dd>1.8 Use ElggPlugin-&gt;canActivate() </dd>
+<dt><a class="anchor" id="_deprecated000149"></a>Global <a class="el" href="deprecated-1_88_8php.html#a9be9eba630b32b1e56f49ac20032ff21">clear_all_plugin_settings</a>  ($plugin_id="")</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2plugins_8php.html#a727a90669d5cb2525566b0232967c90e">elgg_unset_all_plugin_settings()</a> or ElggPlugin-&gt;unsetAllSettings()  </dd>
+<dt><a class="anchor" id="_deprecated000171"></a>Global <a class="el" href="deprecated-1_88_8php.html#a137bc0b3268405b1b1db6b39f10e22b7">clear_annotations</a>  ($guid, $name="")</dt>
+<dd>1.8 Use <a class="el" href="lib_2annotations_8php.html#a1ae747989f5aff4f0928d2516d5475ef">elgg_delete_annotations()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000172"></a>Global <a class="el" href="deprecated-1_88_8php.html#a60b34441fd8a254b0ae4039a4847c6f7">clear_annotations_by_owner</a>  ($owner_guid)</dt>
+<dd>1.8 Use <a class="el" href="lib_2annotations_8php.html#a1ae747989f5aff4f0928d2516d5475ef">elgg_delete_annotations()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000165"></a>Global <a class="el" href="deprecated-1_88_8php.html#ae80bc02a08ff2a34a082638253412b2a">clear_metadata</a>  ($guid)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2metadata_8php.html#a33c99b808a909640744d23e06fddde36">elgg_delete_metadata()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000166"></a>Global <a class="el" href="deprecated-1_88_8php.html#a7b119f6ffac173de1909f1a01dabfc92">clear_metadata_by_owner</a>  ($owner_guid)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2metadata_8php.html#a33c99b808a909640744d23e06fddde36">elgg_delete_metadata()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000148"></a>Global <a class="el" href="deprecated-1_88_8php.html#afc761c154f41fcbc33261a697abf5126">clear_plugin_setting</a>  ($name, $plugin_id="")</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2plugins_8php.html#a0459464cf99f44e9ac060504e0262e5b">elgg_unset_plugin_setting()</a> or ElggPlugin-&gt;unsetSetting()  </dd>
+<dt><a class="anchor" id="_deprecated000144"></a>Global <a class="el" href="deprecated-1_88_8php.html#a0bb7c5635f82ee420ccdf37f0a49abec">clear_plugin_usersetting</a>  ($name, $user_guid=0, $plugin_id= '')</dt>
+<dd>1.8 Use elgg_unset_plugin_user_setting or ElggPlugin-&gt;unsetUserSetting().  </dd>
+<dt><a class="anchor" id="_deprecated000152"></a>Global <a class="el" href="deprecated-1_88_8php.html#a6edb0a5d27893794298b5ed90b60d1b6">count_annotations</a>  ($entity_guid=0, $entity_type="", $entity_subtype="", $name="", $value="", $value_type="", $owner_guid=0, $timelower=0, $timeupper=0)</dt>
+<dd>1.8 Use <a class="el" href="lib_2annotations_8php.html#ae6685c23c9906b8c00469e1f6a1ca717">elgg_get_annotations()</a> and pass 'count' =&gt; true  </dd>
+<dt><a class="anchor" id="_deprecated000129"></a>Global <a class="el" href="deprecated-1_88_8php.html#a0453bac1fae41c9eb1aae7698519e49d">count_user_objects</a>  ($user_guid, $subtype=ELGG_ENTITIES_ANY_VALUE, $timelower=0, $timeupper=0)</dt>
+<dd>1.8 Use <a class="el" href="lib_2entities_8php.html#af085c8362e49c4f52d4f1fcf58ca6fb8">elgg_get_entities()</a> instead  </dd>
+<dt><a class="anchor" id="_deprecated000055"></a>Global <a class="el" href="deprecated-1_88_8php.html#a4a1e586ee596b5db203637f2498e0ac9">db_upgrade</a>  ($version, $fromdir="", $quiet=FALSE)</dt>
+<dd>1.8 Use PHP upgrades for sql changes.  </dd>
+<dt><a class="anchor" id="_deprecated000203"></a>Global <a class="el" href="deprecated-1_88_8php.html#a75d0625729118edb5902d0882c0a58e9">default_page_handler</a>  ($page, $handler)</dt>
+<dd>1.8  </dd>
+<dt><a class="anchor" id="_deprecated000170"></a>Global <a class="el" href="deprecated-1_88_8php.html#a4cec53c044394d43e338316b1f1588a1">delete_annotation</a>  ($id)</dt>
+<dd>1.8 Use <a class="el" href="lib_2annotations_8php.html#a1ae747989f5aff4f0928d2516d5475ef">elgg_delete_annotations()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000036"></a>Global <a class="el" href="deprecated-1_87_8php.html#ab1cec89ed4e555dfe915eb45cb450c08">delete_entities</a>  ($type="", $subtype="", $owner_guid=0)</dt>
+<dd>1.7. This is a dangerous function as it defaults to deleting everything. </dd>
+<dt><a class="anchor" id="_deprecated000167"></a>Global <a class="el" href="deprecated-1_88_8php.html#a97a9cc3d1cce515418b1fbaa9ce55c03">delete_metadata</a>  ($id)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2metadata_8php.html#a33c99b808a909640744d23e06fddde36">elgg_delete_metadata()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000109"></a>Global <a class="el" href="deprecated-1_88_8php.html#a88c74f66d1faa772bc26e6da1d67d2ae">disable_plugin</a>  ($plugin, $site_guid=0)</dt>
+<dd>1.8 Use ElggPlugin-&gt;deactivate() </dd>
+<dt><a class="anchor" id="_deprecated000127"></a>Global <a class="el" href="deprecated-1_88_8php.html#aa157b96c474f242a5ed51f3e18e3614d">display_tagcloud</a>  ($threshold=1, $limit=10, $metadata_name="", $entity_type="object", $entity_subtype="", $owner_guid="", $site_guid=-1, $start_ts="", $end_ts="")</dt>
+<dd>1.8 use <a class="el" href="engine_2lib_2tags_8php.html#afd456ef2445b96abf197f00cf22c1d5b">elgg_view_tagcloud()</a> </dd>
+<dt><a class="anchor" id="_deprecated000198"></a>Global <a class="el" href="deprecated-1_88_8php.html#a437e48ca1d2faacc4a3587aa83bac65f">display_widget</a>  (<a class="el" href="class_elgg_object.html">ElggObject</a> $widget)</dt>
+<dd>1.8 Use <a class="el" href="views_8php.html#aa2c1ea92e9279d1d029152ec16cc7d24">elgg_view_entity()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000251"></a>Namespace <a class="el" href="namespace_elgg.html">Elgg</a>  </dt>
 <dd><p class="startdd">1.7 </p>
 <p>1.7 </p>
 <p>1.8 Extend the topbar menus or the page/elements/topbar view directly </p>
-<p>1.8 See how file plugin adds a toggle in function file_register_toggle() </p>
+<p>1.8 See how file plugin adds a toggle in function <a class="el" href="mod_2file_2start_8php.html#a174f819ab5a451719e63b4f5d3dcdbb0">file_register_toggle()</a> </p>
 <p>1.8 Use output/dropdown </p>
 <p>1.7 </p>
 <p class="enddd">1.7  </p>
 </dd>
+<dt><a class="anchor" id="_deprecated000075"></a>Global <a class="el" href="deprecated-1_88_8php.html#acaebb628075ddf1ed38b04966551a7b5">elgg_get_entity_container_where_sql</a>  ($table, $container_guids)</dt>
+<dd>1.8 Use <a class="el" href="lib_2entities_8php.html#adcc3dcf717d36334879fbf7c88cfbcb6">elgg_get_guid_based_where_sql()</a>; </dd>
+<dt><a class="anchor" id="_deprecated000074"></a>Global <a class="el" href="deprecated-1_88_8php.html#aa323c35c81de05e84698e21e838fa80c">elgg_get_entity_owner_where_sql</a>  ($table, $owner_guids)</dt>
+<dd>1.8 Use <a class="el" href="lib_2entities_8php.html#adcc3dcf717d36334879fbf7c88cfbcb6">elgg_get_guid_based_where_sql()</a>; </dd>
+<dt><a class="anchor" id="_deprecated000076"></a>Global <a class="el" href="deprecated-1_88_8php.html#a5ded9d18eff9bd1f5cb096cf1b2250cf">elgg_get_entity_site_where_sql</a>  ($table, $site_guids)</dt>
+<dd>1.8 Use <a class="el" href="lib_2entities_8php.html#adcc3dcf717d36334879fbf7c88cfbcb6">elgg_get_guid_based_where_sql()</a> </dd>
+<dt><a class="anchor" id="_deprecated000032"></a>Global <a class="el" href="deprecated-1_87_8php.html#a14138e3c301705df259a35648cd530b7">elgg_validate_action_url</a>  ($url)</dt>
+<dd>1.7 final  </dd>
+<dt><a class="anchor" id="_deprecated000183"></a>Global <a class="el" href="deprecated-1_88_8php.html#a02db86a4ac14c1c87452b298ba5a61ff">elgg_view_disable_simplecache</a>  ()</dt>
+<dd>1.8 Use <a class="el" href="cache_8php.html#a69bafeb3744185b8153f18951bcf8371">elgg_disable_simplecache()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000182"></a>Global <a class="el" href="deprecated-1_88_8php.html#abca4c78ca71cfcb4aa2e6fb33c61995f">elgg_view_enable_simplecache</a>  ()</dt>
+<dd>1.8 Use <a class="el" href="cache_8php.html#a5cccd56c5dff048f0232b4c5763ba217">elgg_enable_simplecache()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000136"></a>Global <a class="el" href="deprecated-1_88_8php.html#a25f0b6c02578ce024056689a94f90045">elgg_view_listing</a>  ($icon, $info)</dt>
+<dd>1.8 use <a class="el" href="views_8php.html#a7a8aa79e1e3b618aea544467f8339951">elgg_view_image_block()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000181"></a>Global <a class="el" href="deprecated-1_88_8php.html#a0e6bf616549361a984e220eefd62bf86">elgg_view_regenerate_simplecache</a>  ($viewtype=NULL)</dt>
+<dd>1.8 Use <a class="el" href="cache_8php.html#a99328b935b75bc6a58c68cc8e5182dcf">elgg_regenerate_simplecache()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000180"></a>Global <a class="el" href="deprecated-1_88_8php.html#a3c1bb25666d7caf02000a41cfecfb25b">elgg_view_register_simplecache</a>  ($viewname)</dt>
+<dd>1.8 Use <a class="el" href="cache_8php.html#a9908d146f5e7be8b4b371e935803eb86">elgg_register_simplecache_view()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000118"></a>Global <a class="el" href="deprecated-1_88_8php.html#aa3c5705dbb5de0f24eacfc7a14a8a0d1">elgg_view_river_items</a>  ($subject_guid=0, $object_guid=0, $subject_relationship= '', $type= '', $subtype= '', $action_type= '', $limit=20, $posted_min=0, $posted_max=0, $pagination=true)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2river_8php.html#a1bd54d325daa3a51717aa2c1f4b44abb">elgg_list_river()</a>  </dd>
 <dt><a class="anchor" id="_deprecated000001"></a>Global <a class="el" href="class_elgg_access.html#acd5f0bf82d908e82e66e6829a388ddff">ElggAccess::get_ignore_access</a>  ()</dt>
 <dd>1.8 Use <a class="el" href="class_elgg_access.html#ac4de6f21652aee373d1fe9ce08bf2285">ElggAccess::getIgnoreAccess()</a>  </dd>
 <dt><a class="anchor" id="_deprecated000002"></a>Global <a class="el" href="class_elgg_access.html#a516c9c7d3d9ef43e83634afe7bf91bf7">ElggAccess::set_ignore_access</a>  ($ignore=true)</dt>
@@ -49,7 +128,7 @@
 <dd>1.8 Use <a class="el" href="class_elgg_cache.html#ae422b21fe2e56717901c6b5b8bcfd07e">ElggCache::getVariable()</a>  </dd>
 <dt><a class="anchor" id="_deprecated000003"></a>Global <a class="el" href="class_elgg_cache.html#a4eadf02b4092033b7d54218f9f8342b9">ElggCache::set_variable</a>  ($variable, $value)</dt>
 <dd>1.8 Use <a class="el" href="class_elgg_cache.html">ElggCache</a>:setVariable()  </dd>
-<dt><a class="anchor" id="_deprecated000230"></a>Namespace <a class="el" href="namespace_elgg_categories.html">ElggCategories</a>  </dt>
+<dt><a class="anchor" id="_deprecated000206"></a>Namespace <a class="el" href="namespace_elgg_categories.html">ElggCategories</a>  </dt>
 <dd>1.8  </dd>
 <dt><a class="anchor" id="_deprecated000006"></a>Global <a class="el" href="class_elgg_data.html#a28618bb52fcdf4e9d12b194a51fecb0a">ElggData::getObjectOwnerGUID</a>  ()</dt>
 <dd>1.8 Use getOwnerGUID() instead  </dd>
@@ -59,6 +138,8 @@
 <dd>1.8 Use <a class="el" href="class_elgg_disk_filestore.html#a4e76842e3cf1ced57f05dbc85eca4710">ElggDiskFilestore::makeDirectoryRoot()</a>  </dd>
 <dt><a class="anchor" id="_deprecated000009"></a>Global <a class="el" href="class_elgg_disk_filestore.html#aa80f1e34bc00e254269efb044eb90b93">ElggDiskFilestore::make_file_matrix</a>  ($identifier)</dt>
 <dd>1.8 Use <a class="el" href="class_elgg_disk_filestore.html#aed3172d87a8bcfc4ee1fdc000fba711a">ElggDiskFilestore::makeFileMatrix()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000008"></a>Global <a class="el" href="class_elgg_disk_filestore.html#acd39cfead0c6353c8e4b4983292a97f3">ElggDiskFilestore::mb_str_split</a>  ($string, $charset= 'UTF8')</dt>
+<dd>1.8 Files are stored by date and guid; no need for this.  </dd>
 <dt><a class="anchor" id="_deprecated000012"></a>Global <a class="el" href="class_elgg_entity.html#ad909e352cca5e6f37791fb0bb45117dc">ElggEntity::clearAnnotations</a>  ($name="")</dt>
 <dd>1.8 Use -&gt;deleteAnnotations()  </dd>
 <dt><a class="anchor" id="_deprecated000010"></a>Global <a class="el" href="class_elgg_entity.html#ac6a3dbe45258010d318f40b2082c1b86">ElggEntity::clearMetaData</a>  ($name= '')</dt>
@@ -77,39 +158,293 @@
 <dd>1.8 See getIconURL() for the plugin hook to use  </dd>
 <dt><a class="anchor" id="_deprecated000018"></a>Global <a class="el" href="class_elgg_extender.html#adf7c472f5ffc30ad0aa95c63cd2b8f6c">ElggExtender::getOwner</a>  ()</dt>
 <dd>1.8 Use getOwnerGUID  </dd>
-<dt><a class="anchor" id="_deprecated000019"></a>Global <a class="el" href="class_elgg_file.html#a775bfb88c1bb7975d67f277eade2a1b7">ElggFile::size</a>  ()</dt>
-<dd>1.8 Use getSize()  </dd>
-<dt><a class="anchor" id="_deprecated000020"></a>Global <a class="el" href="class_elgg_file_cache.html#a4691c20e64c07840bdeba9f81fb66d75">ElggFileCache::create_file</a>  ($filename, $rw="rb")</dt>
+<dt><a class="anchor" id="_deprecated000019"></a>Global <a class="el" href="class_elgg_file_cache.html#a4691c20e64c07840bdeba9f81fb66d75">ElggFileCache::create_file</a>  ($filename, $rw="rb")</dt>
 <dd>1.8 Use <a class="el" href="class_elgg_file_cache.html#a6443b62d4bb58e8944e1172ac7873914">ElggFileCache::createFile()</a> </dd>
-<dt><a class="anchor" id="_deprecated000021"></a>Global <a class="el" href="class_elgg_file_cache.html#a69d51b35940203d34d67edd3e519bc06">ElggFileCache::sanitise_filename</a>  ($filename)</dt>
+<dt><a class="anchor" id="_deprecated000020"></a>Global <a class="el" href="class_elgg_file_cache.html#a69d51b35940203d34d67edd3e519bc06">ElggFileCache::sanitise_filename</a>  ($filename)</dt>
 <dd>1.8 Use <a class="el" href="class_elgg_file_cache.html#ad52a1016da51607777c3ba344f43e178">ElggFileCache::sanitizeFilename()</a> </dd>
-<dt><a class="anchor" id="_deprecated000232"></a>Namespace <a class="el" href="namespace_elgg_groups.html">ElggGroups</a>  </dt>
+<dt><a class="anchor" id="_deprecated000208"></a>Namespace <a class="el" href="namespace_elgg_groups.html">ElggGroups</a>  </dt>
 <dd>1.8  </dd>
-<dt><a class="anchor" id="_deprecated000023"></a>Global <a class="el" href="class_elgg_menu_item.html#aaa4245d61f6a09fe56c00912eb483bd8">ElggMenuItem::getWeight</a>  ()</dt>
+<dt><a class="anchor" id="_deprecated000022"></a>Global <a class="el" href="class_elgg_menu_item.html#aaa4245d61f6a09fe56c00912eb483bd8">ElggMenuItem::getWeight</a>  ()</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000022"></a>Global <a class="el" href="class_elgg_menu_item.html#a01b3ce5edccd47ffe2ad4a911575e4ae">ElggMenuItem::setWeight</a>  ($priority)</dt>
+<dt><a class="anchor" id="_deprecated000021"></a>Global <a class="el" href="class_elgg_menu_item.html#a01b3ce5edccd47ffe2ad4a911575e4ae">ElggMenuItem::setWeight</a>  ($priority)</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000025"></a>Global <a class="el" href="class_elgg_site.html#a3d93c13bd3f9ae36b334b65cce52ba9b">ElggSite::getCollections</a>  ($subtype="", $limit=10, $offset=0)</dt>
+<dt><a class="anchor" id="_deprecated000024"></a>Global <a class="el" href="class_elgg_site.html#a3d93c13bd3f9ae36b334b65cce52ba9b">ElggSite::getCollections</a>  ($subtype="", $limit=10, $offset=0)</dt>
 <dd>1.8 Was never implemented  </dd>
-<dt><a class="anchor" id="_deprecated000024"></a>Global <a class="el" href="class_elgg_site.html#a7ab403e5326ffb0fb285c962dca5bddd">ElggSite::getMembers</a>  ($options=array(), $offset=0)</dt>
+<dt><a class="anchor" id="_deprecated000023"></a>Global <a class="el" href="class_elgg_site.html#a7ab403e5326ffb0fb285c962dca5bddd">ElggSite::getMembers</a>  ($options=array(), $offset=0)</dt>
 <dd>parameter </dd>
-<dt><a class="anchor" id="_deprecated000026"></a>Global <a class="el" href="class_elgg_user.html#adf7c472f5ffc30ad0aa95c63cd2b8f6c">ElggUser::getOwner</a>  ()</dt>
+<dt><a class="anchor" id="_deprecated000025"></a>Global <a class="el" href="class_elgg_user.html#adf7c472f5ffc30ad0aa95c63cd2b8f6c">ElggUser::getOwner</a>  ()</dt>
 <dd>1.8 Use getOwnerGUID()  </dd>
-<dt><a class="anchor" id="_deprecated000027"></a>Global <a class="el" href="interface_loggable.html#a28618bb52fcdf4e9d12b194a51fecb0a">Loggable::getObjectOwnerGUID</a>  ()</dt>
+<dt><a class="anchor" id="_deprecated000108"></a>Global <a class="el" href="deprecated-1_88_8php.html#af0028fb87737d8af3739ad3ca8b2f4f1">enable_plugin</a>  ($plugin, $site_guid=null)</dt>
+<dd>1.8 Use ElggPlugin-&gt;activate() </dd>
+<dt><a class="anchor" id="_deprecated000065"></a>Global <a class="el" href="deprecated-1_88_8php.html#ac6caa5c426ec14b1692b41a8bf7f5ee7">events</a>  ($event="", $object_type="", $function="", $priority=500, $call=false, $object=null)</dt>
+<dd>1.8 Use explicit register/trigger event functions </dd>
+<dt><a class="anchor" id="_deprecated000058"></a>Global <a class="el" href="deprecated-1_88_8php.html#a75646058d31202db00435600ab83caa0">extend_elgg_admin_page</a>  ($new_admin_view, $view= 'admin/main', $priority=500)</dt>
+<dd>1.8 Extend admin views manually </dd>
+<dt><a class="anchor" id="_deprecated000134"></a>Global <a class="el" href="deprecated-1_88_8php.html#ad22d011bc5483a79100af993089754d4">extend_elgg_settings_page</a>  ($new_settings_view, $view= 'usersettings/main', $priority=500)</dt>
+<dd>1.8 Extend one of the views in core/settings  </dd>
+<dt><a class="anchor" id="_deprecated000052"></a>Global <a class="el" href="deprecated-1_87_8php.html#a865152d4fda23b94f76766aa9891abbc">extend_view</a>  ($view, $view_name, $priority=501, $viewtype= '')</dt>
+<dd>1.7. Use <a class="el" href="views_8php.html#abb88daa7efb97327a3022156fe648de3">elgg_extend_view()</a>. </dd>
+<dt><a class="anchor" id="_deprecated000093"></a>Global <a class="el" href="deprecated-1_88_8php.html#a826ec2f0d059f1b9ad9ac402e0641fae">filter_string</a>  ($string)</dt>
+<dd>1.8 Don't use this. </dd>
+<dt><a class="anchor" id="_deprecated000161"></a>Global <a class="el" href="deprecated-1_88_8php.html#a6c7c5938c860e8642ad9b7b3bb017a38">find_metadata</a>  ($meta_name="", $meta_value="", $entity_type="", $entity_subtype="", $limit=10, $offset=0, $order_by="", $site_guid=0)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2metadata_8php.html#a1614d620ec0b0d0b9531c68070ffb33c">elgg_get_metadata()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000106"></a>Global <a class="el" href="deprecated-1_88_8php.html#a762c5585166e3a75ebbfff0e9f56fcc2">find_plugin_settings</a>  ($plugin_id=null)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2plugins_8php.html#aa71af51fb3300b04dae44cfda642510a">elgg_get_calling_plugin_entity()</a> or <a class="el" href="engine_2lib_2plugins_8php.html#a01ca0b3353fb9f81296ab42efa53dc8a">elgg_get_plugin_from_id()</a> </dd>
+<dt><a class="anchor" id="_deprecated000142"></a>Global <a class="el" href="deprecated-1_88_8php.html#aff3598f6540d9beba8ce7e6201611032">find_plugin_usersettings</a>  ($plugin_id=null, $user_guid=0)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2plugins_8php.html#a88c48a8394d3f1887949d29c53a13870">elgg_get_all_plugin_user_settings()</a> or ElggPlugin-&gt;getAllUserSettings()  </dd>
+<dt><a class="anchor" id="_deprecated000092"></a>Global <a class="el" href="deprecated-1_88_8php.html#ab2e353bd7f8c01670398aae684157afa">friendly_time</a>  ($time)</dt>
+<dd>1.8 Use <a class="el" href="views_8php.html#a0a5fe56fcb4374fbee5640628b1b5df6">elgg_view_friendly_time()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000091"></a>Global <a class="el" href="deprecated-1_88_8php.html#aa90e1a4e7b93e9c1ab63d8b24453a6f7">friendly_title</a>  ($title)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2output_8php.html#a123d46ff7767b2610cc4cf2df53f3c5c">elgg_get_friendly_title()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000119"></a>Global <a class="el" href="deprecated-1_88_8php.html#a9a697c0b8cade6764b6f71e0bd0d29b6">get_activity_stream_data</a>  ($limit=10, $offset=0, $type="", $subtype="", $owner_guid="", $owner_relationship="")</dt>
+<dd>1.8 This is outdated and uses the systemlog table instead of the river table. Don't use it.  </dd>
+<dt><a class="anchor" id="_deprecated000169"></a>Global <a class="el" href="deprecated-1_88_8php.html#a4714ee1a4068824aefe0f61840cb8e20">get_annotation</a>  ($annotation_id)</dt>
+<dd>1.8 Use <a class="el" href="lib_2annotations_8php.html#ad9b24e0d8c98113a423f85f72094286a">elgg_get_annotation_from_id()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000150"></a>Global <a class="el" href="deprecated-1_88_8php.html#ab02e3f22eff30f56ced346d9459b4d06">get_annotations</a>  ($entity_guid=0, $entity_type="", $entity_subtype="", $name="", $value="", $owner_guid=0, $limit=10, $offset=0, $order_by="asc", $timelower=0, $timeupper=0, $entity_owner_guid=0)</dt>
+<dd>1.8 Use <a class="el" href="lib_2annotations_8php.html#ae6685c23c9906b8c00469e1f6a1ca717">elgg_get_annotations()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000156"></a>Global <a class="el" href="deprecated-1_88_8php.html#abdc3dfa89691b513adaec58c2333cc2a">get_annotations_avg</a>  ($entity_guid, $entity_type="", $entity_subtype="", $name="", $value="", $value_type="", $owner_guid=0)</dt>
+<dd>1.8 Use <a class="el" href="lib_2annotations_8php.html#ae6685c23c9906b8c00469e1f6a1ca717">elgg_get_annotations()</a> and pass 'annotation_calculation' =&gt; 'min' </dd>
+<dt><a class="anchor" id="_deprecated000157"></a>Global <a class="el" href="deprecated-1_88_8php.html#a761eb7dbe8f9b6742a5f823dd4911d07">get_annotations_calculate_x</a>  ($sum="avg", $entity_guid, $entity_type="", $entity_subtype="", $name="", $value="", $value_type="", $owner_guid=0, $timelower=0, $timeupper=0)</dt>
+<dd>1.8 Use <a class="el" href="lib_2annotations_8php.html#ae6685c23c9906b8c00469e1f6a1ca717">elgg_get_annotations()</a> and pass anntoation_calculation =&gt; &lt;calculation&gt;  </dd>
+<dt><a class="anchor" id="_deprecated000154"></a>Global <a class="el" href="deprecated-1_88_8php.html#a6368927168929693c24950b1f13ef40f">get_annotations_max</a>  ($entity_guid, $entity_type="", $entity_subtype="", $name="", $value="", $value_type="", $owner_guid=0)</dt>
+<dd>1.8 Use <a class="el" href="lib_2annotations_8php.html#ae6685c23c9906b8c00469e1f6a1ca717">elgg_get_annotations()</a> and pass 'annotation_calculation' =&gt; 'max'  </dd>
+<dt><a class="anchor" id="_deprecated000155"></a>Global <a class="el" href="deprecated-1_88_8php.html#ae820600e2551391138511fdb986c6b0c">get_annotations_min</a>  ($entity_guid, $entity_type="", $entity_subtype="", $name="", $value="", $value_type="", $owner_guid=0)</dt>
+<dd>1.8 Use <a class="el" href="lib_2annotations_8php.html#ae6685c23c9906b8c00469e1f6a1ca717">elgg_get_annotations()</a> and pass 'annotation_calculation' =&gt; 'min'  </dd>
+<dt><a class="anchor" id="_deprecated000153"></a>Global <a class="el" href="deprecated-1_88_8php.html#affae9eae5d1403d23b0c4cab477a377f">get_annotations_sum</a>  ($entity_guid, $entity_type="", $entity_subtype="", $name="", $value="", $value_type="", $owner_guid=0)</dt>
+<dd>1.8 Use <a class="el" href="lib_2annotations_8php.html#ae6685c23c9906b8c00469e1f6a1ca717">elgg_get_annotations()</a> and pass 'annotation_calculation' =&gt; 'sum'  </dd>
+<dt><a class="anchor" id="_deprecated000100"></a>Global <a class="el" href="deprecated-1_88_8php.html#a9299ef0c92605a94b7d81a603bc66909">get_context</a>  ()</dt>
+<dd>1.8 Use <a class="el" href="pageowner_8php.html#a25fe73eb19442b4a4476f18e63abf382">elgg_get_context()</a> </dd>
+<dt><a class="anchor" id="_deprecated000035"></a>Global <a class="el" href="deprecated-1_87_8php.html#a339da3ef72ebd41558593e1814f11cf1">get_entities</a>  ($type="", $subtype="", $owner_guid=0, $order_by="", $limit=10, $offset=0, $count=false, $site_guid=0, $container_guid=null, $timelower=0, $timeupper=0)</dt>
+<dd>1.7. Use <a class="el" href="lib_2entities_8php.html#af085c8362e49c4f52d4f1fcf58ca6fb8">elgg_get_entities()</a>. </dd>
+<dt><a class="anchor" id="_deprecated000114"></a>Global <a class="el" href="deprecated-1_88_8php.html#a163b04a4d4a47b7cd200f96c66c86f97">get_entities_by_relationship_count</a>  ($relationship, $inverse_relationship=true, $type="", $subtype="", $owner_guid=0, $limit=10, $offset=0, $count=false, $site_guid=0)</dt>
+<dd>1.8 Use <a class="el" href="relationships_8php.html#a63766d108700cff38c96e7af8ba23976">elgg_get_entities_from_relationship_count()</a> </dd>
+<dt><a class="anchor" id="_deprecated000028"></a>Global <a class="el" href="deprecated-1_87_8php.html#a25443c213890a89dfdc1d86befc98cd9">get_entities_from_access_collection</a>  ($collection_id, $entity_type="", $entity_subtype="", $owner_guid=0, $limit=10, $offset=0, $order_by="", $site_guid=0, $count=false)</dt>
+<dd>1.7  </dd>
+<dt><a class="anchor" id="_deprecated000027"></a>Global <a class="el" href="deprecated-1_87_8php.html#afc4133450c66cd5e674aa38c65c795e7">get_entities_from_access_id</a>  ($collection_id, $entity_type="", $entity_subtype="", $owner_guid=0, $limit=10, $offset=0, $order_by="", $site_guid=0, $count=false)</dt>
+<dd>1.7. Use <a class="el" href="engine_2lib_2access_8php.html#ad5361b6a889ae345997afba19d88b7bd">elgg_get_entities_from_access_id()</a> </dd>
+<dt><a class="anchor" id="_deprecated000060"></a>Global <a class="el" href="deprecated-1_88_8php.html#a888ea09b3bdaefc15ecac8df856008b1">get_entities_from_annotation_count</a>  ($entity_type="", $entity_subtype="", $name="", $mdname= '', $mdvalue= '', $owner_guid=0, $limit=10, $offset=0, $orderdir= 'desc', $count=false)</dt>
+<dd>1.8 Use <a class="el" href="lib_2annotations_8php.html#a5755f24c67348ac01e07ba9bacbe646e">elgg_get_entities_from_annotation_calculation()</a> </dd>
+<dt><a class="anchor" id="_deprecated000029"></a>Global <a class="el" href="deprecated-1_87_8php.html#a43f664732e5a59e64e780ab82c3495fd">get_entities_from_annotations</a>  ($entity_type="", $entity_subtype="", $name="", $value="", $owner_guid=0, $group_guid=0, $limit=10, $offset=0, $order_by="asc", $count=false, $timelower=0, $timeupper=0)</dt>
+<dd>1.7 Use <a class="el" href="lib_2annotations_8php.html#abe8782882d980d7075eaaf4f363c31b5">elgg_get_entities_from_annotations()</a> </dd>
+<dt><a class="anchor" id="_deprecated000059"></a>Global <a class="el" href="deprecated-1_88_8php.html#a2af1ed36ee72d950f536f699bc6a3ced">get_entities_from_annotations_calculate_x</a>  ($sum="sum", $entity_type="", $entity_subtype="", $name="", $mdname= '', $mdvalue= '', $owner_guid=0, $limit=10, $offset=0, $orderdir= 'desc', $count=false)</dt>
+<dd>1.8 Use <a class="el" href="lib_2annotations_8php.html#a5755f24c67348ac01e07ba9bacbe646e">elgg_get_entities_from_annotation_calculation()</a> </dd>
+<dt><a class="anchor" id="_deprecated000042"></a>Global <a class="el" href="deprecated-1_87_8php.html#a6472d464a5a1b768db186356d0dab983">get_entities_from_metadata</a>  ($meta_name, $meta_value="", $entity_type="", $entity_subtype="", $owner_guid=0, $limit=10, $offset=0, $order_by="", $site_guid=0, $count=FALSE, $case_sensitive=TRUE)</dt>
+<dd>1.7 use <a class="el" href="engine_2lib_2metadata_8php.html#aec4b6f0b9565e3554acb9b39ef34a2ac">elgg_get_entities_from_metadata()</a>. </dd>
+<dt><a class="anchor" id="_deprecated000079"></a>Global <a class="el" href="deprecated-1_88_8php.html#a79181b7755d62d50ab118190dd553b1b">get_entities_from_metadata_groups</a>  ($group_guid, $meta_name, $meta_value="", $entity_type="", $entity_subtype="", $owner_guid=0, $limit=10, $offset=0, $order_by="", $site_guid=0, $count=false)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2metadata_8php.html#aec4b6f0b9565e3554acb9b39ef34a2ac">elgg_get_entities_from_metadata()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000080"></a>Global <a class="el" href="deprecated-1_88_8php.html#a16a8205095be8163dbf42763156ba3c0">get_entities_from_metadata_groups_multi</a>  ($group_guid, $meta_array, $entity_type="", $entity_subtype="", $owner_guid=0, $limit=10, $offset=0, $order_by="", $site_guid=0, $count=false)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2metadata_8php.html#aec4b6f0b9565e3554acb9b39ef34a2ac">elgg_get_entities_from_metadata()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000043"></a>Global <a class="el" href="deprecated-1_87_8php.html#a9f13ed95cd1edf3163ef1fb9dabf4b1b">get_entities_from_metadata_multi</a>  ($meta_array, $entity_type="", $entity_subtype="", $owner_guid=0, $limit=10, $offset=0, $order_by="", $site_guid=0, $count=false, $meta_array_operator= 'and')</dt>
+<dd>1.7. Use <a class="el" href="engine_2lib_2metadata_8php.html#aec4b6f0b9565e3554acb9b39ef34a2ac">elgg_get_entities_from_metadata()</a>. </dd>
+<dt><a class="anchor" id="_deprecated000111"></a>Global <a class="el" href="deprecated-1_88_8php.html#acc75fe90961f771cf57be8dc1805e34b">get_entities_from_private_setting</a>  ($name="", $value="", $type="", $subtype="", $owner_guid=0, $order_by="", $limit=10, $offset=0, $count=false, $site_guid=0, $container_guid=null)</dt>
+<dd>1.8 Use <a class="el" href="private__settings_8php.html#a7fa2958cce576f569bc158aa0bb19903">elgg_get_entities_from_private_settings()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000112"></a>Global <a class="el" href="deprecated-1_88_8php.html#a10661bdc08332118eee373efa3257171">get_entities_from_private_setting_multi</a>  (array $name, $type="", $subtype="", $owner_guid=0, $order_by="", $limit=10, $offset=0, $count=false, $site_guid=0, $container_guid=null)</dt>
+<dd>1.8 Use <a class="el" href="private__settings_8php.html#a7fa2958cce576f569bc158aa0bb19903">elgg_get_entities_from_private_settings()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000047"></a>Global <a class="el" href="deprecated-1_87_8php.html#ab75bb282b8dc98362a65913a2a148bb1">get_entities_from_relationship</a>  ($relationship, $relationship_guid, $inverse_relationship=false, $type="", $subtype="", $owner_guid=0, $order_by="", $limit=10, $offset=0, $count=false, $site_guid=0)</dt>
+<dd>1.7 Use <a class="el" href="relationships_8php.html#a743921595516dbca8116ab6875d5fc6c">elgg_get_entities_from_relationship()</a> </dd>
+<dt><a class="anchor" id="_deprecated000116"></a>Global <a class="el" href="deprecated-1_88_8php.html#a1590349c6e61d826e19d45651f78229e">get_entities_from_relationships_and_meta</a>  ($relationship, $relationship_guid, $inverse_relationship=false, $meta_name="", $meta_value="", $type="", $subtype="", $owner_guid=0, $limit=10, $offset=0, $count=false, $site_guid=0)</dt>
+<dd>1.8 Use <a class="el" href="relationships_8php.html#a743921595516dbca8116ab6875d5fc6c">elgg_get_entities_from_relationship()</a> </dd>
+<dt><a class="anchor" id="_deprecated000083"></a>Global <a class="el" href="deprecated-1_88_8php.html#a62b806f1a4ee22fb073d60b86f73e7a1">get_entities_in_area</a>  ($lat, $long, $radius, $type="", $subtype="", $owner_guid=0, $order_by="", $limit=10, $offset=0, $count=false, $site_guid=0, $container_guid=NULL)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2location_8php.html#ae4deb9b7f5662237e33c45406699ee47">elgg_get_entities_from_location()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000107"></a>Global <a class="el" href="deprecated-1_88_8php.html#a8e69adb7844504bfd287b722d477eb1d">get_installed_plugins</a>  ($status= 'all')</dt>
+<dd>1.8 use <a class="el" href="engine_2lib_2plugins_8php.html#ab47810951bebdb66cc872c3c99307713">elgg_get_plugins()</a> </dd>
+<dt><a class="anchor" id="_deprecated000031"></a>Global <a class="el" href="deprecated-1_87_8php.html#ad28c386e4f7b992819f2da69e6efb3e0">get_library_files</a>  ($directory, $exceptions=array(), $list=array())</dt>
+<dd>1.7 Use <a class="el" href="elgglib_8php.html#ab95447c3f446bec6aa32ed3236c3f209">elgg_get_file_list()</a> instead </dd>
+<dt><a class="anchor" id="_deprecated000137"></a>Global <a class="el" href="deprecated-1_88_8php.html#a84f913b7ae8e713f512e75d6d3f5d5af">get_loggedin_user</a>  ()</dt>
+<dd>1.8 Use <a class="el" href="sessions_8php.html#abf4a146df3537979f68fa275f161eea5">elgg_get_logged_in_user_entity()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000138"></a>Global <a class="el" href="deprecated-1_88_8php.html#adcce737b6955ac7707f5ae2113bdb137">get_loggedin_userid</a>  ()</dt>
+<dd>1.8 Use <a class="el" href="sessions_8php.html#a74a60ed3d6e1e03b1b25772dac35dbc0">elgg_get_logged_in_user_guid()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000164"></a>Global <a class="el" href="deprecated-1_88_8php.html#a59635cf18e997c5141bffa05ff7622e0">get_metadata</a>  ($id)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2metadata_8php.html#a94013c19aa9f630d0ac1f9b6fdcf998f">elgg_get_metadata_from_id()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000162"></a>Global <a class="el" href="deprecated-1_88_8php.html#a6b6d16a10c30ecec13f4e3e48044a06f">get_metadata_byname</a>  ($entity_guid, $meta_name)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2metadata_8php.html#a1614d620ec0b0d0b9531c68070ffb33c">elgg_get_metadata()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000163"></a>Global <a class="el" href="deprecated-1_88_8php.html#a7df0b92f453300d10b80a315c992ecf3">get_metadata_for_entity</a>  ($entity_guid)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2metadata_8php.html#a1614d620ec0b0d0b9531c68070ffb33c">elgg_get_metadata()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000077"></a>Global <a class="el" href="deprecated-1_88_8php.html#a055a611780e112c659002c917bcead9c">get_objects_in_group</a>  ($group_guid, $subtype="", $owner_guid=0, $site_guid=0, $order_by="", $limit=10, $offset=0, $count=FALSE)</dt>
+<dd>1.8 Use <a class="el" href="lib_2entities_8php.html#af085c8362e49c4f52d4f1fcf58ca6fb8">elgg_get_entities()</a> instead  </dd>
+<dt><a class="anchor" id="_deprecated000101"></a>Global <a class="el" href="deprecated-1_88_8php.html#a735bb0439fd8b249c23e5a1f1116fa19">get_plugin_list</a>  ()</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2plugins_8php.html#aafc63265e85179912a684e83f56af62b">elgg_get_plugin_ids_in_dir()</a> or <a class="el" href="engine_2lib_2plugins_8php.html#ab47810951bebdb66cc872c3c99307713">elgg_get_plugins()</a> </dd>
+<dt><a class="anchor" id="_deprecated000103"></a>Global <a class="el" href="deprecated-1_88_8php.html#a42630f14139feee02bcb7888c3f56069">get_plugin_name</a>  ($mainfilename=false)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2plugins_8php.html#a9614995e94f1d7a7608b2695e7d7c1ea">elgg_get_calling_plugin_id()</a> </dd>
+<dt><a class="anchor" id="_deprecated000147"></a>Global <a class="el" href="deprecated-1_88_8php.html#a1067599573db0d4e8f8a25c09baa4783">get_plugin_setting</a>  ($name, $plugin_id="")</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2plugins_8php.html#a6a3e953e9714394efaaa512bcaaa5788">elgg_get_plugin_setting()</a> or ElggPlugin-&gt;getSetting()  </dd>
+<dt><a class="anchor" id="_deprecated000145"></a>Global <a class="el" href="deprecated-1_88_8php.html#a9c01fd9fc55144f1e74b1c63dcca4d4f">get_plugin_usersetting</a>  ($name, $user_guid=0, $plugin_id="")</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2plugins_8php.html#a021b92d1e532f6ef4b311d3823b499ce">elgg_get_plugin_user_setting()</a> or ElggPlugin-&gt;getUserSetting()  </dd>
+<dt><a class="anchor" id="_deprecated000064"></a>Global <a class="el" href="deprecated-1_88_8php.html#a1d28e0feb0584d02095fb9a3d2b6e44f">get_register</a>  ($register_name)</dt>
+<dd>1.8 Use the new menu system </dd>
+<dt><a class="anchor" id="_deprecated000117"></a>Global <a class="el" href="deprecated-1_88_8php.html#af9516a1a93dd666dfc4909be8304d50f">get_river_items</a>  ($subject_guid=0, $object_guid=0, $subject_relationship= '', $type= '', $subtype= '', $action_type= '', $limit=20, $offset=0, $posted_min=0, $posted_max=0)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2river_8php.html#a46c34fcb89d70f4573a1ca00282a40ea">elgg_get_river()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000125"></a>Global <a class="el" href="deprecated-1_88_8php.html#a9289ee4f94886edbe151a7ec622cd2af">get_site_collections</a>  ($site_guid, $subtype="", $limit=10, $offset=0)</dt>
+<dd>1.8 Don't use this.  </dd>
+<dt><a class="anchor" id="_deprecated000121"></a>Global <a class="el" href="deprecated-1_88_8php.html#a41f02d04079d8dd262c7991411565763">get_site_members</a>  ($site_guid, $limit=10, $offset=0)</dt>
+<dd>1.8 Use <a class="el" href="class_elgg_site.html#a7ab403e5326ffb0fb285c962dca5bddd">ElggSite::getMembers()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000088"></a>Global <a class="el" href="deprecated-1_88_8php.html#a9d939482f5165ac31f91ca0d680b0929">get_submenu</a>  ()</dt>
+<dd>1.8 Use the new menu system. <a class="el" href="views_8php.html#ac2d475d3efbbec30603537013ac34e22">elgg_view_menu()</a> </dd>
+<dt><a class="anchor" id="_deprecated000126"></a>Global <a class="el" href="deprecated-1_88_8php.html#af8e024f27439ad647865990e6fa6e996">get_tags</a>  ($threshold=1, $limit=10, $metadata_name="", $entity_type="object", $entity_subtype="", $owner_guid="", $site_guid=-1, $start_ts="", $end_ts="")</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2tags_8php.html#aa07a3c2c9aa89ee7456cf667b5467b94">elgg_get_tags()</a>. </dd>
+<dt><a class="anchor" id="_deprecated000128"></a>Global <a class="el" href="deprecated-1_88_8php.html#adae19a1079eeffc5ae4d5c3d0bdedf5e">get_user_objects</a>  ($user_guid, $subtype=ELGG_ENTITIES_ANY_VALUE, $limit=10, $offset=0, $timelower=0, $timeupper=0)</dt>
+<dd>1.8 Use <a class="el" href="lib_2entities_8php.html#af085c8362e49c4f52d4f1fcf58ca6fb8">elgg_get_entities()</a> instead  </dd>
+<dt><a class="anchor" id="_deprecated000131"></a>Global <a class="el" href="deprecated-1_88_8php.html#affcaccfe75694e6824ca2446b702e8d1">get_user_objects_by_metadata</a>  ($user_guid, $subtype="", $metadata=array(), $limit=0, $offset=0)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2metadata_8php.html#aec4b6f0b9565e3554acb9b39ef34a2ac">elgg_get_entities_from_metadata()</a> instead  </dd>
+<dt><a class="anchor" id="_deprecated000053"></a>Global <a class="el" href="deprecated-1_87_8php.html#ae65c6b22f6a84eecbeb01dc7296a7700">get_views</a>  ($dir, $base)</dt>
+<dd>1.7. Use <a class="el" href="views_8php.html#a8267e5bef524d17e47ffc85bffd4fce2">elgg_get_views()</a>. </dd>
+<dt><a class="anchor" id="_deprecated000193"></a>Global <a class="el" href="deprecated-1_88_8php.html#af7c3268110c96e9ab6ce195f6ea60bc0">get_widget_types</a>  ()</dt>
+<dd>1.8 Use elgg_get_widget_types  </dd>
+<dt><a class="anchor" id="_deprecated000188"></a>Global <a class="el" href="deprecated-1_88_8php.html#a8a332af069d1e59dd7bd032b7dd9683a">get_widgets</a>  ($user_guid, $context, $column)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2widgets_8php.html#a2abd045dcc7192bd2402d2b6b93bfc90">elgg_get_widgets()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000184"></a>Global <a class="el" href="deprecated-1_88_8php.html#a5de6b3c3d52975a97efd4ed1598bbe7f">is_db_installed</a>  ()</dt>
+<dd>1.8  </dd>
+<dt><a class="anchor" id="_deprecated000185"></a>Global <a class="el" href="deprecated-1_88_8php.html#a740de315cce4796d58d64f5ccd2984ce">is_installed</a>  ()</dt>
+<dd>1.8  </dd>
+<dt><a class="anchor" id="_deprecated000034"></a>Global <a class="el" href="deprecated-1_87_8php.html#a446e56ce455476b7557345d7230de064">is_ip_in_array</a>  ()</dt>
+<dd>1.7  </dd>
+<dt><a class="anchor" id="_deprecated000110"></a>Global <a class="el" href="deprecated-1_88_8php.html#a90e82d687ee093a3714bfb5c87e794ae">is_plugin_enabled</a>  ($plugin, $site_guid=0)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2plugins_8php.html#a1bc881a02fb54524e68f2a98f75b3904">elgg_is_active_plugin()</a> </dd>
+<dt><a class="anchor" id="_deprecated000140"></a>Global <a class="el" href="deprecated-1_88_8php.html#ad3f0b4e9ed2520cd6819333f5522d403">isadminloggedin</a>  ()</dt>
+<dd>1.8 Use <a class="el" href="sessions_8php.html#a53c6256e03ff06499e017c37ffc7fd3b">elgg_is_admin_logged_in()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000139"></a>Global <a class="el" href="deprecated-1_88_8php.html#a05874fa5e08443747d2f7e5c1b8c1f0d">isloggedin</a>  ()</dt>
+<dd>1.8 Use <a class="el" href="sessions_8php.html#ad3b2cb688c9a2e32a584fc7c10a3e038">elgg_is_logged_in()</a>;  </dd>
+<dt><a class="anchor" id="_deprecated000151"></a>Global <a class="el" href="deprecated-1_88_8php.html#a40ebe85dc8a4afd98616ffede207fe94">list_annotations</a>  ($entity_guid, $name="", $limit=25, $asc=true)</dt>
+<dd>1.8 Use <a class="el" href="lib_2annotations_8php.html#a2f985ccfcd248dc076457c315de6c6dc">elgg_list_annotations()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000038"></a>Global <a class="el" href="deprecated-1_87_8php.html#a01648dae3c6bb31b02f407ba72b4f802">list_entities</a>  ($type="", $subtype="", $owner_guid=0, $limit=10, $fullview=true, $listtypetoggle=false, $pagination=true)</dt>
+<dd>1.7. Use <a class="el" href="lib_2entities_8php.html#a3a100de94a0d137ff3320335aca19152">elgg_list_entities()</a>. </dd>
+<dt><a class="anchor" id="_deprecated000115"></a>Global <a class="el" href="deprecated-1_88_8php.html#a91d9373ce94feb6eec555f1670e7d52d">list_entities_by_relationship_count</a>  ($relationship, $inverse_relationship=true, $type="", $subtype="", $owner_guid=0, $limit=10, $fullview=true, $listtypetoggle=false, $pagination=true)</dt>
+<dd>1.8 Use <a class="el" href="relationships_8php.html#a0a3a2fa013f11834905c38b05032b4d1">elgg_list_entities_from_relationship_count()</a> </dd>
+<dt><a class="anchor" id="_deprecated000056"></a>Global <a class="el" href="deprecated-1_88_8php.html#aaf057e4921635e1b6cf7dae5bcc0c555">list_entities_from_access_id</a>  ($access_id, $entity_type="", $entity_subtype="", $owner_guid=0, $limit=10, $fullview=true, $listtypetoggle=true, $pagination=true)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2access_8php.html#ae003a8a90cc4a572d417fabe45cbf91f">elgg_list_entities_from_access_id()</a> </dd>
+<dt><a class="anchor" id="_deprecated000061"></a>Global <a class="el" href="deprecated-1_88_8php.html#adc36760a9f338f13b73591f1de27308c">list_entities_from_annotation_count</a>  ($entity_type="", $entity_subtype="", $name="", $limit=10, $owner_guid=0, $group_guid=0, $asc=false, $fullview=true, $listtypetoggle=false, $pagination=true, $orderdir= 'desc')</dt>
+<dd>1.8 Use <a class="el" href="lib_2annotations_8php.html#a2c50117d7de8cc544b2df6c575adc2cf">elgg_list_entities_from_annotation_calculation()</a> </dd>
+<dt><a class="anchor" id="_deprecated000158"></a>Global <a class="el" href="deprecated-1_88_8php.html#a94e81aac684667d50dd7ab06c55881ab">list_entities_from_annotation_count_by_metadata</a>  ($entity_type="", $entity_subtype="", $name="", $mdname= '', $mdvalue= '', $limit=10, $owner_guid=0, $group_guid=0, $asc=false, $fullview=true, $listtypetoggle=false, $pagination=true, $orderdir= 'desc')</dt>
+<dd>1.8 Use <a class="el" href="lib_2annotations_8php.html#a2c50117d7de8cc544b2df6c575adc2cf">elgg_list_entities_from_annotation_calculation()</a>. </dd>
+<dt><a class="anchor" id="_deprecated000030"></a>Global <a class="el" href="deprecated-1_87_8php.html#a291298f9436e8cf1699b6c554302e833">list_entities_from_annotations</a>  ($entity_type="", $entity_subtype="", $name="", $value="", $limit=10, $owner_guid=0, $group_guid=0, $asc=false, $fullview=true, $listtypetoggle=false)</dt>
+<dd>1.7 Use <a class="el" href="lib_2annotations_8php.html#aae8deff59648b3aaa627d12c12f76f1a">elgg_list_entities_from_annotations()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000084"></a>Global <a class="el" href="deprecated-1_88_8php.html#a9a932317f1fa085232097877472b774e">list_entities_from_metadata</a>  ($meta_name, $meta_value="", $entity_type=ELGG_ENTITIES_ANY_VALUE, $entity_subtype=ELGG_ENTITIES_ANY_VALUE, $owner_guid=0, $limit=10, $fullview=true, $listtypetoggle=true, $pagination=true, $case_sensitive=true)</dt>
+<dd>1.8 Use elgg_list_entities_from_metadata </dd>
+<dt><a class="anchor" id="_deprecated000085"></a>Global <a class="el" href="deprecated-1_88_8php.html#a6f614ccbf02d9367784d37ad1ffc53d3">list_entities_from_metadata_multi</a>  ($meta_array, $entity_type="", $entity_subtype="", $owner_guid=0, $limit=10, $fullview=true, $listtypetoggle=true, $pagination=true)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2metadata_8php.html#a273ceac041577846e90e9f5a50151b36">elgg_list_entities_from_metadata()</a> instead  </dd>
+<dt><a class="anchor" id="_deprecated000113"></a>Global <a class="el" href="deprecated-1_88_8php.html#a91ae74ab3e842463c345cf4bb95b360b">list_entities_from_relationship</a>  ($relationship, $relationship_guid, $inverse_relationship=false, $type=ELGG_ENTITIES_ANY_VALUE, $subtype=ELGG_ENTITIES_ANY_VALUE, $owner_guid=0, $limit=10, $fullview=true, $listtypetoggle=false, $pagination=true, $order_by= '')</dt>
+<dd>1.8 Use <a class="el" href="relationships_8php.html#a056a8b9b86ca8dfceca2f88537b0e116">elgg_list_entities_from_relationship()</a> </dd>
+<dt><a class="anchor" id="_deprecated000078"></a>Global <a class="el" href="deprecated-1_88_8php.html#aea7e1fc131559b937290a609fb70f08b">list_entities_groups</a>  ($subtype="", $owner_guid=0, $container_guid=0, $limit=10, $fullview=true, $listtypetoggle=true, $pagination=true)</dt>
+<dd>1.8 Use <a class="el" href="lib_2entities_8php.html#a3a100de94a0d137ff3320335aca19152">elgg_list_entities()</a> instead  </dd>
+<dt><a class="anchor" id="_deprecated000081"></a>Global <a class="el" href="deprecated-1_88_8php.html#af7dc2cfd911f76bba1a05c4ef3205922">list_entities_in_area</a>  ($lat, $long, $radius, $type="", $subtype="", $owner_guid=0, $limit=10, $fullview=true, $listtypetoggle=false, $navigation=true)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2location_8php.html#ae4deb9b7f5662237e33c45406699ee47">elgg_get_entities_from_location()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000082"></a>Global <a class="el" href="deprecated-1_88_8php.html#a557700b31811b9d9c6ef9c82c1fa64dc">list_entities_location</a>  ($location, $type="", $subtype="", $owner_guid=0, $limit=10, $fullview=true, $listtypetoggle=false, $navigation=true)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2location_8php.html#a62b23ee2c8df2830345adce8b36d9fc8">elgg_list_entities_from_location()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000041"></a>Global <a class="el" href="deprecated-1_87_8php.html#ac355b2096009f25c34baa4fdb0b35170">list_group_search</a>  ($tag, $limit=10)</dt>
+<dd>1.7  </dd>
+<dt><a class="anchor" id="_deprecated000037"></a>Global <a class="el" href="deprecated-1_87_8php.html#a5b7ec1a189703c9dda56c1ab46863e8b">list_registered_entities</a>  ($owner_guid=0, $limit=10, $fullview=true, $listtypetoggle=false, $allowedtypes=true)</dt>
+<dd>1.7. Use <a class="el" href="lib_2entities_8php.html#abcf2e7ad756a732cd6c9942856c01dfe">elgg_list_registered_entities()</a>.  </dd>
+<dt><a class="anchor" id="_deprecated000122"></a>Global <a class="el" href="deprecated-1_88_8php.html#a0932aab2d15501e0967956d168da8d0f">list_site_members</a>  ($site_guid, $limit=10, $fullview=true)</dt>
+<dd>1.8 Use <a class="el" href="class_elgg_site.html#a4ce275dac4ac291267b767f7dac702e9">ElggSite::listMembers()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000130"></a>Global <a class="el" href="deprecated-1_88_8php.html#ac516b6d374201406cb34a8e87e289f97">list_user_objects</a>  ($user_guid, $subtype=ELGG_ENTITIES_ANY_VALUE, $limit=10, $fullview=true, $listtypetoggle=true, $pagination=true, $timelower=0, $timeupper=0)</dt>
+<dd>1.8 Use <a class="el" href="lib_2entities_8php.html#a3a100de94a0d137ff3320335aca19152">elgg_list_entities()</a> instead  </dd>
+<dt><a class="anchor" id="_deprecated000050"></a>Global <a class="el" href="deprecated-1_87_8php.html#adbd78e4facfe598b2813b7d506bf1681">list_user_search</a>  ($tag, $limit=10)</dt>
+<dd>1.7  </dd>
+<dt><a class="anchor" id="_deprecated000141"></a>Global <a class="el" href="deprecated-1_88_8php.html#a5517f5b644d22307dc22a51dfd113b42">load_plugins</a>  ()</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2plugins_8php.html#a705a5eeda2c3e87bc1d9e2753a8a9669">elgg_load_plugins()</a> </dd>
+<dt><a class="anchor" id="_deprecated000026"></a>Global <a class="el" href="interface_loggable.html#a28618bb52fcdf4e9d12b194a51fecb0a">Loggable::getObjectOwnerGUID</a>  ()</dt>
 <dd>1.8 Use getOwnerGUID() instead  </dd>
-<dt><a class="anchor" id="_deprecated000233"></a>Global <a class="el" href="class_minify___controller___base.html#aeb61e450b3869a53c7422d7ab153dd6a">Minify_Controller_Base::_fileIsSafe</a>  ($file, $safeDirs)</dt>
-<dd>use checkAllowDirs, checkNotHidden instead  </dd>
-<dt><a class="anchor" id="_deprecated000235"></a>Global <a class="el" href="class_simple_error_queue.html#a9e603f811a1c81f5ed463d276c1f71e8">SimpleErrorQueue::assertError</a>  ($expected, $message)</dt>
+<dt><a class="anchor" id="_deprecated000054"></a>Global <a class="el" href="deprecated-1_87_8php.html#aafcd1e87d8a9ef734683ddb850ea1963">make_register_object</a>  ($register_name, $register_value, $children_array=array())</dt>
+<dd>1.7 Use <a class="el" href="deprecated-1_88_8php.html#adf09a38a08659ebc267361093ce7e25a">add_submenu_item()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000044"></a>Global <a class="el" href="deprecated-1_87_8php.html#ae30dae8ed3526c4929e3d920271ec6de">menu_item</a>  ($menu_name, $menu_url)</dt>
+<dd>1.7  </dd>
+<dt><a class="anchor" id="_deprecated000135"></a>Global <a class="el" href="deprecated-1_88_8php.html#a02483c12bd518c91be4286418b034a3d">page_draw</a>  ($title, $body, $sidebar="")</dt>
+<dd>1.8 Use <a class="el" href="views_8php.html#a14e7c7976f6d210d86e9a8c602793d11">elgg_view_page()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000095"></a>Global <a class="el" href="deprecated-1_88_8php.html#a0ab677eaa0697bea3fa1eeecbef9eca3">page_owner</a>  ()</dt>
+<dd>1.8 Use <a class="el" href="pageowner_8php.html#a5874c24be33f1de99ecc6b798415be8c">elgg_get_page_owner_guid()</a> </dd>
+<dt><a class="anchor" id="_deprecated000096"></a>Global <a class="el" href="deprecated-1_88_8php.html#acb42b2339d312fbabc16104803502c59">page_owner_entity</a>  ()</dt>
+<dd>1.8 Use <a class="el" href="pageowner_8php.html#a055185017192e688e1ba7dfc5ff3ab29">elgg_get_page_owner_entity()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000186"></a>Global <a class="el" href="deprecated-1_88_8php.html#aa79c7039f62b5437b9e2265d5e29c34b">pam_authenticate</a>  ($credentials=NULL, $policy="user")</dt>
+<dd>1.8 See <a class="el" href="class_elgg_p_a_m.html">ElggPAM</a>  </dd>
+<dt><a class="anchor" id="_deprecated000102"></a>Global <a class="el" href="deprecated-1_88_8php.html#ad8919d937a898258190aa90c8ba2f31b">regenerate_plugin_list</a>  ($pluginorder=FALSE)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2plugins_8php.html#aa183c3a78f82d38c5f04e3425fd61d32">elgg_generate_plugin_entities()</a> and <a class="el" href="engine_2lib_2plugins_8php.html#ad7898e2ba0fdd93a031f495073312694">elgg_set_plugin_priorities()</a> </dd>
+<dt><a class="anchor" id="_deprecated000057"></a>Global <a class="el" href="deprecated-1_88_8php.html#a3f21e0873b497739b3c9da1d43360e89">register_action</a>  ($action, $public=false, $filename="", $admin_only=false)</dt>
+<dd>1.8 Use <a class="el" href="actions_8php.html#a18557a1ccc92a76725b0359680865447">elgg_register_action()</a> instead </dd>
+<dt><a class="anchor" id="_deprecated000175"></a>Global <a class="el" href="deprecated-1_88_8php.html#a2f40b5020cf7d9b50a396ef3495fc89b">register_annotation_url_handler</a>  ($function, $extender_name)</dt>
+<dd>1.8 Use <a class="el" href="lib_2annotations_8php.html#a22adc6eaedffb66c36880924e2992995">elgg_register_annotation_url_handler()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000066"></a>Global <a class="el" href="deprecated-1_88_8php.html#a9e5a7f2948cddd09d96d512461dcf407">register_elgg_event_handler</a>  ($event, $object_type, $callback, $priority=500)</dt>
+<dd>1.8 Use <a class="el" href="elgglib_8php.html#a856e8224aaa6484910788d0271036798">elgg_register_event_handler()</a> instead </dd>
+<dt><a class="anchor" id="_deprecated000177"></a>Global <a class="el" href="deprecated-1_88_8php.html#aa5a05fb4aeab347b12d5ac8356e6d665">register_entity_type</a>  ($type, $subtype=null)</dt>
+<dd>1.8 Use <a class="el" href="lib_2entities_8php.html#ade3d136ebb672909d60d6e3f10095818">elgg_register_entity_type()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000160"></a>Global <a class="el" href="deprecated-1_88_8php.html#af28d3b403f90c91a715b81334eb59893">register_entity_url_handler</a>  ($function_name, $entity_type="all", $entity_subtype="all")</dt>
+<dd>1.8 Use <a class="el" href="lib_2entities_8php.html#a2de8ea4b1f5be2df8aef5c14520d87dd">elgg_register_entity_url_handler()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000176"></a>Global <a class="el" href="deprecated-1_88_8php.html#a59c5417a135d568231bd8bc937223a23">register_extender_url_handler</a>  ($function, $type="all", $name="all")</dt>
+<dd>1.8 Use <a class="el" href="extender_8php.html#a5b0c43dd33c327fce805f6fea23d943e">elgg_register_extender_url_handler()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000178"></a>Global <a class="el" href="deprecated-1_88_8php.html#a06cafbc0dee9dd66d108b6a00e1e0d3d">register_metadata_url_handler</a>  ($function, $extender_name="all")</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2metadata_8php.html#a8d27c0f46a2cd8e29d82fb63ab1be86e">elgg_register_metadata_url_handler()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000173"></a>Global <a class="el" href="deprecated-1_88_8php.html#a1e91b57fe473768f836c07817663d17e">register_page_handler</a>  ($handler, $function)</dt>
+<dd>1.8 Use <a class="el" href="pagehandler_8php.html#accec5f046f36860a769d104a7fae76f8">elgg_register_page_handler()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000069"></a>Global <a class="el" href="deprecated-1_88_8php.html#a95df7cd0168df4594cc499781ec02f18">register_plugin_hook</a>  ($hook, $type, $callback, $priority=500)</dt>
+<dd>1.8 Use <a class="el" href="elgglib_8php.html#a61ac4b86cafddcc201acda05a0e88997">elgg_register_plugin_hook_handler()</a> instead </dd>
+<dt><a class="anchor" id="_deprecated000179"></a>Global <a class="el" href="deprecated-1_88_8php.html#a4e1e634331d221b5ceb15c9b121a1d45">register_relationship_url_handler</a>  ($function_name, $relationship_type="all")</dt>
+<dd>1.8 Use <a class="el" href="relationships_8php.html#aa12900068c3cee3292a7611812b08241">elgg_register_relationship_url_handler()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000094"></a>Global <a class="el" href="deprecated-1_88_8php.html#a531592b1e13659d83b132098cab9a8b9">remove_blacklist</a>  ($input)</dt>
+<dd>1.8 Don't use this. </dd>
+<dt><a class="anchor" id="_deprecated000063"></a>Global <a class="el" href="deprecated-1_88_8php.html#a6bff594bcbe13adad977cfbc93fbefd8">remove_from_register</a>  ($register_name, $subregister_name)</dt>
+<dd>1.8 Use the new menu system. </dd>
+<dt><a class="anchor" id="_deprecated000201"></a>Global <a class="el" href="deprecated-1_88_8php.html#a310b089e268bc8498e83c4b8da6d8e1a">remove_from_river_by_annotation</a>  ($annotation_id)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2river_8php.html#ab1e1df1b5e545b775a1869d250207136">elgg_delete_river()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000202"></a>Global <a class="el" href="deprecated-1_88_8php.html#a07e97bc2b51b5da44afb3e20e4a67792">remove_from_river_by_id</a>  ($id)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2river_8php.html#ab1e1df1b5e545b775a1869d250207136">elgg_delete_river()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000200"></a>Global <a class="el" href="deprecated-1_88_8php.html#a7e6045a8fce3a97fd237674dcf3a2f93">remove_from_river_by_object</a>  ($object_guid)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2river_8php.html#ab1e1df1b5e545b775a1869d250207136">elgg_delete_river()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000199"></a>Global <a class="el" href="deprecated-1_88_8php.html#aace2af06fb7fefd602526a3426f997d6">remove_from_river_by_subject</a>  ($subject_guid)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2river_8php.html#ab1e1df1b5e545b775a1869d250207136">elgg_delete_river()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000090"></a>Global <a class="el" href="deprecated-1_88_8php.html#a481370a1a4025a98606196a60d667395">remove_menu</a>  ($menu_name)</dt>
+<dd>1.8 Use the new menu system  </dd>
+<dt><a class="anchor" id="_deprecated000168"></a>Global <a class="el" href="deprecated-1_88_8php.html#a99ad9885c5a009526d6c5a8a19d416f0">remove_metadata</a>  ($guid, $name, $value="")</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2metadata_8php.html#a33c99b808a909640744d23e06fddde36">elgg_delete_metadata()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000124"></a>Global <a class="el" href="deprecated-1_88_8php.html#a055462c586ed9af1f33863b154618c04">remove_site_collection</a>  ($site_guid, $collection_guid)</dt>
+<dd>1.8 Don't use this.  </dd>
+<dt><a class="anchor" id="_deprecated000087"></a>Global <a class="el" href="deprecated-1_88_8php.html#a8aa21162012b1962292ade7d140ed2f0">remove_submenu_item</a>  ($label, $group= 'a')</dt>
+<dd>1.8 Use the new menu system  </dd>
+<dt><a class="anchor" id="_deprecated000191"></a>Global <a class="el" href="deprecated-1_88_8php.html#a1e2b4d3826c44b098a090fcca56f2947">remove_widget_type</a>  ($handler)</dt>
+<dd>1.8 Use elgg_unregister_widget_type  </dd>
+<dt><a class="anchor" id="_deprecated000195"></a>Global <a class="el" href="deprecated-1_88_8php.html#a0f0ba9142a8c49b4a4ffdc33ec35dc0f">reorder_widgets_from_panel</a>  ($panelstring1, $panelstring2, $panelstring3, $context, $owner)</dt>
+<dd>1.8 Don't use.  </dd>
+<dt><a class="anchor" id="_deprecated000133"></a>Global <a class="el" href="deprecated-1_88_8php.html#a4d437c453ef5767e03bf16b83ae886ae">request_user_validation</a>  ($user_guid)</dt>
+<dd>1.8 Hook into the register, user plugin hook and request validation.  </dd>
+<dt><a class="anchor" id="_deprecated000194"></a>Global <a class="el" href="deprecated-1_88_8php.html#a629d5c0176e23816455d7cf691f1a385">save_widget_info</a>  ($widget_guid, $params)</dt>
+<dd>1.8 Use elgg_save_widget_settings  </dd>
+<dt><a class="anchor" id="_deprecated000187"></a>Global <a class="el" href="deprecated-1_88_8php.html#a079b4d4c28d24b6b102409eab55c70ff">save_widget_location</a>  (<a class="el" href="class_elgg_object.html">ElggObject</a> $widget, $order, $column)</dt>
+<dd>1.8 use <a class="el" href="class_elgg_widget.html#ac9f50a02bf5b2e8ee63f382c3bbe1956">ElggWidget::move()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000039"></a>Global <a class="el" href="deprecated-1_87_8php.html#a67e99f8de0170e24bbe4f4a7c87c9f42">search_for_group</a>  ($criteria, $limit=10, $offset=0, $order_by="", $count=false)</dt>
+<dd>1.7  </dd>
+<dt><a class="anchor" id="_deprecated000045"></a>Global <a class="el" href="deprecated-1_87_8php.html#aa2a12396653987c6d23ba00bfe203460">search_for_object</a>  ($criteria, $limit=10, $offset=0, $order_by="", $count=false)</dt>
+<dd>1.7  </dd>
+<dt><a class="anchor" id="_deprecated000048"></a>Global <a class="el" href="deprecated-1_87_8php.html#a3322e9f6d45e3a8ff2d59f2db00975fd">search_for_site</a>  ($criteria, $limit=10, $offset=0, $order_by="", $count=false)</dt>
+<dd>1.7  </dd>
+<dt><a class="anchor" id="_deprecated000049"></a>Global <a class="el" href="deprecated-1_87_8php.html#a81034c0e83f95e9501d7f34424454283">search_for_user</a>  ($criteria, $limit=10, $offset=0, $order_by="", $count=false)</dt>
+<dd>1.7  </dd>
+<dt><a class="anchor" id="_deprecated000040"></a>Global <a class="el" href="deprecated-1_87_8php.html#a2520a8e95cbb80c23c477d0ddcd7e00a">search_list_groups_by_name</a>  ($hook, $user, $returnvalue, $tag)</dt>
+<dd>1.7 </dd>
+<dt><a class="anchor" id="_deprecated000046"></a>Global <a class="el" href="deprecated-1_87_8php.html#ad433eff644f32124d1a03a5a9d41b002">search_list_objects_by_name</a>  ($hook, $user, $returnvalue, $tag)</dt>
+<dd>1.7 </dd>
+<dt><a class="anchor" id="_deprecated000051"></a>Global <a class="el" href="deprecated-1_87_8php.html#a58e12ebaa058db18f0a777ad891b5276">search_list_users_by_name</a>  ($hook, $user, $returnvalue, $tag)</dt>
+<dd>1.7 </dd>
+<dt><a class="anchor" id="_deprecated000099"></a>Global <a class="el" href="deprecated-1_88_8php.html#a7a63434779598f60213923a747d10994">set_context</a>  ($context)</dt>
+<dd>1.8 Use <a class="el" href="pageowner_8php.html#ad3e7a7a259e8c04f18ad6a4deacf4038">elgg_set_context()</a> </dd>
+<dt><a class="anchor" id="_deprecated000098"></a>Global <a class="el" href="deprecated-1_88_8php.html#a84b7b5eed6fc8b65cae91ecbab71f789">set_page_owner</a>  ($entitytoset=-1)</dt>
+<dd>1.8 Use <a class="el" href="pageowner_8php.html#a263f21ec79e1766a280745c885097746">elgg_set_page_owner_guid()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000146"></a>Global <a class="el" href="deprecated-1_88_8php.html#a272fe022ec49ad107f5548124fb44c43">set_plugin_setting</a>  ($name, $value, $plugin_id=null)</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2plugins_8php.html#aed270853e84ff162a9e599d26aae660c">elgg_set_plugin_setting()</a> or ElggPlugin-&gt;setSetting()  </dd>
+<dt><a class="anchor" id="_deprecated000143"></a>Global <a class="el" href="deprecated-1_88_8php.html#af59b2339d5aa34d3010150d96cc32880">set_plugin_usersetting</a>  ($name, $value, $user_guid=0, $plugin_id="")</dt>
+<dd>1.8 Use <a class="el" href="engine_2lib_2plugins_8php.html#a722d916f06791ea05196d6c5464b4427">elgg_set_plugin_user_setting()</a> or ElggPlugin-&gt;setUserSetting()  </dd>
+<dt><a class="anchor" id="_deprecated000132"></a>Global <a class="el" href="deprecated-1_88_8php.html#a02f75d33a72457a3ef6640069d542503">set_user_validation_status</a>  ($user_guid, $status, $method= '')</dt>
+<dd>1.8 Use <a class="el" href="lib_2users_8php.html#affc77a1bda0acedc1e72867ee2251eb9">elgg_set_user_validation_status()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000159"></a>Global <a class="el" href="deprecated-1_88_8php.html#a95f8ef2a37bc59a082e895a8d5415405">set_view_location</a>  ($view, $location, $viewtype= '')</dt>
+<dd>1.8 Use <a class="el" href="views_8php.html#a31d5070804eeb1e9fafad573fb0c2d94">elgg_set_view_location()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000210"></a>Global <a class="el" href="class_simple_error_queue.html#a9e603f811a1c81f5ed463d276c1f71e8">SimpleErrorQueue::assertError</a>  ($expected, $message)</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000234"></a>Global <a class="el" href="class_simple_error_queue.html#ac19fcc85e183985b0d64e814387afe32">SimpleErrorQueue::assertNoErrors</a>  ($message)</dt>
+<dt><a class="anchor" id="_deprecated000209"></a>Global <a class="el" href="class_simple_error_queue.html#ac19fcc85e183985b0d64e814387afe32">SimpleErrorQueue::assertNoErrors</a>  ($message)</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000239"></a>Global <a class="el" href="class_simple_mock.html#ae959e2307c7d8a9a0032802fdd5b8cbe">SimpleMock::expectArguments</a>  ($method, $args, $message= 's')</dt>
+<dt><a class="anchor" id="_deprecated000214"></a>Global <a class="el" href="class_simple_mock.html#ae959e2307c7d8a9a0032802fdd5b8cbe">SimpleMock::expectArguments</a>  ($method, $args, $message= 's')</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000240"></a>Global <a class="el" href="class_simple_mock.html#a882824cff27b93510198f54a6623527f">SimpleMock::expectArgumentsAt</a>  ($timing, $method, $args, $message= 's')</dt>
+<dt><a class="anchor" id="_deprecated000215"></a>Global <a class="el" href="class_simple_mock.html#a882824cff27b93510198f54a6623527f">SimpleMock::expectArgumentsAt</a>  ($timing, $method, $args, $message= 's')</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000241"></a>Global <a class="el" href="class_simple_mock.html#a462fea179dc01a9a87c9477a09472775">SimpleMock::tally</a>  ()</dt>
+<dt><a class="anchor" id="_deprecated000216"></a>Global <a class="el" href="class_simple_mock.html#a462fea179dc01a9a87c9477a09472775">SimpleMock::tally</a>  ()</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000236"></a>Namespace <a class="el" href="namespace_simple_test.html">SimpleTest</a>  </dt>
+<dt><a class="anchor" id="_deprecated000211"></a>Namespace <a class="el" href="namespace_simple_test.html">SimpleTest</a>  </dt>
 <dd><p class="startdd"></p>
 <p></p>
 <p></p>
@@ -117,73 +452,91 @@
 <p></p>
 <p class="enddd"></p>
 </dd>
-<dt><a class="anchor" id="_deprecated000244"></a>Global <a class="el" href="class_simple_test.html#a62c48e0d3994712164930d4ad0b2043a">SimpleTest::getMockBaseClass</a>  ()</dt>
+<dt><a class="anchor" id="_deprecated000219"></a>Global <a class="el" href="class_simple_test.html#a62c48e0d3994712164930d4ad0b2043a">SimpleTest::getMockBaseClass</a>  ()</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000243"></a>Global <a class="el" href="class_simple_test.html#aff0afe34030b6197c5c048c67f215bce">SimpleTest::setMockBaseClass</a>  ($mock_base)</dt>
+<dt><a class="anchor" id="_deprecated000218"></a>Global <a class="el" href="class_simple_test.html#aff0afe34030b6197c5c048c67f215bce">SimpleTest::setMockBaseClass</a>  ($mock_base)</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000258"></a>Global <a class="el" href="class_simple_test_case.html#a8b257c99865a0aad56488776a2f4f47c">SimpleTestCase::assertExpectation</a>  (&amp;$expectation, $compare, $message= 's')</dt>
+<dt><a class="anchor" id="_deprecated000233"></a>Global <a class="el" href="class_simple_test_case.html#a8b257c99865a0aad56488776a2f4f47c">SimpleTestCase::assertExpectation</a>  (&amp;$expectation, $compare, $message= 's')</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000256"></a>Global <a class="el" href="class_simple_test_case.html#a413ec6a28c017c7f5c08af552930a023">SimpleTestCase::pass</a>  ($message="Pass")</dt>
+<dt><a class="anchor" id="_deprecated000231"></a>Global <a class="el" href="class_simple_test_case.html#a413ec6a28c017c7f5c08af552930a023">SimpleTestCase::pass</a>  ($message="Pass")</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000259"></a>Global <a class="el" href="class_simple_test_case.html#a3237a61cccc14d183936f7809006c661">SimpleTestCase::sendMessage</a>  ($message)</dt>
+<dt><a class="anchor" id="_deprecated000234"></a>Global <a class="el" href="class_simple_test_case.html#a3237a61cccc14d183936f7809006c661">SimpleTestCase::sendMessage</a>  ($message)</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000257"></a>Global <a class="el" href="class_simple_test_case.html#aad0d36365301521d4b464912a15ab9dd">SimpleTestCase::signal</a>  ($type, &amp;$payload)</dt>
+<dt><a class="anchor" id="_deprecated000232"></a>Global <a class="el" href="class_simple_test_case.html#aad0d36365301521d4b464912a15ab9dd">SimpleTestCase::signal</a>  ($type, &amp;$payload)</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000251"></a>Global <a class="el" href="class_simple_test_options.html#a19628ecf7875af515a087f8ef896707f">SimpleTestOptions::getDefaultProxy</a>  ()</dt>
+<dt><a class="anchor" id="_deprecated000226"></a>Global <a class="el" href="class_simple_test_options.html#a19628ecf7875af515a087f8ef896707f">SimpleTestOptions::getDefaultProxy</a>  ()</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000253"></a>Global <a class="el" href="class_simple_test_options.html#a7ca457186993c69a86357a28ea607b79">SimpleTestOptions::getDefaultProxyPassword</a>  ()</dt>
+<dt><a class="anchor" id="_deprecated000228"></a>Global <a class="el" href="class_simple_test_options.html#a7ca457186993c69a86357a28ea607b79">SimpleTestOptions::getDefaultProxyPassword</a>  ()</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000252"></a>Global <a class="el" href="class_simple_test_options.html#a0fa035336ed814128e6c563561b4ecce">SimpleTestOptions::getDefaultProxyUsername</a>  ()</dt>
+<dt><a class="anchor" id="_deprecated000227"></a>Global <a class="el" href="class_simple_test_options.html#a0fa035336ed814128e6c563561b4ecce">SimpleTestOptions::getDefaultProxyUsername</a>  ()</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000249"></a>Global <a class="el" href="class_simple_test_options.html#a62c48e0d3994712164930d4ad0b2043a">SimpleTestOptions::getMockBaseClass</a>  ()</dt>
+<dt><a class="anchor" id="_deprecated000224"></a>Global <a class="el" href="class_simple_test_options.html#a62c48e0d3994712164930d4ad0b2043a">SimpleTestOptions::getMockBaseClass</a>  ()</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000245"></a>Global <a class="el" href="class_simple_test_options.html#afa8e7a3a646144eab50188b7a805a389">SimpleTestOptions::getVersion</a>  ()</dt>
+<dt><a class="anchor" id="_deprecated000220"></a>Global <a class="el" href="class_simple_test_options.html#afa8e7a3a646144eab50188b7a805a389">SimpleTestOptions::getVersion</a>  ()</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000246"></a>Global <a class="el" href="class_simple_test_options.html#a0a1358129954b8ba2d1d2ff9ed67fe52">SimpleTestOptions::ignore</a>  ($class)</dt>
+<dt><a class="anchor" id="_deprecated000221"></a>Global <a class="el" href="class_simple_test_options.html#a0a1358129954b8ba2d1d2ff9ed67fe52">SimpleTestOptions::ignore</a>  ($class)</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000247"></a>Global <a class="el" href="class_simple_test_options.html#aae90989e275afd30469807dc59363d42">SimpleTestOptions::isIgnored</a>  ($class)</dt>
+<dt><a class="anchor" id="_deprecated000222"></a>Global <a class="el" href="class_simple_test_options.html#aae90989e275afd30469807dc59363d42">SimpleTestOptions::isIgnored</a>  ($class)</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000248"></a>Global <a class="el" href="class_simple_test_options.html#aff0afe34030b6197c5c048c67f215bce">SimpleTestOptions::setMockBaseClass</a>  ($mock_base)</dt>
+<dt><a class="anchor" id="_deprecated000223"></a>Global <a class="el" href="class_simple_test_options.html#aff0afe34030b6197c5c048c67f215bce">SimpleTestOptions::setMockBaseClass</a>  ($mock_base)</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000250"></a>Global <a class="el" href="class_simple_test_options.html#a66752504459832410b7770f7cc3e5f0b">SimpleTestOptions::useProxy</a>  ($proxy, $username=false, $password=false)</dt>
+<dt><a class="anchor" id="_deprecated000225"></a>Global <a class="el" href="class_simple_test_options.html#a66752504459832410b7770f7cc3e5f0b">SimpleTestOptions::useProxy</a>  ($proxy, $username=false, $password=false)</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000260"></a>Global <a class="el" href="class_test_suite.html#a58e49a401996a66694daa35b3bc9170d">TestSuite::addTestCase</a>  (&amp;$test_case)</dt>
+<dt><a class="anchor" id="_deprecated000033"></a>Global <a class="el" href="deprecated-1_87_8php.html#a27f56f30095819e384670e8d5f2e786b">test_ip</a>  ()</dt>
+<dd>1.7  </dd>
+<dt><a class="anchor" id="_deprecated000235"></a>Global <a class="el" href="class_test_suite.html#a58e49a401996a66694daa35b3bc9170d">TestSuite::addTestCase</a>  (&amp;$test_case)</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000261"></a>Global <a class="el" href="class_test_suite.html#a722bbe07790da0097b05e14cec9077c7">TestSuite::addTestClass</a>  ($class)</dt>
+<dt><a class="anchor" id="_deprecated000236"></a>Global <a class="el" href="class_test_suite.html#a722bbe07790da0097b05e14cec9077c7">TestSuite::addTestClass</a>  ($class)</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000262"></a>Global <a class="el" href="class_test_suite.html#a7bcd2dfd0f97b239e50dd6cb454ffd4e">TestSuite::addTestFile</a>  ($test_file)</dt>
+<dt><a class="anchor" id="_deprecated000237"></a>Global <a class="el" href="class_test_suite.html#a7bcd2dfd0f97b239e50dd6cb454ffd4e">TestSuite::addTestFile</a>  ($test_file)</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000263"></a>Global <a class="el" href="class_unit_test_case.html#acf4ab7f4c77dd60d7a8ca01934ab7ed8">UnitTestCase::assertCopy</a>  (&amp;$first, &amp;$second, $message="%s")</dt>
+<dt><a class="anchor" id="_deprecated000068"></a>Global <a class="el" href="deprecated-1_88_8php.html#a2898ff5bae42a567a57b24b03abecb67">trigger_elgg_event</a>  ($event, $object_type, $object=null)</dt>
+<dd>1.8 Use <a class="el" href="elgglib_8php.html#a1242dc9a087124d7c017fb1fd3f4b785">elgg_trigger_event()</a> instead </dd>
+<dt><a class="anchor" id="_deprecated000071"></a>Global <a class="el" href="deprecated-1_88_8php.html#abcc3fe52f157fa635c35c5642a4b041e">trigger_plugin_hook</a>  ($hook, $type, $params=null, $returnvalue=null)</dt>
+<dd>1.8 Use <a class="el" href="elgglib_8php.html#a94b87b20b0e12a7f36021d036f49a5bd">elgg_trigger_plugin_hook()</a> instead </dd>
+<dt><a class="anchor" id="_deprecated000238"></a>Global <a class="el" href="class_unit_test_case.html#acf4ab7f4c77dd60d7a8ca01934ab7ed8">UnitTestCase::assertCopy</a>  (&amp;$first, &amp;$second, $message="%s")</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000268"></a>Global <a class="el" href="class_unit_test_case.html#a03aabf088eab741d9d38c8f3962024dc">UnitTestCase::assertError</a>  ($expected=false, $message= 's')</dt>
+<dt><a class="anchor" id="_deprecated000243"></a>Global <a class="el" href="class_unit_test_case.html#a03aabf088eab741d9d38c8f3962024dc">UnitTestCase::assertError</a>  ($expected=false, $message= 's')</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000269"></a>Global <a class="el" href="class_unit_test_case.html#ace46e7fb443995e41d5bb4f7ce45009f">UnitTestCase::assertErrorPattern</a>  ($pattern, $message= 's')</dt>
+<dt><a class="anchor" id="_deprecated000244"></a>Global <a class="el" href="class_unit_test_case.html#ace46e7fb443995e41d5bb4f7ce45009f">UnitTestCase::assertErrorPattern</a>  ($pattern, $message= 's')</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000267"></a>Global <a class="el" href="class_unit_test_case.html#ac4da17bd057dc424b6416f3e0f736b72">UnitTestCase::assertNoErrors</a>  ($message= 's')</dt>
+<dt><a class="anchor" id="_deprecated000242"></a>Global <a class="el" href="class_unit_test_case.html#ac4da17bd057dc424b6416f3e0f736b72">UnitTestCase::assertNoErrors</a>  ($message= 's')</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000265"></a>Global <a class="el" href="class_unit_test_case.html#ade2bb2e8ff0ad0959b00c9ac6f00cdcd">UnitTestCase::assertNoUnwantedPattern</a>  ($pattern, $subject, $message= 's')</dt>
+<dt><a class="anchor" id="_deprecated000240"></a>Global <a class="el" href="class_unit_test_case.html#ade2bb2e8ff0ad0959b00c9ac6f00cdcd">UnitTestCase::assertNoUnwantedPattern</a>  ($pattern, $subject, $message= 's')</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000264"></a>Global <a class="el" href="class_unit_test_case.html#a28c156582583c1e7acc2704b409f3310">UnitTestCase::assertWantedPattern</a>  ($pattern, $subject, $message= 's')</dt>
+<dt><a class="anchor" id="_deprecated000239"></a>Global <a class="el" href="class_unit_test_case.html#a28c156582583c1e7acc2704b409f3310">UnitTestCase::assertWantedPattern</a>  ($pattern, $subject, $message= 's')</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000266"></a>Global <a class="el" href="class_unit_test_case.html#a99cca1f4648e9a7e1db1e12337357068">UnitTestCase::swallowErrors</a>  ()</dt>
+<dt><a class="anchor" id="_deprecated000241"></a>Global <a class="el" href="class_unit_test_case.html#a99cca1f4648e9a7e1db1e12337357068">UnitTestCase::swallowErrors</a>  ()</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000270"></a>Global <a class="el" href="class_web_test_case.html#a461a7a2b78c92c4459c232f1e0e8a0b8">WebTestCase::assertHeaderPattern</a>  ($header, $pattern, $message= 's')</dt>
+<dt><a class="anchor" id="_deprecated000067"></a>Global <a class="el" href="deprecated-1_88_8php.html#a30bdb89d74175e558dafe7ce8eeacc46">unregister_elgg_event_handler</a>  ($event, $object_type, $callback)</dt>
+<dd>1.8 Use elgg_unregister_event_handler instead </dd>
+<dt><a class="anchor" id="_deprecated000174"></a>Global <a class="el" href="deprecated-1_88_8php.html#ae11fcb9d7e80a4546dc870c095c20e87">unregister_page_handler</a>  ($handler)</dt>
+<dd>1.8 Use <a class="el" href="pagehandler_8php.html#a3544e0c5430913e26870bfc009d35f29">elgg_unregister_page_handler()</a>  </dd>
+<dt><a class="anchor" id="_deprecated000070"></a>Global <a class="el" href="deprecated-1_88_8php.html#a287da44bb5de9b13333e469a02b5f867">unregister_plugin_hook</a>  ($hook, $entity_type, $callback)</dt>
+<dd>1.8 Use <a class="el" href="elgglib_8php.html#a81a043b95296c910f20557ca76866264">elgg_unregister_plugin_hook_handler()</a> instead </dd>
+<dt><a class="anchor" id="_deprecated000196"></a>Global <a class="el" href="deprecated-1_88_8php.html#a57ef824d74efc313d396c3a5dafe4e63">use_widgets</a>  ($context)</dt>
+<dd>1.8 Don't use.  </dd>
+<dt><a class="anchor" id="_deprecated000197"></a>Global <a class="el" href="deprecated-1_88_8php.html#a73cab14f2758976c11f646e177bfef5c">using_widgets</a>  ()</dt>
+<dd>1.8 Don't use.  </dd>
+<dt><a class="anchor" id="_deprecated000245"></a>Global <a class="el" href="class_web_test_case.html#a461a7a2b78c92c4459c232f1e0e8a0b8">WebTestCase::assertHeaderPattern</a>  ($header, $pattern, $message= 's')</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000271"></a>Global <a class="el" href="class_web_test_case.html#abb0d5328ad4df80c4f4800e37ba8c428">WebTestCase::assertNoUnwantedHeader</a>  ($header, $message= 's')</dt>
+<dt><a class="anchor" id="_deprecated000246"></a>Global <a class="el" href="class_web_test_case.html#abb0d5328ad4df80c4f4800e37ba8c428">WebTestCase::assertNoUnwantedHeader</a>  ($header, $message= 's')</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000275"></a>Global <a class="el" href="class_web_test_case.html#a0df30396459422b012e70d7ab671977e">WebTestCase::assertNoUnwantedPattern</a>  ($pattern, $message= 's')</dt>
+<dt><a class="anchor" id="_deprecated000250"></a>Global <a class="el" href="class_web_test_case.html#a0df30396459422b012e70d7ab671977e">WebTestCase::assertNoUnwantedPattern</a>  ($pattern, $message= 's')</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000273"></a>Global <a class="el" href="class_web_test_case.html#ab4e98c73365fe4da07a3b3ee19d0fde1">WebTestCase::assertNoUnwantedText</a>  ($text, $message= 's')</dt>
+<dt><a class="anchor" id="_deprecated000248"></a>Global <a class="el" href="class_web_test_case.html#ab4e98c73365fe4da07a3b3ee19d0fde1">WebTestCase::assertNoUnwantedText</a>  ($text, $message= 's')</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000274"></a>Global <a class="el" href="class_web_test_case.html#a973d600db249fd2a0070214f2ba081bd">WebTestCase::assertWantedPattern</a>  ($pattern, $message= 's')</dt>
+<dt><a class="anchor" id="_deprecated000249"></a>Global <a class="el" href="class_web_test_case.html#a973d600db249fd2a0070214f2ba081bd">WebTestCase::assertWantedPattern</a>  ($pattern, $message= 's')</dt>
 <dd></dd>
-<dt><a class="anchor" id="_deprecated000272"></a>Global <a class="el" href="class_web_test_case.html#a3993d576a866471c5643a573ca575473">WebTestCase::assertWantedText</a>  ($text, $message= 's')</dt>
+<dt><a class="anchor" id="_deprecated000247"></a>Global <a class="el" href="class_web_test_case.html#a3993d576a866471c5643a573ca575473">WebTestCase::assertWantedText</a>  ($text, $message= 's')</dt>
 <dd></dd>
+<dt><a class="anchor" id="_deprecated000192"></a>Global <a class="el" href="deprecated-1_88_8php.html#a9f79549cde3ffb0985ac985e22369a05">widget_type_exists</a>  ($handler)</dt>
+<dd>1.8 Use elgg_is_widget_type </dd>
 </dl>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 30 2012 09:32:41 for Elgg by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 19 2012 12:53:47 for Elgg by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

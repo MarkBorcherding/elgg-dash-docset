@@ -15,6 +15,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="elgg_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Elgg
    </div>
@@ -30,6 +31,10 @@
 &#160;
 
 <h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>samples()
+: <a class="el" href="class_simple_test_acceptance_test.html#a3c857706ee829220e71a0a2953611f37">SimpleTestAcceptanceTest</a>
+, <a class="el" href="class_test_of_live_browser.html#a3c857706ee829220e71a0a2953611f37">TestOfLiveBrowser</a>
+</li>
 <li>sanitise_filename()
 : <a class="el" href="class_elgg_file_cache.html#a69d51b35940203d34d67edd3e519bc06">ElggFileCache</a>
 </li>
@@ -37,26 +42,29 @@
 : <a class="el" href="class_elgg_file_cache.html#ad52a1016da51607777c3ba344f43e178">ElggFileCache</a>
 </li>
 <li>save()
-: <a class="el" href="class_elgg_cache.html#a88bfa2db36cb5c178d2d313f2610308a">ElggCache</a>
-, <a class="el" href="class_elgg_file_cache.html#a88bfa2db36cb5c178d2d313f2610308a">ElggFileCache</a>
-, <a class="el" href="class_elgg_volatile_metadata_cache.html#a74801e30eebd16ebe406f04e90c1561a">ElggVolatileMetadataCache</a>
-, <a class="el" href="class_elgg_h_m_a_c_cache.html#a88bfa2db36cb5c178d2d313f2610308a">ElggHMACCache</a>
-, <a class="el" href="class_elgg_data.html#afc8a3c62679cf00ade9f15fb2a6d6132">ElggData</a>
-, <a class="el" href="class_elgg_memcache.html#ae36df76dda7f62c04ba4920902e2e8eb">ElggMemcache</a>
-, <a class="el" href="class_elgg_metadata.html#afc8a3c62679cf00ade9f15fb2a6d6132">ElggMetadata</a>
-, <a class="el" href="class_elgg_annotation.html#afc8a3c62679cf00ade9f15fb2a6d6132">ElggAnnotation</a>
-, <a class="el" href="class_elgg_entity.html#afc8a3c62679cf00ade9f15fb2a6d6132">ElggEntity</a>
+: <a class="el" href="class_elgg_entity.html#afc8a3c62679cf00ade9f15fb2a6d6132">ElggEntity</a>
 , <a class="el" href="class_elgg_plugin.html#afc8a3c62679cf00ade9f15fb2a6d6132">ElggPlugin</a>
 , <a class="el" href="class_elgg_relationship.html#afc8a3c62679cf00ade9f15fb2a6d6132">ElggRelationship</a>
 , <a class="el" href="class_elgg_file.html#afc8a3c62679cf00ade9f15fb2a6d6132">ElggFile</a>
 , <a class="el" href="class_elgg_site.html#afc8a3c62679cf00ade9f15fb2a6d6132">ElggSite</a>
 , <a class="el" href="class_elgg_static_variable_cache.html#a88bfa2db36cb5c178d2d313f2610308a">ElggStaticVariableCache</a>
+, <a class="el" href="class_elgg_annotation.html#afc8a3c62679cf00ade9f15fb2a6d6132">ElggAnnotation</a>
+, <a class="el" href="class_elgg_file_cache.html#a88bfa2db36cb5c178d2d313f2610308a">ElggFileCache</a>
+, <a class="el" href="class_elgg_user.html#afc8a3c62679cf00ade9f15fb2a6d6132">ElggUser</a>
+, <a class="el" href="class_elgg_volatile_metadata_cache.html#a74801e30eebd16ebe406f04e90c1561a">ElggVolatileMetadataCache</a>
+, <a class="el" href="class_elgg_group.html#afc8a3c62679cf00ade9f15fb2a6d6132">ElggGroup</a>
+, <a class="el" href="class_elgg_cache.html#a88bfa2db36cb5c178d2d313f2610308a">ElggCache</a>
+, <a class="el" href="class_elgg_h_m_a_c_cache.html#a88bfa2db36cb5c178d2d313f2610308a">ElggHMACCache</a>
+, <a class="el" href="class_elgg_memcache.html#ae36df76dda7f62c04ba4920902e2e8eb">ElggMemcache</a>
+, <a class="el" href="class_elgg_data.html#afc8a3c62679cf00ade9f15fb2a6d6132">ElggData</a>
+, <a class="el" href="class_elgg_metadata.html#afc8a3c62679cf00ade9f15fb2a6d6132">ElggMetadata</a>
+, <a class="el" href="class_elgg_object.html#afc8a3c62679cf00ade9f15fb2a6d6132">ElggObject</a>
+</li>
+<li>save_entity()
+: <a class="el" href="class_elgg_core_entity_test.html#a3eddb81576753d3c866bc5482326eb2e">ElggCoreEntityTest</a>
 </li>
 <li>saveAll()
 : <a class="el" href="class_elgg_volatile_metadata_cache.html#ae85399e0a0939bef277b28f649689e34">ElggVolatileMetadataCache</a>
-</li>
-<li>saveCache()
-: <a class="el" href="class_elgg_autoload_manager.html#a14e6791361b1c9847af25e600d600204">ElggAutoloadManager</a>
 </li>
 <li>saveSettings()
 : <a class="el" href="class_elgg_widget.html#ad3f2bc96a49d13778abce354027b8b2b">ElggWidget</a>
@@ -84,21 +92,17 @@
 <li>selectSignatureMethod()
 : <a class="el" href="class_o_auth_request.html#ae33a0a921ba8b55609f60b93b7db1cef">OAuthRequest</a>
 </li>
-<li>sendAll()
-: <a class="el" href="class_h_t_t_p___encoder.html#a26e9795826a01caf37691988251927fe">HTTP_Encoder</a>
-</li>
-<li>sendHeaders()
-: <a class="el" href="class_h_t_t_p___conditional_get.html#abab55ed2b1496fd1d0f631fc99d71ed4">HTTP_ConditionalGet</a>
-, <a class="el" href="class_h_t_t_p___encoder.html#abab55ed2b1496fd1d0f631fc99d71ed4">HTTP_Encoder</a>
-</li>
 <li>sendMessage()
 : <a class="el" href="class_simple_test_case.html#a3237a61cccc14d183936f7809006c661">SimpleTestCase</a>
 </li>
 <li>sendNoCacheHeaders()
 : <a class="el" href="class_html_reporter.html#a67e27f422c006697c66433071f06c41f">HtmlReporter</a>
 </li>
-<li>serve()
-: <a class="el" href="class_minify.html#a47ca57217b0b2de1aa74848fc8ea8a53">Minify</a>
+<li>sendValidEnd()
+: <a class="el" href="class_test_of_xml_results_parsing.html#a1d42a9dc4f403bad500941e6d0252d59">TestOfXmlResultsParsing</a>
+</li>
+<li>sendValidStart()
+: <a class="el" href="class_test_of_xml_results_parsing.html#a03a58d44f6add976f708d64a1ccec2d0">TestOfXmlResultsParsing</a>
 </li>
 <li>set()
 : <a class="el" href="class_elgg_data.html#aa4c6a0b87c6e47fa6f863eedb300e707">ElggData</a>
@@ -112,23 +116,11 @@
 <li>set_ignore_access()
 : <a class="el" href="class_elgg_access.html#a516c9c7d3d9ef43e83634afe7bf91bf7">ElggAccess</a>
 </li>
-<li>set_max_execution_time()
-: <a class="el" href="class_c_s_smin.html#a4ee822387e2d206ca3b408f7fd5d7a67">CSSmin</a>
-</li>
-<li>set_memory_limit()
-: <a class="el" href="class_c_s_smin.html#a8dbf9a7e481d7196ef55638794d483a7">CSSmin</a>
-</li>
-<li>set_pcre_backtrack_limit()
-: <a class="el" href="class_c_s_smin.html#a5bcff95f0d7c0efe8ecc0882a5855591">CSSmin</a>
-</li>
-<li>set_pcre_recursion_limit()
-: <a class="el" href="class_c_s_smin.html#a88a21946951b73e4ac6a22488eef2fde">CSSmin</a>
+<li>set_parameter()
+: <a class="el" href="classtwitter_o_auth_request.html#ae9db9b38504e6d784d059d1ae5893842">twitterOAuthRequest</a>
 </li>
 <li>set_variable()
 : <a class="el" href="class_elgg_cache.html#a4eadf02b4092033b7d54218f9f8342b9">ElggCache</a>
-</li>
-<li>setAltered()
-: <a class="el" href="class_elgg_class_map.html#a769797d56082ea53d9b8876dc591a43d">ElggClassMap</a>
 </li>
 <li>setAttribute()
 : <a class="el" href="class_o_d_d.html#a0510466da552b21cc2be4e4c4119a5bb">ODD</a>
@@ -143,18 +135,12 @@
 <li>setBrowser()
 : <a class="el" href="class_web_test_case.html#acb0f7bb2ebc595010284ea2f35b9b78e">WebTestCase</a>
 </li>
-<li>setCache()
-: <a class="el" href="class_minify.html#a9824751c56092b2fc6ce2aa10e2de66b">Minify</a>
-</li>
 <li>setCalendarTimeAndDuration()
 : <a class="el" href="class_elgg_entity.html#a4954b529db197cb9f10ee6394bdb7b0b">ElggEntity</a>
 , <a class="el" href="interface_notable.html#a4954b529db197cb9f10ee6394bdb7b0b">Notable</a>
 </li>
 <li>setChildren()
 : <a class="el" href="class_elgg_menu_item.html#ac6d0f40d3ca66959389ef8299c00fad9">ElggMenuItem</a>
-</li>
-<li>setClassPath()
-: <a class="el" href="class_elgg_autoload_manager.html#aad4f8c0e5c83e65253e3b97e92f09102">ElggAutoloadManager</a>
 </li>
 <li>setConfirmText()
 : <a class="el" href="class_elgg_menu_item.html#a800dacc8ae268218f74abc173df190ce">ElggMenuItem</a>
@@ -165,16 +151,14 @@
 , <a class="el" href="class_web_test_case.html#a28b44697cda1cc13b07602d6ee2884e2">WebTestCase</a>
 </li>
 <li>setConsumerAccessTokenTtl()
-: <a class="el" href="class_o_auth_store_my_s_q_l.html#a42b8b06d94978e035518b44072c2f9cd">OAuthStoreMySQL</a>
+: <a class="el" href="class_o_auth_store_abstract.html#a47d085226c5c0c87c52e17de943aa0ac">OAuthStoreAbstract</a>
+, <a class="el" href="class_o_auth_store_my_s_q_l.html#a42b8b06d94978e035518b44072c2f9cd">OAuthStoreMySQL</a>
 </li>
 <li>setContainer()
 : <a class="el" href="class_elgg_entity.html#ac3188640428bf1f34e108676bd0e480f">ElggEntity</a>
 </li>
 <li>setContainerGUID()
 : <a class="el" href="class_elgg_entity.html#abf931637c4691471bd2ad6befd2514d2">ElggEntity</a>
-</li>
-<li>setContentLength()
-: <a class="el" href="class_h_t_t_p___conditional_get.html#ad3f66ef242895f3aeda11c349d4427bd">HTTP_ConditionalGet</a>
 </li>
 <li>setContext()
 : <a class="el" href="class_elgg_menu_item.html#a3db4df9e613a07d043702d9d22cfba07">ElggMenuItem</a>
@@ -200,16 +184,6 @@
 </li>
 <li>setDescription()
 : <a class="el" href="class_elgg_file.html#a31fad3e39336ea079ea758e051866627">ElggFile</a>
-, <a class="el" href="class_mr_clay_1_1_cli_1_1_arg.html#a88655faf7c28f0586fb08bc11054e30b">Arg</a>
-</li>
-<li>setDocRoot()
-: <a class="el" href="class_minify.html#a628f630853295eea40b4b638b26065bb">Minify</a>
-</li>
-<li>setEnabled()
-: <a class="el" href="class_fire_p_h_p.html#a3462b257a09b04bfd2f872563d117d7d">FirePHP</a>
-</li>
-<li>setExpire()
-: <a class="el" href="class_elgg_cookie.html#a8a08a1f6877cbe79baef64925275a136">ElggCookie</a>
 </li>
 <li>setField()
 : <a class="el" href="class_simple_browser.html#a6a967999c03735c0be30c9ab2de575c2">SimpleBrowser</a>
@@ -246,9 +220,6 @@
 , <a class="el" href="class_simple_frameset.html#a84917a2dd7701346f0ea1a4266487540">SimpleFrameset</a>
 , <a class="el" href="class_simple_page.html#a84917a2dd7701346f0ea1a4266487540">SimplePage</a>
 , <a class="el" href="class_web_test_case.html#a84917a2dd7701346f0ea1a4266487540">WebTestCase</a>
-</li>
-<li>setHeader()
-: <a class="el" href="class_fire_p_h_p.html#ad2f07317a0891a66281bd61fd3d951ab">FirePHP</a>
 </li>
 <li>setHost()
 : <a class="el" href="class_simple_cookie.html#a3796cc8d08abefbb14f15fde02b883a9">SimpleCookie</a>
@@ -296,14 +267,8 @@
 : <a class="el" href="class_elgg_entity.html#a4d5de0b69040330eba15a59e5993442a">ElggEntity</a>
 , <a class="el" href="interface_locatable.html#a4d5de0b69040330eba15a59e5993442a">Locatable</a>
 </li>
-<li>setLogger()
-: <a class="el" href="class_minify___logger.html#a2bdbb231f362f85d8876fe2f8a8f6d41">Minify_Logger</a>
-</li>
 <li>setLooselyTyped()
 : <a class="el" href="class_p_h_p_unit___test_case.html#a92e745643fe368750a9d4524044e0b00">PHPUnit_TestCase</a>
-</li>
-<li>setMap()
-: <a class="el" href="class_elgg_class_map.html#a013b8376cb1c7cbd52f0b426c0482aac">ElggClassMap</a>
 </li>
 <li>setMaximumNestedFrames()
 : <a class="el" href="class_simple_browser.html#a38b6acad1a8be6e4c1694decbaa0b78c">SimpleBrowser</a>
@@ -331,27 +296,18 @@
 <li>setNamespace()
 : <a class="el" href="class_elgg_shared_memory_cache.html#a70b4441d44b0569e7e5acb9c10b2a8b6">ElggSharedMemoryCache</a>
 </li>
-<li>setObjectFilter()
-: <a class="el" href="class_fire_p_h_p.html#acc7dba9f6cae145e9889d352f5bb86c6">FirePHP</a>
-</li>
-<li>setOptions()
-: <a class="el" href="class_fire_p_h_p.html#ac3f88cfc26710c6c1c471aaa2babe9b2">FirePHP</a>
-</li>
 <li>setParam()
 : <a class="el" href="class_o_auth_request.html#ad3ed57a881a6d42dbdb744b9db7abe0b">OAuthRequest</a>
 </li>
 <li>setParameters()
-: <a class="el" href="class_elgg_disk_filestore.html#a5ac786ddf6144015c268adbd45b224aa">ElggDiskFilestore</a>
-, <a class="el" href="class_elgg_filestore.html#a5ac786ddf6144015c268adbd45b224aa">ElggFilestore</a>
+: <a class="el" href="class_elgg_filestore.html#a5ac786ddf6144015c268adbd45b224aa">ElggFilestore</a>
+, <a class="el" href="class_elgg_disk_filestore.html#a5ac786ddf6144015c268adbd45b224aa">ElggDiskFilestore</a>
 </li>
 <li>setParent()
 : <a class="el" href="class_elgg_menu_item.html#a3b949fc022c82eb25e8650e0e01404fa">ElggMenuItem</a>
 </li>
 <li>setParentName()
 : <a class="el" href="class_elgg_menu_item.html#a30e1c1100aa4cdc5063fdb36afaf1a70">ElggMenuItem</a>
-</li>
-<li>setPath()
-: <a class="el" href="class_elgg_class_map.html#aa7842c3801c64abb6b4382eb844db670">ElggClassMap</a>
 </li>
 <li>setPriority()
 : <a class="el" href="class_elgg_menu_item.html#a8f85e86a0294c2d785ad6c8561cf29fa">ElggMenuItem</a>
@@ -360,17 +316,11 @@
 <li>setPrivateSetting()
 : <a class="el" href="class_elgg_entity.html#a5f37fca379241b50470a615d515a6003">ElggEntity</a>
 </li>
-<li>setProcessorUrl()
-: <a class="el" href="class_fire_p_h_p.html#a1d5fc374d343cf42852a62a8d066b80b">FirePHP</a>
-</li>
 <li>setPublished()
 : <a class="el" href="class_o_d_d.html#ae16bc65f06820e8d74016c7f69a50c31">ODD</a>
 </li>
 <li>setReceived()
 : <a class="el" href="class_o_auth_request_logger.html#a8615aa149b6003ae9ef78b5b9e215806">OAuthRequestLogger</a>
-</li>
-<li>setRendererUrl()
-: <a class="el" href="class_fire_p_h_p.html#af2415d5d60ebb63b550b37be48e07398">FirePHP</a>
 </li>
 <li>setReporter()
 : <a class="el" href="class_simple_test_context.html#a143348c064ee29d9904be8b3d83acfca">SimpleTestContext</a>
@@ -408,11 +358,11 @@
 <li>setSetting()
 : <a class="el" href="class_elgg_plugin.html#a7c8765d2cfaa26f8a4e2f3447e2fcf15">ElggPlugin</a>
 </li>
+<li>setStatus()
+: <a class="el" href="class_elgg_plugin.html#aa8201612259e4a05d1618f31b4b375e5">ElggPlugin</a>
+</li>
 <li>setStatusCode()
 : <a class="el" href="class_generic_result.html#a1e8c89781eb098569a5d87b886da5d69">GenericResult</a>
-</li>
-<li>setStorage()
-: <a class="el" href="class_elgg_autoload_manager.html#a059496ab4adb0ad05511ad20b7f9a3fc">ElggAutoloadManager</a>
 </li>
 <li>setTarget()
 : <a class="el" href="class_simple_url.html#acd4cf60e2762b295fb9a433a435ba9a8">SimpleUrl</a>
@@ -438,38 +388,54 @@
 <li>setUnsigned()
 : <a class="el" href="class_o_auth_request_signer.html#aa50768d8782ebb1bd8287a7a57f9f81f">OAuthRequestSigner</a>
 </li>
+<li>setup()
+: <a class="el" href="class_markdown___parser.html#a1d04139db3a5ad5713ecbd14d97da879">Markdown_Parser</a>
+, <a class="el" href="class_markdown_extra___parser.html#a1d04139db3a5ad5713ecbd14d97da879">MarkdownExtra_Parser</a>
+</li>
 <li>setUp()
-: <a class="el" href="class_htm_lawed_duplicate_tags_test.html#a0bc688732d2b3b162ffebaf7812e78da">HtmLawedDuplicateTagsTest</a>
-, <a class="el" href="class_elgg_core_regression_bugs_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreRegressionBugsTest</a>
-, <a class="el" href="class_elgg_core_entity_getter_functions_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreEntityGetterFunctionsTest</a>
+: <a class="el" href="class_simple_test_case.html#a0bc688732d2b3b162ffebaf7812e78da">SimpleTestCase</a>
 , <a class="el" href="class_elgg_core_access_collections_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreAccessCollectionsTest</a>
 , <a class="el" href="class_elgg_core_annotation_a_p_i_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreAnnotationAPITest</a>
-, <a class="el" href="class_elgg_core_entity_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreEntityTest</a>
-, <a class="el" href="class_elgg_core_filestore_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreFilestoreTest</a>
+, <a class="el" href="class_elgg_core_entity_getter_functions_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreEntityGetterFunctionsTest</a>
 , <a class="el" href="class_elgg_core_helpers_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreHelpersTest</a>
 , <a class="el" href="class_elgg_core_metadata_a_p_i_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreMetadataAPITest</a>
 , <a class="el" href="class_elgg_core_metadata_cache_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreMetadataCacheTest</a>
 , <a class="el" href="class_elgg_core_metastrings_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreMetastringsTest</a>
+, <a class="el" href="class_test_of_nested_frames.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfNestedFrames</a>
+, <a class="el" href="class_elgg_core_output_auto_p_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreOutputAutoPTest</a>
+, <a class="el" href="class_elgg_core_entity_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreEntityTest</a>
+, <a class="el" href="class_elgg_core_filestore_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreFilestoreTest</a>
+, <a class="el" href="class_test_of_live_history_navigation.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfLiveHistoryNavigation</a>
 , <a class="el" href="class_elgg_core_object_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreObjectTest</a>
 , <a class="el" href="class_elgg_core_site_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreSiteTest</a>
-, <a class="el" href="class_elgg_core_skeleton_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreSkeletonTest</a>
 , <a class="el" href="class_elgg_core_user_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreUserTest</a>
+, <a class="el" href="class_test_of_live_cookies.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfLiveCookies</a>
+, <a class="el" href="class_elgg_core_regression_bugs_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreRegressionBugsTest</a>
+, <a class="el" href="class_elgg_core_skeleton_test.html#a0bc688732d2b3b162ffebaf7812e78da">ElggCoreSkeletonTest</a>
+, <a class="el" href="class_htm_lawed_duplicate_tags_test.html#a0bc688732d2b3b162ffebaf7812e78da">HtmLawedDuplicateTagsTest</a>
 , <a class="el" href="class_the_wire_regex_test.html#a0bc688732d2b3b162ffebaf7812e78da">TheWireRegexTest</a>
-, <a class="el" href="class_simple_test_case.html#a0bc688732d2b3b162ffebaf7812e78da">SimpleTestCase</a>
-</li>
-<li>setupConnections()
-: <a class="el" href="class_elgg_database.html#a1e6b58c4fe0918754b4a651f642c83dd">ElggDatabase</a>
+, <a class="el" href="class_test_of_live_fetching.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfLiveFetching</a>
+, <a class="el" href="class_test_of_link_following.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfLinkFollowing</a>
+, <a class="el" href="class_test_of_live_page_linking_with_minimal_links.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfLivePageLinkingWithMinimalLinks</a>
+, <a class="el" href="class_test_of_live_front_controller_emulation.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfLiveFrontControllerEmulation</a>
+, <a class="el" href="class_test_of_live_headers.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfLiveHeaders</a>
+, <a class="el" href="class_test_of_live_redirects.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfLiveRedirects</a>
+, <a class="el" href="class_live_test_of_forms.html#a0bc688732d2b3b162ffebaf7812e78da">LiveTestOfForms</a>
+, <a class="el" href="class_test_of_live_multi_value_widgets.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfLiveMultiValueWidgets</a>
+, <a class="el" href="class_test_of_file_uploads.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfFileUploads</a>
+, <a class="el" href="class_test_of_live_authentication.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfLiveAuthentication</a>
+, <a class="el" href="class_test_of_loading_frames.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfLoadingFrames</a>
+, <a class="el" href="class_test_of_frame_authentication.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfFrameAuthentication</a>
+, <a class="el" href="class_test_of_error_queue.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfErrorQueue</a>
+, <a class="el" href="class_test_of_error_trap.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfErrorTrap</a>
+, <a class="el" href="class_test_of_errors.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfErrors</a>
+, <a class="el" href="class_test_of_exception_thrown_in_set_up_does_not_run_test_body.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfExceptionThrownInSetUpDoesNotRunTestBody</a>
+, <a class="el" href="class_test_of_expect_exception_with_set_up.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfExpectExceptionWithSetUp</a>
+, <a class="el" href="class_test_of_mock_expectations.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfMockExpectations</a>
+, <a class="el" href="class_test_of_fetching_url_parameters.html#a0bc688732d2b3b162ffebaf7812e78da">TestOfFetchingUrlParameters</a>
 </li>
 <li>setupSections()
 : <a class="el" href="class_elgg_menu_builder.html#abd01cb1e15d1747f989a44580bc4a646">ElggMenuBuilder</a>
-</li>
-<li>setupSources()
-: <a class="el" href="class_minify___controller___base.html#ac56e41749f067994f4930eda9c34e0d6">Minify_Controller_Base</a>
-, <a class="el" href="class_minify___controller___files.html#ac56e41749f067994f4930eda9c34e0d6">Minify_Controller_Files</a>
-, <a class="el" href="class_minify___controller___groups.html#ac56e41749f067994f4930eda9c34e0d6">Minify_Controller_Groups</a>
-, <a class="el" href="class_minify___controller___min_app.html#ac56e41749f067994f4930eda9c34e0d6">Minify_Controller_MinApp</a>
-, <a class="el" href="class_minify___controller___page.html#ac56e41749f067994f4930eda9c34e0d6">Minify_Controller_Page</a>
-, <a class="el" href="class_minify___controller___version1.html#ac56e41749f067994f4930eda9c34e0d6">Minify_Controller_Version1</a>
 </li>
 <li>setupTrees()
 : <a class="el" href="class_elgg_menu_builder.html#ae19657c9e63ecc3db7855cc95080cda2">ElggMenuBuilder</a>
@@ -484,17 +450,17 @@
 : <a class="el" href="class_elgg_plugin.html#abcb3e8c7c55349a1b17459c6756a236d">ElggPlugin</a>
 </li>
 <li>setValue()
-: <a class="el" href="class_simple_text_area_tag.html#a7494441b6ed08a391704971873f31432">SimpleTextAreaTag</a>
-, <a class="el" href="class_simple_text_tag.html#a7494441b6ed08a391704971873f31432">SimpleTextTag</a>
-, <a class="el" href="class_simple_widget.html#a7494441b6ed08a391704971873f31432">SimpleWidget</a>
+: <a class="el" href="class_simple_checkbox_tag.html#a7494441b6ed08a391704971873f31432">SimpleCheckboxTag</a>
 , <a class="el" href="class_simple_submit_tag.html#a7494441b6ed08a391704971873f31432">SimpleSubmitTag</a>
+, <a class="el" href="class_simple_widget.html#a7494441b6ed08a391704971873f31432">SimpleWidget</a>
+, <a class="el" href="class_simple_text_tag.html#a7494441b6ed08a391704971873f31432">SimpleTextTag</a>
 , <a class="el" href="class_simple_image_submit_tag.html#a7494441b6ed08a391704971873f31432">SimpleImageSubmitTag</a>
 , <a class="el" href="class_simple_button_tag.html#a7494441b6ed08a391704971873f31432">SimpleButtonTag</a>
+, <a class="el" href="class_simple_text_area_tag.html#a7494441b6ed08a391704971873f31432">SimpleTextAreaTag</a>
 , <a class="el" href="class_simple_selection_tag.html#a7494441b6ed08a391704971873f31432">SimpleSelectionTag</a>
 , <a class="el" href="class_multiple_selection_tag.html#af758623b9eb7e603820fc85b563178c0">MultipleSelectionTag</a>
 , <a class="el" href="class_simple_option_tag.html#a7494441b6ed08a391704971873f31432">SimpleOptionTag</a>
 , <a class="el" href="class_simple_radio_button_tag.html#a7494441b6ed08a391704971873f31432">SimpleRadioButtonTag</a>
-, <a class="el" href="class_simple_checkbox_tag.html#a7494441b6ed08a391704971873f31432">SimpleCheckboxTag</a>
 , <a class="el" href="class_simple_checkbox_group.html#a632cfa5aa1306f8a5735f079d2a9ad8d">SimpleCheckboxGroup</a>
 , <a class="el" href="class_simple_radio_group.html#a7494441b6ed08a391704971873f31432">SimpleRadioGroup</a>
 </li>
@@ -534,15 +500,18 @@
 <li>sign()
 : <a class="el" href="class_o_auth_request_signer.html#a3e7306a399733236506c4f9199036e0e">OAuthRequestSigner</a>
 </li>
+<li>sign_request()
+: <a class="el" href="classtwitter_o_auth_request.html#ab86c8238f6062b6e770e5d3a903c2cda">twitterOAuthRequest</a>
+</li>
 <li>signal()
 : <a class="el" href="class_simple_test_case.html#aad0d36365301521d4b464912a15ab9dd">SimpleTestCase</a>
 </li>
 <li>signature()
-: <a class="el" href="class_o_auth_signature_method___r_s_a___s_h_a1.html#a61151d8d136dba2652392a8f3698f17e">OAuthSignatureMethod_RSA_SHA1</a>
-, <a class="el" href="class_o_auth_signature_method___p_l_a_i_n_t_e_x_t.html#a61151d8d136dba2652392a8f3698f17e">OAuthSignatureMethod_PLAINTEXT</a>
-, <a class="el" href="class_o_auth_signature_method.html#a61151d8d136dba2652392a8f3698f17e">OAuthSignatureMethod</a>
-, <a class="el" href="class_o_auth_signature_method___h_m_a_c___s_h_a1.html#a61151d8d136dba2652392a8f3698f17e">OAuthSignatureMethod_HMAC_SHA1</a>
+: <a class="el" href="class_o_auth_signature_method.html#a61151d8d136dba2652392a8f3698f17e">OAuthSignatureMethod</a>
 , <a class="el" href="class_o_auth_signature_method___m_d5.html#a61151d8d136dba2652392a8f3698f17e">OAuthSignatureMethod_MD5</a>
+, <a class="el" href="class_o_auth_signature_method___p_l_a_i_n_t_e_x_t.html#a61151d8d136dba2652392a8f3698f17e">OAuthSignatureMethod_PLAINTEXT</a>
+, <a class="el" href="class_o_auth_signature_method___r_s_a___s_h_a1.html#a61151d8d136dba2652392a8f3698f17e">OAuthSignatureMethod_RSA_SHA1</a>
+, <a class="el" href="class_o_auth_signature_method___h_m_a_c___s_h_a1.html#a61151d8d136dba2652392a8f3698f17e">OAuthSignatureMethod_HMAC_SHA1</a>
 </li>
 <li>signatureBaseString()
 : <a class="el" href="class_o_auth_request.html#a14af8cb1cf103b5cf82280ec26726ee3">OAuthRequest</a>
@@ -778,14 +747,24 @@
 <li>SimpleWidget()
 : <a class="el" href="class_simple_widget.html#a908b3ade722b0ad983499e662851de0b">SimpleWidget</a>
 </li>
-<li>singleLineComment()
-: <a class="el" href="class_j_s_min.html#a3fdcf1c052762c2779e0e2a54765faf1">JSMin</a>
-</li>
 <li>size()
 : <a class="el" href="class_elgg_file.html#a775bfb88c1bb7975d67f277eade2a1b7">ElggFile</a>
 </li>
 <li>skip()
-: <a class="el" href="class_simple_test_case.html#a72d303844a2d71da1340a30207d9f7e7">SimpleTestCase</a>
+: <a class="el" href="class_test_of_p_h_p5_static_method_mocking.html#a72d303844a2d71da1340a30207d9f7e7">TestOfPHP5StaticMethodMocking</a>
+, <a class="el" href="class_test_of_p_h_p52_recoverable_errors.html#a72d303844a2d71da1340a30207d9f7e7">TestOfPHP52RecoverableErrors</a>
+, <a class="el" href="class_test_of_p_h_p5_abstract_method_mocking.html#a72d303844a2d71da1340a30207d9f7e7">TestOfPHP5AbstractMethodMocking</a>
+, <a class="el" href="class_test_of_spl.html#a72d303844a2d71da1340a30207d9f7e7">TestOfSpl</a>
+, <a class="el" href="class_test_of_reflection_with_type_hints.html#a72d303844a2d71da1340a30207d9f7e7">TestOfReflectionWithTypeHints</a>
+, <a class="el" href="class_test_of_errors_excluding_p_h_p52_and_above.html#a72d303844a2d71da1340a30207d9f7e7">TestOfErrorsExcludingPHP52AndAbove</a>
+, <a class="el" href="class_test_of_mocking_classes_with_static_methods.html#a72d303844a2d71da1340a30207d9f7e7">TestOfMockingClassesWithStaticMethods</a>
+, <a class="el" href="class_test_of_skipping_no_matter_what.html#a72d303844a2d71da1340a30207d9f7e7">TestOfSkippingNoMatterWhat</a>
+, <a class="el" href="class_test_of_throwing_exceptions_from_mocks.html#a72d303844a2d71da1340a30207d9f7e7">TestOfThrowingExceptionsFromMocks</a>
+, <a class="el" href="class_test_of_special_methods.html#a72d303844a2d71da1340a30207d9f7e7">TestOfSpecialMethods</a>
+, <a class="el" href="class_test_of_skipping_or_else.html#a72d303844a2d71da1340a30207d9f7e7">TestOfSkippingOrElse</a>
+, <a class="el" href="class_test_that_should_not_be_skipped.html#a72d303844a2d71da1340a30207d9f7e7">TestThatShouldNotBeSkipped</a>
+, <a class="el" href="class_simple_test_case.html#a72d303844a2d71da1340a30207d9f7e7">SimpleTestCase</a>
+, <a class="el" href="class_test_of_skipping_twice_over.html#a72d303844a2d71da1340a30207d9f7e7">TestOfSkippingTwiceOver</a>
 </li>
 <li>skipIf()
 : <a class="el" href="class_simple_test_case.html#a951582860e52ec68e4299518b36bd8af">SimpleTestCase</a>
@@ -794,28 +773,49 @@
 : <a class="el" href="class_simple_test_case.html#a8fee5aa062880afdddb0f2d51eed9f27">SimpleTestCase</a>
 </li>
 <li>sort()
-: <a class="el" href="class_elgg_menu_builder.html#a7fa647caf9df4dd81b18a7dd21bc4bf3">ElggMenuBuilder</a>
-, <a class="el" href="class_elgg_priority_list.html#aefa48f9af8a9a0611e6b467f44e93af1">ElggPriorityList</a>
+: <a class="el" href="class_elgg_priority_list.html#aefa48f9af8a9a0611e6b467f44e93af1">ElggPriorityList</a>
+, <a class="el" href="class_elgg_menu_builder.html#a7fa647caf9df4dd81b18a7dd21bc4bf3">ElggMenuBuilder</a>
 </li>
 <li>sortChildren()
 : <a class="el" href="class_elgg_menu_item.html#a31492cb04afb7c7be51a0adcfcc7bae4">ElggMenuItem</a>
 </li>
+<li>sortIfUnsorted()
+: <a class="el" href="class_elgg_priority_list.html#a070881c388bebdc1d3cdddd8f3d7ca7b">ElggPriorityList</a>
+</li>
+<li>split_header()
+: <a class="el" href="class_o_auth_util.html#a16f8fbb4ad60153f3caaf2fb2aba8134">OAuthUtil</a>
+</li>
+<li>sql_args()
+: <a class="el" href="class_o_auth_store_anymeta.html#aafbf035b6700d9b70866bca0205e9569">OAuthStoreAnymeta</a>
+</li>
+<li>sql_errcheck()
+: <a class="el" href="class_o_auth_store_my_s_q_l.html#ad868a4e0effcba4eb68a1dc8951d0492">OAuthStoreMySQL</a>
+</li>
+<li>sql_escape_string()
+: <a class="el" href="class_o_auth_store_my_s_q_l.html#a08a884faaecb1e1ac57ada1f96119713">OAuthStoreMySQL</a>
+</li>
+<li>sql_printf()
+: <a class="el" href="class_o_auth_store_my_s_q_l.html#a5cadbfc859e41ac58991c41e6bd7d60c">OAuthStoreMySQL</a>
+</li>
 <li>start()
-: <a class="el" href="class_elgg_plugin.html#aadc69a49a013616b3cd6228b73812903">ElggPlugin</a>
-, <a class="el" href="class_o_auth_request_logger.html#a20b563a3db1dc02cc7a5079312a6f23c">OAuthRequestLogger</a>
+: <a class="el" href="class_o_auth_request_logger.html#a20b563a3db1dc02cc7a5079312a6f23c">OAuthRequestLogger</a>
+, <a class="el" href="class_elgg_plugin.html#aadc69a49a013616b3cd6228b73812903">ElggPlugin</a>
 </li>
 <li>startElement()
 : <a class="el" href="class_simple_sax_listener.html#ac1fcac454720831c670174efedca8d13">SimpleSaxListener</a>
 , <a class="el" href="class_simple_page_builder.html#ac1fcac454720831c670174efedca8d13">SimplePageBuilder</a>
 </li>
-<li>store()
-: <a class="el" href="class_minify___cache___zend_platform.html#aa6aab51325059f5b195f1f8db42c316a">Minify_Cache_ZendPlatform</a>
-, <a class="el" href="class_minify___cache___a_p_c.html#aa6aab51325059f5b195f1f8db42c316a">Minify_Cache_APC</a>
-, <a class="el" href="class_minify___cache___file.html#aa6aab51325059f5b195f1f8db42c316a">Minify_Cache_File</a>
-, <a class="el" href="class_minify___cache___memcache.html#aa6aab51325059f5b195f1f8db42c316a">Minify_Cache_Memcache</a>
-</li>
 <li>stretch()
 : <a class="el" href="class_simple_realm.html#aae7eb54e6565a7b7d5057c1dc3abc376">SimpleRealm</a>
+</li>
+<li>stripAbbreviations()
+: <a class="el" href="class_markdown_extra___parser.html#a31e99cf478019fdf66e78100b097c35c">MarkdownExtra_Parser</a>
+</li>
+<li>stripFootnotes()
+: <a class="el" href="class_markdown_extra___parser.html#ab28aa2da4c5b3589643886dab44ad1ec">MarkdownExtra_Parser</a>
+</li>
+<li>stripLinkDefinitions()
+: <a class="el" href="class_markdown___parser.html#a496892644ca662d197a06c382e0e7868">Markdown_Parser</a>
 </li>
 <li>submit()
 : <a class="el" href="class_simple_form.html#ab9e356f2165bc12df16964044bf8bd24">SimpleForm</a>
@@ -824,8 +824,8 @@
 : <a class="el" href="class_simple_form.html#a68ddcf2fbb360e894064da2ba4b5b25f">SimpleForm</a>
 </li>
 <li>submitFormById()
-: <a class="el" href="class_web_test_case.html#ab6231499934531c87493ce3f7912e1b1">WebTestCase</a>
-, <a class="el" href="class_simple_browser.html#ab6231499934531c87493ce3f7912e1b1">SimpleBrowser</a>
+: <a class="el" href="class_simple_browser.html#ab6231499934531c87493ce3f7912e1b1">SimpleBrowser</a>
+, <a class="el" href="class_web_test_case.html#ab6231499934531c87493ce3f7912e1b1">WebTestCase</a>
 </li>
 <li>submitImage()
 : <a class="el" href="class_simple_form.html#a712d2bf1cf19de3e757ec972dff3d116">SimpleForm</a>
@@ -837,7 +837,7 @@
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 30 2012 09:32:47 for Elgg by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 19 2012 12:53:57 for Elgg by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

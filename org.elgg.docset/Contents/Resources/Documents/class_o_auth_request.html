@@ -15,6 +15,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="elgg_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Elgg
    </div>
@@ -30,7 +31,8 @@
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-attribs">Protected Attributes</a>  </div>
+<a href="#pro-attribs">Protected Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a>  </div>
   <div class="headertitle">
 <div class="title">OAuthRequest Class Reference</div>  </div>
 </div><!--header-->
@@ -51,7 +53,7 @@ Inheritance diagram for OAuthRequest:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a907563a6a2177941846bab82caee6ba5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#a907563a6a2177941846bab82caee6ba5">__construct</a> ($uri=null, $method= 'GET', $parameters= '', $headers=array(), $body=null)</td></tr>
+<tr class="memitem:a907563a6a2177941846bab82caee6ba5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#a907563a6a2177941846bab82caee6ba5">__construct</a> ($uri=null, $method= 'GET', $parameters= '', $headers=array(), $<a class="el" href="views_2default_2css_2elements_2reset_8php.html#a14d48c2e9f05d0b03044eb45f308fcb0">body</a>=null)</td></tr>
 <tr class="separator:a907563a6a2177941846bab82caee6ba5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14af8cb1cf103b5cf82280ec26726ee3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#a14af8cb1cf103b5cf82280ec26726ee3">signatureBaseString</a> ()</td></tr>
 <tr class="separator:a14af8cb1cf103b5cf82280ec26726ee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -71,13 +73,13 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a63ccd5ab2ed1c3274d1d5b5c6e9e8afb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a094deeff93c2fba4e212a42d11f889b0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#a094deeff93c2fba4e212a42d11f889b0">getRequestUrl</a> ()</td></tr>
 <tr class="separator:a094deeff93c2fba4e212a42d11f889b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a53909e4741405bd49dc85c13eea0ca08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#a53909e4741405bd49dc85c13eea0ca08">getParam</a> ($name, $<a class="el" href="class_o_auth_request.html#a476edd2231539cd3a898ea6b2cabe531">urldecode</a>=false)</td></tr>
+<tr class="memitem:a53909e4741405bd49dc85c13eea0ca08"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#a53909e4741405bd49dc85c13eea0ca08">getParam</a> ($<a class="el" href="actions_2twitter__api_2interstitial__settings_8php.html#a15907ec3dd0d6369a0a804dec31747cb">name</a>, $<a class="el" href="class_o_auth_request.html#a476edd2231539cd3a898ea6b2cabe531">urldecode</a>=false)</td></tr>
 <tr class="separator:a53909e4741405bd49dc85c13eea0ca08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3ed57a881a6d42dbdb744b9db7abe0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#ad3ed57a881a6d42dbdb744b9db7abe0b">setParam</a> ($name, $value, $encoded=false)</td></tr>
+<tr class="memitem:ad3ed57a881a6d42dbdb744b9db7abe0b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#ad3ed57a881a6d42dbdb744b9db7abe0b">setParam</a> ($<a class="el" href="actions_2twitter__api_2interstitial__settings_8php.html#a15907ec3dd0d6369a0a804dec31747cb">name</a>, $value, $encoded=false)</td></tr>
 <tr class="separator:ad3ed57a881a6d42dbdb744b9db7abe0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7bab1db052fb9fcc8bd0b4f3eac29ac"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#ad7bab1db052fb9fcc8bd0b4f3eac29ac">getBody</a> ()</td></tr>
 <tr class="separator:ad7bab1db052fb9fcc8bd0b4f3eac29ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a043c9fa5f271098eb80d5949ba1d6a11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#a043c9fa5f271098eb80d5949ba1d6a11">setBody</a> ($body)</td></tr>
+<tr class="memitem:a043c9fa5f271098eb80d5949ba1d6a11"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#a043c9fa5f271098eb80d5949ba1d6a11">setBody</a> ($<a class="el" href="views_2default_2css_2elements_2reset_8php.html#a14d48c2e9f05d0b03044eb45f308fcb0">body</a>)</td></tr>
 <tr class="separator:a043c9fa5f271098eb80d5949ba1d6a11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a60ee9220b317e0f92bbabdd748aae6da"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#a60ee9220b317e0f92bbabdd748aae6da">urlencode</a> ($s)</td></tr>
 <tr class="separator:a60ee9220b317e0f92bbabdd748aae6da"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -99,32 +101,34 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ab83a7b3ae323231c86a7f4367d1e0909"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab83a7b3ae323231c86a7f4367d1e0909"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$realm</b></td></tr>
+<tr class="memitem:ab83a7b3ae323231c86a7f4367d1e0909"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#ab83a7b3ae323231c86a7f4367d1e0909">$realm</a></td></tr>
 <tr class="separator:ab83a7b3ae323231c86a7f4367d1e0909"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefab80aedcdbb988388e43e2f52491f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aefab80aedcdbb988388e43e2f52491f1"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$param</b> = array()</td></tr>
+<tr class="memitem:aefab80aedcdbb988388e43e2f52491f1"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#aefab80aedcdbb988388e43e2f52491f1">$param</a> = array()</td></tr>
 <tr class="separator:aefab80aedcdbb988388e43e2f52491f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2013b6ad2f33d94e087353e9c350c4c4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2013b6ad2f33d94e087353e9c350c4c4"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$uri_parts</b></td></tr>
+<tr class="memitem:a2013b6ad2f33d94e087353e9c350c4c4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#a2013b6ad2f33d94e087353e9c350c4c4">$uri_parts</a></td></tr>
 <tr class="separator:a2013b6ad2f33d94e087353e9c350c4c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a653b5458163d338546c47271b4fb81b7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a653b5458163d338546c47271b4fb81b7"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$uri</b></td></tr>
+<tr class="memitem:a653b5458163d338546c47271b4fb81b7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#a653b5458163d338546c47271b4fb81b7">$uri</a></td></tr>
 <tr class="separator:a653b5458163d338546c47271b4fb81b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52500036ee807241b8b4b7e2367c49ef"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52500036ee807241b8b4b7e2367c49ef"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$headers</b></td></tr>
+<tr class="memitem:a52500036ee807241b8b4b7e2367c49ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#a52500036ee807241b8b4b7e2367c49ef">$headers</a></td></tr>
 <tr class="separator:a52500036ee807241b8b4b7e2367c49ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a12661b2fc0f57f97e30a1620889ce9c6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a12661b2fc0f57f97e30a1620889ce9c6"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$method</b></td></tr>
+<tr class="memitem:a12661b2fc0f57f97e30a1620889ce9c6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#a12661b2fc0f57f97e30a1620889ce9c6">$method</a></td></tr>
 <tr class="separator:a12661b2fc0f57f97e30a1620889ce9c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26b9f9373f7bb79dfcf8a86dff086b45"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a26b9f9373f7bb79dfcf8a86dff086b45"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$body</b></td></tr>
+<tr class="memitem:a26b9f9373f7bb79dfcf8a86dff086b45"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#a26b9f9373f7bb79dfcf8a86dff086b45">$body</a></td></tr>
 <tr class="separator:a26b9f9373f7bb79dfcf8a86dff086b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a93336b55b612d2ea49171bbf98022e8c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#a93336b55b612d2ea49171bbf98022e8c">parseHeaders</a> ()</td></tr>
+<tr class="separator:a93336b55b612d2ea49171bbf98022e8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69d84ddccae3236e4c25f2d3d23ca6e8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#a69d84ddccae3236e4c25f2d3d23ca6e8">getRequestContentType</a> ()</td></tr>
+<tr class="separator:a69d84ddccae3236e4c25f2d3d23ca6e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ec17bfe5402e7ce45c01708dda5fa17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_o_auth_request.html#a9ec17bfe5402e7ce45c01708dda5fa17">getRequestBody</a> ()</td></tr>
+<tr class="separator:a9ec17bfe5402e7ce45c01708dda5fa17"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Request wrapper class. Prepares a request for consumption by the OAuth routines</p>
 <dl class="section version"><dt>Version</dt><dd></dd></dl>
-<dl class="section rcs"><dt>Id:</dt><dd>OAuthRequest.php 50 2008-10-01 15:11:08Z <a href="#" onclick="location.href='mai'+'lto:'+'mar'+'cw'+'@po'+'bo'+'x.c'+'om'; return false;">marcw<span style="display: none;">.nosp@m.</span>@pob<span style="display: none;">.nosp@m.</span>ox.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
+<dl class="section rcs"><dt>Id:</dt><dd><a class="el" href="_o_auth_request_8php.html">OAuthRequest.php</a> 50 2008-10-01 15:11:08Z <a href="#" onclick="location.href='mai'+'lto:'+'mar'+'cw'+'@po'+'bo'+'x.c'+'om'; return false;">marcw<span style="display: none;">.nosp@m.</span>@pob<span style="display: none;">.nosp@m.</span>ox.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
 <dl class="section author"><dt>Author</dt><dd>Marc Worrell <a href="#" onclick="location.href='mai'+'lto:'+'mar'+'cw'+'@po'+'bo'+'x.c'+'om'; return false;">marcw<span style="display: none;">.nosp@m.</span>@pob<span style="display: none;">.nosp@m.</span>ox.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>Nov 16, 2007 12:20:31 PM</dd></dl>
 <p>The MIT License</p>
@@ -431,6 +435,57 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a9ec17bfe5402e7ce45c01708dda5fa17"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">getRequestBody </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Get the body of a POST or PUT.</p>
+<p>Used for fetching the post parameters and to calculate the body signature.</p>
+<dl class="section return"><dt>Returns</dt><dd>string null when no body present (or wrong content type for body) </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="a69d84ddccae3236e4c25f2d3d23ca6e8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">getRequestContentType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Fetch the content type of the current request</p>
+<dl class="section return"><dt>Returns</dt><dd>string </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a094deeff93c2fba4e212a42d11f889b0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -471,6 +526,31 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a93336b55b612d2ea49171bbf98022e8c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">parseHeaders </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Parse the oauth parameters from the request headers Looks for something like:</p>
+<p>Authorization: OAuth realm="http://photos.example.net/authorize", oauth_consumer_key="dpf43f3p2l4k3l03", oauth_token="nnch734d00sl2jdk", oauth_signature_method="HMAC-SHA1", oauth_signature="tR3%2BTy81lMeYAr%2FFid0kMTYa%2FWM%3D", oauth_timestamp="1191242096", oauth_nonce="kllo9940pd9333jh", oauth_version="1.0" </p>
+
+</div>
+</div>
 <a class="anchor" id="a5a2407d88e50935160f06b525b264bb3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -493,7 +573,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Parse the uri into its parts. Fill in the missing parts.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000084">Todo:</a></b></dt><dd><p class="startdd">check for the use of https, right now we default to http </p>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000087">Todo:</a></b></dt><dd><p class="startdd">check for the use of https, right now we default to http </p>
 <p class="enddd">support for multiple occurences of parameters </p>
 </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -559,7 +639,7 @@ Protected Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Select a signature method from the list of available methods. We try to check the most secure methods first.</p>
-<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000083">Todo:</a></b></dt><dd>Let the signature method tell us how secure it is </dd></dl>
+<dl class="todo"><dt><b><a class="el" href="todo.html#_todo000086">Todo:</a></b></dt><dd>Let the signature method tell us how secure it is </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">array</td><td>methods </td></tr>
@@ -748,13 +828,154 @@ Protected Attributes</h2></td></tr>
 
 </div>
 </div>
+<h2 class="groupheader">Field Documentation</h2>
+<a class="anchor" id="a26b9f9373f7bb79dfcf8a86dff086b45"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$<a class="el" href="views_2default_2css_2elements_2reset_8php.html#a14d48c2e9f05d0b03044eb45f308fcb0">body</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a52500036ee807241b8b4b7e2367c49ef"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$headers</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a12661b2fc0f57f97e30a1620889ce9c6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$method</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="aefab80aedcdbb988388e43e2f52491f1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$param = array()</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ab83a7b3ae323231c86a7f4367d1e0909"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$realm</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a653b5458163d338546c47271b4fb81b7"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$uri</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a2013b6ad2f33d94e087353e9c350c4c4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">$uri_parts</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/markborcherding/source/vendor/Elgg/mod/oauth_api/vendors/oauth/library/OAuthRequest.php</li>
+<li>Elgg/mod/oauth_api/vendors/oauth/library/<a class="el" href="_o_auth_request_8php.html">OAuthRequest.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 30 2012 09:32:43 for Elgg by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 19 2012 12:53:49 for Elgg by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

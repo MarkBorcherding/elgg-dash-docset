@@ -15,6 +15,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="elgg_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Elgg
    </div>
@@ -35,11 +36,11 @@
 <p>Views are rendered by a template handler and returned as strings.</p>
 <p>Views are called with a special $vars variable set, which includes any variables passed as the second parameter. For backward compatbility, the following variables are also set but we recommend that you do not use them:</p>
 <ul>
-<li>$vars['config'] The $CONFIG global. (Use <a class="el" href="">elgg_get_config()</a> instead).</li>
-<li>$vars['url'] The site URL. (use <a class="el" href="">elgg_get_site_url()</a> instead).</li>
-<li>$vars['user'] The logged in user. (use <a class="el" href="">elgg_get_logged_in_user_entity()</a> instead).</li>
+<li>$vars['config'] The $CONFIG global. (Use <a class="el" href="configuration_8php.html#a725a4b1a9caf752eb0737d43e60e9e61">elgg_get_config()</a> instead).</li>
+<li>$vars['url'] The site URL. (use <a class="el" href="configuration_8php.html#a653484e61352d420f62238c7e38f2cd8">elgg_get_site_url()</a> instead).</li>
+<li>$vars['user'] The logged in user. (use <a class="el" href="sessions_8php.html#abf4a146df3537979f68fa275f161eea5">elgg_get_logged_in_user_entity()</a> instead).</li>
 </ul>
-<p>Custom template handlers can be set with <a class="el" href="">set_template_handler()</a>.</p>
+<p>Custom template handlers can be set with <a class="el" href="views_8php.html#a003f835e40d55c410dfe0c4b51a0a858">set_template_handler()</a>.</p>
 <p>The output of views can be intercepted by registering for the view, $view_name plugin hook.</p>
 <dl class="section warning"><dt>Warning</dt><dd>Any variables in $_SESSION will override passed vars upon name collision. See { #2124}.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -47,18 +48,18 @@
     <tr><td class="paramtype">string</td><td class="paramname">$view</td><td>The name and location of the view to use </td></tr>
     <tr><td class="paramtype">array</td><td class="paramname">$vars</td><td>Variables to pass to the view. </td></tr>
     <tr><td class="paramtype">boolean</td><td class="paramname">$bypass</td><td>If set to true, elgg_view will bypass any specified alternative template handler; by default, it will hand off to this if requested (see set_template_handler) </td></tr>
-    <tr><td class="paramtype">boolean</td><td class="paramname">$debug</td><td>If set to true, the viewer will complain if it can't find a view </td></tr>
+    <tr><td class="paramtype">boolean</td><td class="paramname">$ignored</td><td>This argument is ignored and will be removed eventually </td></tr>
     <tr><td class="paramtype">string</td><td class="paramname">$viewtype</td><td>If set, forces the viewtype for the elgg_view call to be this value (default: standard detection)</td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>string The parsed view </dd></dl>
-<dl class="section see"><dt>See Also</dt><dd>set_template_handler()</dd></dl>
-<p><a class="el" href="">todo 65.  views/elgg_view.php </a></p>
+<dl class="section see"><dt>See Also</dt><dd><a class="el" href="views_8php.html#a003f835e40d55c410dfe0c4b51a0a858">set_template_handler()</a></dd></dl>
+<p><a class="el" href="">views/elgg_view.php </a></p>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 30 2012 09:32:41 for Elgg by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 19 2012 12:53:43 for Elgg by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>

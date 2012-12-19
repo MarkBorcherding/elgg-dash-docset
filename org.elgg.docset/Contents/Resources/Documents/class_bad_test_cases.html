@@ -15,6 +15,7 @@
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="elgg_logo.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">Elgg
    </div>
@@ -45,11 +46,10 @@ Inheritance diagram for BadTestCases:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4f39f8e454f489c041ab371c8a0c7393"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a4f39f8e454f489c041ab371c8a0c7393"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>BadTestCases</b> ()</td></tr>
+<tr class="memitem:a4f39f8e454f489c041ab371c8a0c7393"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bad_test_cases.html#a4f39f8e454f489c041ab371c8a0c7393">BadTestCases</a> ()</td></tr>
 <tr class="separator:a4f39f8e454f489c041ab371c8a0c7393"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_test_suite"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_test_suite')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_test_suite.html">TestSuite</a></td></tr>
-<tr class="memitem:abcc954b65c1ccc5809a0f08d70fd24ce inherit pub_methods_class_test_suite"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_test_suite.html#abcc954b65c1ccc5809a0f08d70fd24ce">TestSuite</a> ($label=false)</td></tr>
+<tr class="memitem:abcc954b65c1ccc5809a0f08d70fd24ce inherit pub_methods_class_test_suite"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_test_suite.html#abcc954b65c1ccc5809a0f08d70fd24ce">TestSuite</a> ($<a class="el" href="views_2default_2css_2admin_8php.html#a22f45a3cb4f074e609f58ebaeef0ecf9">label</a>=false)</td></tr>
 <tr class="separator:abcc954b65c1ccc5809a0f08d70fd24ce inherit pub_methods_class_test_suite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14c4e7420d903d3e40342266333d2ecf inherit pub_methods_class_test_suite"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_test_suite.html#a14c4e7420d903d3e40342266333d2ecf">getLabel</a> ()</td></tr>
 <tr class="separator:a14c4e7420d903d3e40342266333d2ecf inherit pub_methods_class_test_suite"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -63,7 +63,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7bcd2dfd0f97b239e50dd6cb454ffd4e inherit pub_methods_class_test_suite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03cce541ee080a4bf23ada6b323069d0 inherit pub_methods_class_test_suite"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_test_suite.html#a03cce541ee080a4bf23ada6b323069d0">addFile</a> ($test_file)</td></tr>
 <tr class="separator:a03cce541ee080a4bf23ada6b323069d0 inherit pub_methods_class_test_suite"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b409aca72cf91e304123784c221a9c9 inherit pub_methods_class_test_suite"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_test_suite.html#a4b409aca72cf91e304123784c221a9c9">collect</a> ($path, &amp;$collector)</td></tr>
+<tr class="memitem:a4b409aca72cf91e304123784c221a9c9 inherit pub_methods_class_test_suite"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_test_suite.html#a4b409aca72cf91e304123784c221a9c9">collect</a> ($<a class="el" href="config_8php.html#a33f5c80e6cf283041f6ed750cc151aea">path</a>, &amp;$collector)</td></tr>
 <tr class="separator:a4b409aca72cf91e304123784c221a9c9 inherit pub_methods_class_test_suite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a94801f88862a099d4c4ad175ff1313 inherit pub_methods_class_test_suite"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_test_suite.html#a1a94801f88862a099d4c4ad175ff1313">run</a> (&amp;$reporter)</td></tr>
 <tr class="separator:a1a94801f88862a099d4c4ad175ff1313 inherit pub_methods_class_test_suite"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -76,20 +76,34 @@ Additional Inherited Members</h2></td></tr>
 <tr class="memitem:a0d6d81fc1361272148bf85c281fd3554 inherit pub_static_methods_class_test_suite"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_test_suite.html#a0d6d81fc1361272148bf85c281fd3554">getBaseTestCase</a> ($class)</td></tr>
 <tr class="separator:a0d6d81fc1361272148bf85c281fd3554 inherit pub_static_methods_class_test_suite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_test_suite"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_test_suite')"><img src="closed.png" alt="-"/>&#160;Data Fields inherited from <a class="el" href="class_test_suite.html">TestSuite</a></td></tr>
-<tr class="memitem:a85beea8e344494338119d914b0c126f9 inherit pub_attribs_class_test_suite"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a85beea8e344494338119d914b0c126f9"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$_label</b></td></tr>
+<tr class="memitem:a85beea8e344494338119d914b0c126f9 inherit pub_attribs_class_test_suite"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_test_suite.html#a85beea8e344494338119d914b0c126f9">$_label</a></td></tr>
 <tr class="separator:a85beea8e344494338119d914b0c126f9 inherit pub_attribs_class_test_suite"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a51e55032d231d85b7ddd6de8f1d329fd inherit pub_attribs_class_test_suite"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a51e55032d231d85b7ddd6de8f1d329fd"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>$_test_cases</b></td></tr>
+<tr class="memitem:a51e55032d231d85b7ddd6de8f1d329fd inherit pub_attribs_class_test_suite"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_test_suite.html#a51e55032d231d85b7ddd6de8f1d329fd">$_test_cases</a></td></tr>
 <tr class="separator:a51e55032d231d85b7ddd6de8f1d329fd inherit pub_attribs_class_test_suite"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a4f39f8e454f489c041ab371c8a0c7393"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_bad_test_cases.html">BadTestCases</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>/Users/markborcherding/source/vendor/Elgg/vendors/simpletest/test/bad_test_suite.php</li>
+<li>Elgg/vendors/simpletest/test/<a class="el" href="bad__test__suite_8php.html">bad_test_suite.php</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Nov 30 2012 09:32:41 for Elgg by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Dec 19 2012 12:53:47 for Elgg by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.2
 </small></address>
