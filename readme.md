@@ -11,9 +11,9 @@ This was created from the source in :octocat:[Elgg/Elgg](https://github.com/elgg
 
 Update the submodule.
 
-`
+```
 doxygen Doxyfile
 cd output/html
 make
 cp -r org.elgg.docst <wherever it should go>
-`
+```
